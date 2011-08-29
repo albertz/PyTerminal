@@ -10,7 +10,38 @@
 		23FB664A140BA41A003DA117 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6649140BA41A003DA117 /* Cocoa.framework */; };
 		23FB6654140BA41A003DA117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6652140BA41A003DA117 /* InfoPlist.strings */; };
 		23FB6658140BA41A003DA117 /* PyTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB6657140BA41A003DA117 /* PyTerminal.m */; };
+		23FB6667140BA4A5003DA117 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6649140BA41A003DA117 /* Cocoa.framework */; };
+		23FB666D140BA4A5003DA117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23FB666B140BA4A5003DA117 /* InfoPlist.strings */; };
+		23FB666F140BA4A5003DA117 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB666E140BA4A5003DA117 /* main.m */; };
+		23FB6673140BA4A5003DA117 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6671140BA4A5003DA117 /* Credits.rtf */; };
+		23FB6676140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB6675140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m */; };
+		23FB6679140BA4A5003DA117 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6677140BA4A5003DA117 /* MainMenu.xib */; };
+		23FB6695140BA4DB003DA117 /* iTerm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6693140BA4CB003DA117 /* iTerm.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23FB6690140BA4CB003DA117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8742065A0564169600CFC3F1;
+			remoteInfo = iTerm;
+		};
+		23FB6692140BA4CB003DA117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 874206430564168A00CFC3F1;
+			remoteInfo = "iTerm Framework";
+		};
+		23FB6696140BA5A7003DA117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 874205EE0564168A00CFC3F1;
+			remoteInfo = "iTerm Framework";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		23FB6646140BA41A003DA117 /* PyTerminal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PyTerminal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +54,16 @@
 		23FB6655140BA41A003DA117 /* PyTerminal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PyTerminal-Prefix.pch"; sourceTree = "<group>"; };
 		23FB6656140BA41A003DA117 /* PyTerminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PyTerminal.h; sourceTree = "<group>"; };
 		23FB6657140BA41A003DA117 /* PyTerminal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyTerminal.m; sourceTree = "<group>"; };
+		23FB6665140BA4A5003DA117 /* PyTerminalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyTerminalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FB666A140BA4A5003DA117 /* PyTerminalDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyTerminalDemo-Info.plist"; sourceTree = "<group>"; };
+		23FB666C140BA4A5003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		23FB666E140BA4A5003DA117 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23FB6670140BA4A5003DA117 /* PyTerminalDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PyTerminalDemo-Prefix.pch"; sourceTree = "<group>"; };
+		23FB6672140BA4A5003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		23FB6674140BA4A5003DA117 /* PyTerminalDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PyTerminalDemoAppDelegate.h; sourceTree = "<group>"; };
+		23FB6675140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyTerminalDemoAppDelegate.m; sourceTree = "<group>"; };
+		23FB6678140BA4A5003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iTerm.xcodeproj; path = "Path Finder SDK/iTerm/iTerm.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,13 +75,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23FB6662140BA4A5003DA117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FB6667140BA4A5003DA117 /* Cocoa.framework in Frameworks */,
+				23FB6695140BA4DB003DA117 /* iTerm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		23FB663A140BA41A003DA117 = {
 			isa = PBXGroup;
 			children = (
+				23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */,
 				23FB664F140BA41A003DA117 /* PyTerminal */,
+				23FB6668140BA4A5003DA117 /* PyTerminalDemo */,
 				23FB6648140BA41A003DA117 /* Frameworks */,
 				23FB6647140BA41A003DA117 /* Products */,
 			);
@@ -50,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				23FB6646140BA41A003DA117 /* PyTerminal.framework */,
+				23FB6665140BA4A5003DA117 /* PyTerminalDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +146,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		23FB6668140BA4A5003DA117 /* PyTerminalDemo */ = {
+			isa = PBXGroup;
+			children = (
+				23FB6674140BA4A5003DA117 /* PyTerminalDemoAppDelegate.h */,
+				23FB6675140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m */,
+				23FB6677140BA4A5003DA117 /* MainMenu.xib */,
+				23FB6669140BA4A5003DA117 /* Supporting Files */,
+			);
+			path = PyTerminalDemo;
+			sourceTree = "<group>";
+		};
+		23FB6669140BA4A5003DA117 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23FB666A140BA4A5003DA117 /* PyTerminalDemo-Info.plist */,
+				23FB666B140BA4A5003DA117 /* InfoPlist.strings */,
+				23FB666E140BA4A5003DA117 /* main.m */,
+				23FB6670140BA4A5003DA117 /* PyTerminalDemo-Prefix.pch */,
+				23FB6671140BA4A5003DA117 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23FB667F140BA4CB003DA117 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23FB6691140BA4CB003DA117 /* iTerm.app */,
+				23FB6693140BA4CB003DA117 /* iTerm.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -124,6 +209,24 @@
 			productReference = 23FB6646140BA41A003DA117 /* PyTerminal.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		23FB6664140BA4A5003DA117 /* PyTerminalDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23FB667C140BA4A5003DA117 /* Build configuration list for PBXNativeTarget "PyTerminalDemo" */;
+			buildPhases = (
+				23FB6661140BA4A5003DA117 /* Sources */,
+				23FB6662140BA4A5003DA117 /* Frameworks */,
+				23FB6663140BA4A5003DA117 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23FB6697140BA5A7003DA117 /* PBXTargetDependency */,
+			);
+			name = PyTerminalDemo;
+			productName = PyTerminalDemo;
+			productReference = 23FB6665140BA4A5003DA117 /* PyTerminalDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,12 +245,36 @@
 			mainGroup = 23FB663A140BA41A003DA117;
 			productRefGroup = 23FB6647140BA41A003DA117 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 23FB667F140BA4CB003DA117 /* Products */;
+					ProjectRef = 23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				23FB6645140BA41A003DA117 /* PyTerminal */,
+				23FB6664140BA4A5003DA117 /* PyTerminalDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		23FB6691140BA4CB003DA117 /* iTerm.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iTerm.app;
+			remoteRef = 23FB6690140BA4CB003DA117 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		23FB6693140BA4CB003DA117 /* iTerm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iTerm.framework;
+			remoteRef = 23FB6692140BA4CB003DA117 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		23FB6644140BA41A003DA117 /* Resources */ = {
@@ -155,6 +282,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				23FB6654140BA41A003DA117 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23FB6663140BA4A5003DA117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FB666D140BA4A5003DA117 /* InfoPlist.strings in Resources */,
+				23FB6673140BA4A5003DA117 /* Credits.rtf in Resources */,
+				23FB6679140BA4A5003DA117 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +306,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23FB6661140BA4A5003DA117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FB666F140BA4A5003DA117 /* main.m in Sources */,
+				23FB6676140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23FB6697140BA5A7003DA117 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "iTerm Framework";
+			targetProxy = 23FB6696140BA5A7003DA117 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		23FB6652140BA41A003DA117 /* InfoPlist.strings */ = {
@@ -178,6 +332,30 @@
 				23FB6653140BA41A003DA117 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		23FB666B140BA4A5003DA117 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23FB666C140BA4A5003DA117 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		23FB6671140BA4A5003DA117 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23FB6672140BA4A5003DA117 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		23FB6677140BA4A5003DA117 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23FB6678140BA4A5003DA117 /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -256,6 +434,28 @@
 			};
 			name = Release;
 		};
+		23FB667A140BA4A5003DA117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PyTerminalDemo/PyTerminalDemo-Prefix.pch";
+				INFOPLIST_FILE = "PyTerminalDemo/PyTerminalDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		23FB667B140BA4A5003DA117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PyTerminalDemo/PyTerminalDemo-Prefix.pch";
+				INFOPLIST_FILE = "PyTerminalDemo/PyTerminalDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -273,6 +473,15 @@
 			buildConfigurations = (
 				23FB665C140BA41A003DA117 /* Debug */,
 				23FB665D140BA41A003DA117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23FB667C140BA4A5003DA117 /* Build configuration list for PBXNativeTarget "PyTerminalDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23FB667A140BA4A5003DA117 /* Debug */,
+				23FB667B140BA4A5003DA117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
