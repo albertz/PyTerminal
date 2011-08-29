@@ -17,6 +17,7 @@
 		23FB6676140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB6675140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m */; };
 		23FB6679140BA4A5003DA117 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6677140BA4A5003DA117 /* MainMenu.xib */; };
 		23FB6695140BA4DB003DA117 /* iTerm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6693140BA4CB003DA117 /* iTerm.framework */; };
+		23FB669C140BADCF003DA117 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB669B140BADCF003DA117 /* Python.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		23FB6675140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyTerminalDemoAppDelegate.m; sourceTree = "<group>"; };
 		23FB6678140BA4A5003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iTerm.xcodeproj; path = "Path Finder SDK/iTerm/iTerm.xcodeproj"; sourceTree = "<group>"; };
+		23FB669B140BADCF003DA117 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FB669C140BADCF003DA117 /* Python.framework in Frameworks */,
 				23FB6667140BA4A5003DA117 /* Cocoa.framework in Frameworks */,
 				23FB6695140BA4DB003DA117 /* iTerm.framework in Frameworks */,
 			);
@@ -110,6 +113,7 @@
 		23FB6648140BA41A003DA117 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23FB669B140BADCF003DA117 /* Python.framework */,
 				23FB6649140BA41A003DA117 /* Cocoa.framework */,
 				23FB664B140BA41A003DA117 /* Other Frameworks */,
 			);
