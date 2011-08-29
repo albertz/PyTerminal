@@ -1,6 +1,12 @@
 
 Thank you for downloading the Path Finder SDK.  Included in the SDK are a few simple tutorials for writing Path Finder plugins, and lots of additional open source examples and frameworks.  It might seem a little overwhelming at first glance, but it's actually very simple.  The frameworks included are not required for writing plugins.  They are included so that you can compile the more complex examples.
 
+---
+
+This is a stripped down copy of the Path Finder SDK which only contains everything necessary for the iTerm framework.
+
+---
+
 // -----------------------------------
 // Plugins
 // -----------------------------------
