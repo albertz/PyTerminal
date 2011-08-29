@@ -605,8 +605,9 @@
 /* Begin PBXProject section */
 		F9613FE503A6BEDB014F6B84 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = AA31AF7608554EFC00EB35A6 /* Build configuration list for PBXProject "CocoatechStrings" */;
+			buildConfigurationList = AA31AF7608554EFC00EB35A6 /* Build configuration list for PBXProject "CocoaTechStrings" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -1296,7 +1297,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		AA31AF7608554EFC00EB35A6 /* Build configuration list for PBXProject "CocoatechStrings" */ = {
+		AA31AF7608554EFC00EB35A6 /* Build configuration list for PBXProject "CocoaTechStrings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA31AF7708554EFC00EB35A6 /* Debug */,
