@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23FB664A140BA41A003DA117 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6649140BA41A003DA117 /* Cocoa.framework */; };
+		23FB6654140BA41A003DA117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6652140BA41A003DA117 /* InfoPlist.strings */; };
+		23FB6658140BA41A003DA117 /* PyTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB6657140BA41A003DA117 /* PyTerminal.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23FB6646140BA41A003DA117 /* PyTerminal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PyTerminal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FB6649140BA41A003DA117 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		23FB664C140BA41A003DA117 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		23FB664D140BA41A003DA117 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		23FB664E140BA41A003DA117 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		23FB6651140BA41A003DA117 /* PyTerminal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyTerminal-Info.plist"; sourceTree = "<group>"; };
+		23FB6653140BA41A003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		23FB6655140BA41A003DA117 /* PyTerminal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PyTerminal-Prefix.pch"; sourceTree = "<group>"; };
+		23FB6656140BA41A003DA117 /* PyTerminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PyTerminal.h; sourceTree = "<group>"; };
+		23FB6657140BA41A003DA117 /* PyTerminal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyTerminal.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23FB6642140BA41A003DA117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FB664A140BA41A003DA117 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23FB663A140BA41A003DA117 = {
+			isa = PBXGroup;
+			children = (
+				23FB664F140BA41A003DA117 /* PyTerminal */,
+				23FB6648140BA41A003DA117 /* Frameworks */,
+				23FB6647140BA41A003DA117 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23FB6647140BA41A003DA117 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23FB6646140BA41A003DA117 /* PyTerminal.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23FB6648140BA41A003DA117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23FB6649140BA41A003DA117 /* Cocoa.framework */,
+				23FB664B140BA41A003DA117 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23FB664B140BA41A003DA117 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23FB664C140BA41A003DA117 /* AppKit.framework */,
+				23FB664D140BA41A003DA117 /* CoreData.framework */,
+				23FB664E140BA41A003DA117 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		23FB664F140BA41A003DA117 /* PyTerminal */ = {
+			isa = PBXGroup;
+			children = (
+				23FB6656140BA41A003DA117 /* PyTerminal.h */,
+				23FB6657140BA41A003DA117 /* PyTerminal.m */,
+				23FB6650140BA41A003DA117 /* Supporting Files */,
+			);
+			path = PyTerminal;
+			sourceTree = "<group>";
+		};
+		23FB6650140BA41A003DA117 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23FB6651140BA41A003DA117 /* PyTerminal-Info.plist */,
+				23FB6652140BA41A003DA117 /* InfoPlist.strings */,
+				23FB6655140BA41A003DA117 /* PyTerminal-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		23FB6643140BA41A003DA117 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		23FB6645140BA41A003DA117 /* PyTerminal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23FB665B140BA41A003DA117 /* Build configuration list for PBXNativeTarget "PyTerminal" */;
+			buildPhases = (
+				23FB6641140BA41A003DA117 /* Sources */,
+				23FB6642140BA41A003DA117 /* Frameworks */,
+				23FB6643140BA41A003DA117 /* Headers */,
+				23FB6644140BA41A003DA117 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PyTerminal;
+			productName = PyTerminal;
+			productReference = 23FB6646140BA41A003DA117 /* PyTerminal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23FB663C140BA41A003DA117 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Albert Zeyer";
+			};
+			buildConfigurationList = 23FB663F140BA41A003DA117 /* Build configuration list for PBXProject "PyTerminal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 23FB663A140BA41A003DA117;
+			productRefGroup = 23FB6647140BA41A003DA117 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23FB6645140BA41A003DA117 /* PyTerminal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23FB6644140BA41A003DA117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FB6654140BA41A003DA117 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23FB6641140BA41A003DA117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FB6658140BA41A003DA117 /* PyTerminal.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23FB6652140BA41A003DA117 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23FB6653140BA41A003DA117 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23FB6659140BA41A003DA117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		23FB665A140BA41A003DA117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		23FB665C140BA41A003DA117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PyTerminal/PyTerminal-Prefix.pch";
+				INFOPLIST_FILE = "PyTerminal/PyTerminal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		23FB665D140BA41A003DA117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PyTerminal/PyTerminal-Prefix.pch";
+				INFOPLIST_FILE = "PyTerminal/PyTerminal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23FB663F140BA41A003DA117 /* Build configuration list for PBXProject "PyTerminal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23FB6659140BA41A003DA117 /* Debug */,
+				23FB665A140BA41A003DA117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23FB665B140BA41A003DA117 /* Build configuration list for PBXNativeTarget "PyTerminal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23FB665C140BA41A003DA117 /* Debug */,
+				23FB665D140BA41A003DA117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23FB663C140BA41A003DA117 /* Project object */;
+}
