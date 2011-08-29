@@ -123,78 +123,36 @@ static int _check_and_flush (FILE *stream)
 	{
 		PyObject *v;
 		v = PyImport_ImportModule("readline");
-		if (v == NULL)
+		if (v == NULL) {
+			fprintf(fp_out, "Error importing 'readline' module.\n");
+			PyErr_Print();
 			PyErr_Clear();
-		else
+		} else
 			Py_DECREF(v);
 	}
 	
+	PyRun_SimpleString("s = raw_input('Input: ')\n"
+					   "print 'Out:', s\n");
+
+	PyRun_SimpleString(
+		"import sys\n"
+		"sys.argv = []\n"
+		"from IPython.Shell import IPShellEmbed,IPShell\n"
+		"ipshell = IPShell(argv=[])\n"
+		"ipshell.mainloop()\n"
+	);
+
     PyCompilerFlags cf;
 	cf.cf_flags = 0;
 
-	PyRun_AnyFileExFlags(fp_in, "<stdin>", 0, &cf);
-
+	// We cannot use PyRun_InteractiveLoopFlags because in Python/Parser/tokenizer.c,
+	// there is `PyOS_Readline(stdin, stdout, tok->prompt)` hardcoded, so it ignores our fp_in.
+	//PyRun_InteractiveLoopFlags(fp_in, "<stdin>", &cf);
+	
 	
 	/*
 	NSAutoreleasePool *arPool = [[NSAutoreleasePool alloc] init];;
-    BOOL exitf = NO;
-    int sts;
-	int iterationCount = 0;
-	char readbuf[4096];
-	fd_set rfds,efds;
-	
-	iterationCount = 0; 
-    while (exitf == NO) 
-	{
-		
-		// periodically refresh our autorelease pool
-		iterationCount++;			
-		
-		FD_ZERO(&rfds);
-		FD_ZERO(&efds);
-		
-		FD_SET(boss->TTY_SLAVE, &rfds);
-		FD_SET(boss->TTY_SLAVE, &efds);
-		
-		sts = select(boss->TTY_SLAVE + 1, &rfds, NULL, &efds, NULL);
-		
-		if (sts < 0) {
-			break;
-		}
-		else if (FD_ISSET(boss->TTY_SLAVE, &efds)) {
-			sts = read(boss->TTY_SLAVE, readbuf, 1);
-			if (sts == 0) {
-				// session close
-				exitf = YES;
-			}
-		}
-		else if (FD_ISSET(boss->TTY_SLAVE, &rfds)) {
-			sts = read(boss->TTY_SLAVE, readbuf, sizeof(readbuf));
-			
-            if (sts == 0) 
-			{
-				exitf = YES;
-            }
-			
-            if (sts > 1) {
-                [boss setHasOutput: YES];
-				[boss readTask:readbuf+1 length:sts-1];
-            }
-            else
-                [boss setHasOutput: NO];
-			
-		}
-		
-		// periodically refresh our autorelease pool
-		if ((iterationCount % 50) == 0)
-		{
-			[arPool release];
-			arPool = [[NSAutoreleasePool alloc] init];
-			iterationCount = 0;
-		}
-		
-    }
-	
+ 	
 	if (sts >= 0) 
         [boss brokenPipe];
 	
@@ -249,7 +207,7 @@ static int _check_and_flush (FILE *stream)
 
 - (void)applicationWillTerminate:(NSNotification *)notification
 {
-	Py_Finalize();
+	//Py_Finalize();
 }
 
 @end
