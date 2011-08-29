@@ -488,6 +488,7 @@
 				23FB667B140BA4A5003DA117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
