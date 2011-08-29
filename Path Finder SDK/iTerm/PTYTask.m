@@ -30,7 +30,7 @@
 
 #define CTRLKEY(c)   ((c)-'A'+1)
 
-static void setup_tty_param(struct termios *term,
+void setup_tty_param(struct termios *term,
 							struct winsize *win,
 							int width,
 							int height)

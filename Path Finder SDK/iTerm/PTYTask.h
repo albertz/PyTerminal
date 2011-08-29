@@ -22,13 +22,20 @@
 
 #import <Foundation/Foundation.h>
 
+struct termios;
+struct winsize;
+void setup_tty_param(struct termios *term,
+					 struct winsize *win,
+					 int width,
+					 int height);
+
 @interface PTYTask : NSObject
 {
     pid_t PID;
-    int FILDES;
+    @public int FILDES;
     int STATUS;
     id DELEGATEOBJECT;
-    NSString *TTY;
+    @public NSString *TTY;
     NSString *PATH;
 
     NSString *LOG_PATH;

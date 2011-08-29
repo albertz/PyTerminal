@@ -11,17 +11,16 @@
 		2005EF4C0B73E42500CBF08D /* ITPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005EF4A0B73E42500CBF08D /* ITPopUpButton.m */; };
 		2005EF560B73E5DB00CBF08D /* ITIconStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2005EF540B73E5DB00CBF08D /* ITIconStore.h */; };
 		2005EF570B73E5DB00CBF08D /* ITIconStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005EF550B73E5DB00CBF08D /* ITIconStore.m */; };
-		20147BA00B6702D8004D8B48 /* PTYScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B990B6702D8004D8B48 /* PTYScrollView.h */; };
-		20147BA10B6702D8004D8B48 /* PTYSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9A0B6702D8004D8B48 /* PTYSession.h */; };
-		20147BA20B6702D8004D8B48 /* PTYTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9B0B6702D8004D8B48 /* PTYTabView.h */; };
-		20147BA30B6702D8004D8B48 /* PTYTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9C0B6702D8004D8B48 /* PTYTask.h */; };
-		20147BA40B6702D8004D8B48 /* PTYTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9D0B6702D8004D8B48 /* PTYTextView.h */; };
-		20147BA50B6702D8004D8B48 /* PTYWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9E0B6702D8004D8B48 /* PTYWindow.h */; };
-		20147BA60B6702D8004D8B48 /* VT100Terminal.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9F0B6702D8004D8B48 /* VT100Terminal.h */; };
+		20147BA00B6702D8004D8B48 /* PTYScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B990B6702D8004D8B48 /* PTYScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20147BA10B6702D8004D8B48 /* PTYSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9A0B6702D8004D8B48 /* PTYSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20147BA20B6702D8004D8B48 /* PTYTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9B0B6702D8004D8B48 /* PTYTabView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20147BA30B6702D8004D8B48 /* PTYTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9C0B6702D8004D8B48 /* PTYTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20147BA40B6702D8004D8B48 /* PTYTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9D0B6702D8004D8B48 /* PTYTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20147BA50B6702D8004D8B48 /* PTYWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9E0B6702D8004D8B48 /* PTYWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20147BB30B670351004D8B48 /* NSStringITerm.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147BAF0B670351004D8B48 /* NSStringITerm.h */; };
 		20147BB40B670351004D8B48 /* PreferencePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147BB00B670351004D8B48 /* PreferencePanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20147BB50B670351004D8B48 /* ITTerminalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147BB10B670351004D8B48 /* ITTerminalView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20147BB60B670351004D8B48 /* VT100Terminal.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147BB20B670351004D8B48 /* VT100Terminal.h */; };
+		20147BB60B670351004D8B48 /* VT100Terminal.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147BB20B670351004D8B48 /* VT100Terminal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		205034470B76ED1400AFF542 /* ITSharedActionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 205034450B76ED1400AFF542 /* ITSharedActionHandler.h */; };
 		205034480B76ED1400AFF542 /* ITSharedActionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 205034460B76ED1400AFF542 /* ITSharedActionHandler.m */; };
 		20616FD10B69D16300342BC2 /* MyTerminalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20616FCF0B69D16300342BC2 /* MyTerminalView.m */; };
@@ -44,9 +43,9 @@
 		20C667950B67022100533B48 /* iTermDisplayProfileMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C667940B67022100533B48 /* iTermDisplayProfileMgr.h */; };
 		20C667970B67023000533B48 /* iTermKeyBindingMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C667960B67023000533B48 /* iTermKeyBindingMgr.h */; };
 		20C667990B67023F00533B48 /* iTermProfileWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C667980B67023F00533B48 /* iTermProfileWindowController.h */; };
-		20C6679B0B67025000533B48 /* iTermTerminalProfileMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6679A0B67025000533B48 /* iTermTerminalProfileMgr.h */; };
+		20C6679B0B67025000533B48 /* iTermTerminalProfileMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6679A0B67025000533B48 /* iTermTerminalProfileMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20C6679D0B67026F00533B48 /* Tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6679C0B67026F00533B48 /* Tree.h */; };
-		20C6679F0B67027D00533B48 /* VT100Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6679E0B67027D00533B48 /* VT100Screen.h */; };
+		20C6679F0B67027D00533B48 /* VT100Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6679E0B67027D00533B48 /* VT100Screen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20F0F2490BFE23D700689231 /* CocoaTechStrings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */; };
 		20F0F24A0BFE23E700689231 /* CocoaTechStrings.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */; };
 		874206050564168A00CFC3F1 /* PTToolbarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2076B15704E8817300000106 /* PTToolbarController.h */; };
@@ -266,6 +265,7 @@
 		20E74F4804E9089700000106 /* ITAddressBookMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITAddressBookMgr.h; sourceTree = "<group>"; };
 		20E74F4904E9089700000106 /* ITAddressBookMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITAddressBookMgr.m; sourceTree = "<group>"; };
 		20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaTechStrings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FB6698140BA952003DA117 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Common.xcconfig; path = ../Configurations/Common.xcconfig; sourceTree = "<group>"; };
 		870BCD84047070AC0073D10E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/FindPanel.nib; sourceTree = "<group>"; };
 		870EAAB604325A880073D10E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PreferencePanel.nib; sourceTree = "<group>"; };
 		8723EDED04EAADBB0073D10E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ITConfigPanel.nib; sourceTree = "<group>"; };
@@ -394,6 +394,9 @@
 		0464AB0D006CD2EC7F000001 /* JTerminal */ = {
 			isa = PBXGroup;
 			children = (
+				23FB6698140BA952003DA117 /* Common.xcconfig */,
+				20881DB10EF8D917008D9CB9 /* Debug.xcconfig */,
+				20881DB20EF8D917008D9CB9 /* Release.xcconfig */,
 				2094D2BB0CC6A4B100D5F32C /* CocoatechCore.xcodeproj */,
 				206719FF0BFE72FF00757734 /* CocoaTechStrings.xcodeproj */,
 				0464AB0E006CD2EC7F000001 /* Classes */,
@@ -409,8 +412,6 @@
 		0464AB0E006CD2EC7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				20881DB10EF8D917008D9CB9 /* Debug.xcconfig */,
-				20881DB20EF8D917008D9CB9 /* Release.xcconfig */,
 				206042C10B66FD8300FD2068 /* Application */,
 				206042C40B66FDEE00FD2068 /* Framework */,
 			);
@@ -694,7 +695,16 @@
 				DD02573F09CB9399008F320C /* PSMAquaTabStyle.h in Headers */,
 				DD02574109CB9399008F320C /* PSMMetalTabStyle.h in Headers */,
 				DD02574309CB9399008F320C /* PSMOverflowPopUpButton.h in Headers */,
+				20147BA00B6702D8004D8B48 /* PTYScrollView.h in Headers */,
+				20147BA10B6702D8004D8B48 /* PTYSession.h in Headers */,
+				20147BA20B6702D8004D8B48 /* PTYTabView.h in Headers */,
+				20147BA30B6702D8004D8B48 /* PTYTask.h in Headers */,
+				20147BA40B6702D8004D8B48 /* PTYTextView.h in Headers */,
+				20147BA50B6702D8004D8B48 /* PTYWindow.h in Headers */,
+				20C6679F0B67027D00533B48 /* VT100Screen.h in Headers */,
+				20147BB60B670351004D8B48 /* VT100Terminal.h in Headers */,
 				DD02574709CB9399008F320C /* PSMProgressIndicator.h in Headers */,
+				20C6679B0B67025000533B48 /* iTermTerminalProfileMgr.h in Headers */,
 				DD02574909CB9399008F320C /* PSMRolloverButton.h in Headers */,
 				DD02574B09CB9399008F320C /* PSMTabBarCell.h in Headers */,
 				DD02574D09CB9399008F320C /* PSMTabBarControl.h in Headers */,
@@ -713,16 +723,7 @@
 				20C667950B67022100533B48 /* iTermDisplayProfileMgr.h in Headers */,
 				20C667970B67023000533B48 /* iTermKeyBindingMgr.h in Headers */,
 				20C667990B67023F00533B48 /* iTermProfileWindowController.h in Headers */,
-				20C6679B0B67025000533B48 /* iTermTerminalProfileMgr.h in Headers */,
 				20C6679D0B67026F00533B48 /* Tree.h in Headers */,
-				20C6679F0B67027D00533B48 /* VT100Screen.h in Headers */,
-				20147BA00B6702D8004D8B48 /* PTYScrollView.h in Headers */,
-				20147BA10B6702D8004D8B48 /* PTYSession.h in Headers */,
-				20147BA20B6702D8004D8B48 /* PTYTabView.h in Headers */,
-				20147BA30B6702D8004D8B48 /* PTYTask.h in Headers */,
-				20147BA40B6702D8004D8B48 /* PTYTextView.h in Headers */,
-				20147BA50B6702D8004D8B48 /* PTYWindow.h in Headers */,
-				20147BA60B6702D8004D8B48 /* VT100Terminal.h in Headers */,
 				20147BB30B670351004D8B48 /* NSStringITerm.h in Headers */,
 				20147BB40B670351004D8B48 /* PreferencePanel.h in Headers */,
 				20147BB50B670351004D8B48 /* ITTerminalView.h in Headers */,
