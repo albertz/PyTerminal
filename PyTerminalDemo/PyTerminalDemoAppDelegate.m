@@ -16,6 +16,15 @@
 #include <util.h> // openpty
 #include <sys/ioctl.h>
 
+#import <Python/Python.h>
+
+// from Python/sysmodule.c
+static int _check_and_flush (FILE *stream)
+{
+	int prev_fail = ferror (stream);
+	return fflush (stream) || prev_fail ? EOF : 0;
+}
+
 @interface PyTerminalView : ITTerminalView
 {
 	int TTY_SLAVE;
@@ -23,6 +32,7 @@
 - (void)addNewSession:(NSDictionary *)addressbookEntry
 		  withCommand:(NSString *)command
 			  withURL:(NSString*)url;
++ (void)_runPython:(PyTerminalView *)boss;
 @end
 
 @implementation PyTerminalView
@@ -83,8 +93,118 @@
             	             toTarget:[PTYTask class]
 						   withObject:shell];
 
+	// spawn a thread for Python
+    [NSThread detachNewThreadSelector:@selector(_runPython:)
+            	             toTarget:[PyTerminalView class]
+						   withObject:self];
+	
     [aSession release];
 }
+
++ (void)_runPython:(PyTerminalView *)boss
+{
+	FILE* fp_in = fdopen(boss->TTY_SLAVE, "r");
+	FILE* fp_out = fdopen(boss->TTY_SLAVE, "w");
+	FILE* fp_err = fdopen(boss->TTY_SLAVE, "w");
+
+    PyObject *sysin, *sysout, *syserr;
+	sysin = PyFile_FromFile(fp_in, "<stdin>", "r", NULL);
+    sysout = PyFile_FromFile(fp_out, "<stdout>", "w", _check_and_flush);
+    syserr = PyFile_FromFile(fp_err, "<stderr>", "w", _check_and_flush);
+    NSParameterAssert(!PyErr_Occurred());
+	
+	PySys_SetObject("stdin", sysin);
+	PySys_SetObject("stdout", sysout);
+	PySys_SetObject("stderr", syserr);
+	
+	PyRun_SimpleString("from time import time,ctime\n"
+					   "print 'Today is',ctime(time())\n");
+
+	{
+		PyObject *v;
+		v = PyImport_ImportModule("readline");
+		if (v == NULL)
+			PyErr_Clear();
+		else
+			Py_DECREF(v);
+	}
+	
+    PyCompilerFlags cf;
+	cf.cf_flags = 0;
+
+	PyRun_AnyFileExFlags(fp_in, "<stdin>", 0, &cf);
+
+	
+	/*
+	NSAutoreleasePool *arPool = [[NSAutoreleasePool alloc] init];;
+    BOOL exitf = NO;
+    int sts;
+	int iterationCount = 0;
+	char readbuf[4096];
+	fd_set rfds,efds;
+	
+	iterationCount = 0; 
+    while (exitf == NO) 
+	{
+		
+		// periodically refresh our autorelease pool
+		iterationCount++;			
+		
+		FD_ZERO(&rfds);
+		FD_ZERO(&efds);
+		
+		FD_SET(boss->TTY_SLAVE, &rfds);
+		FD_SET(boss->TTY_SLAVE, &efds);
+		
+		sts = select(boss->TTY_SLAVE + 1, &rfds, NULL, &efds, NULL);
+		
+		if (sts < 0) {
+			break;
+		}
+		else if (FD_ISSET(boss->TTY_SLAVE, &efds)) {
+			sts = read(boss->TTY_SLAVE, readbuf, 1);
+			if (sts == 0) {
+				// session close
+				exitf = YES;
+			}
+		}
+		else if (FD_ISSET(boss->TTY_SLAVE, &rfds)) {
+			sts = read(boss->TTY_SLAVE, readbuf, sizeof(readbuf));
+			
+            if (sts == 0) 
+			{
+				exitf = YES;
+            }
+			
+            if (sts > 1) {
+                [boss setHasOutput: YES];
+				[boss readTask:readbuf+1 length:sts-1];
+            }
+            else
+                [boss setHasOutput: NO];
+			
+		}
+		
+		// periodically refresh our autorelease pool
+		if ((iterationCount % 50) == 0)
+		{
+			[arPool release];
+			arPool = [[NSAutoreleasePool alloc] init];
+			iterationCount = 0;
+		}
+		
+    }
+	
+	if (sts >= 0) 
+        [boss brokenPipe];
+	
+	[arPool release];
+	*/
+ //   MPSignalSemaphore(boss->threadEndSemaphore);
+	
+	[NSThread exit];
+}
+
 @end
 
 @implementation PyTerminalDemoAppDelegate
@@ -93,6 +213,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	Py_Initialize();
+
 /*	// make sure this is initialized (yes goofy, I know)
  	[iTermController sharedInstance];
 	
@@ -123,6 +245,11 @@
 
 	[v addNewSession:nil withCommand:@"/bin/zsh" withURL:nil];
 	//[v runCommand:@"/bin/bash"];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification
+{
+	Py_Finalize();
 }
 
 @end
