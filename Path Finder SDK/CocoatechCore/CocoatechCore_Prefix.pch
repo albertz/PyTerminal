@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'CocoatechCore' target in the 'CocoatechCore' project.
+//
+
+#import <Carbon/Carbon.h>
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <Quartz/Quartz.h>
+#import <Security/Security.h>
+#import <QuartzCore/QuartzCore.h>
+#import <QuickTime/QuickTime.h>
+#import <CocoaTechStrings/CocoaTechStrings.h>
+#import "NTCoreMacros.h"
+#endif

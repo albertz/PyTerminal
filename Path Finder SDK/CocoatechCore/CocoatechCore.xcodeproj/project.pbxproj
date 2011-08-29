@@ -1,0 +1,1803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20061E040F8802CA00241369 /* NTAppearanceMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20061E020F8802CA00241369 /* NTAppearanceMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20061E050F8802CA00241369 /* NTAppearanceMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 20061E030F8802CA00241369 /* NTAppearanceMgr.m */; };
+		2007456B0DBC4D1300668B22 /* NTBoxView.h in Headers */ = {isa = PBXBuildFile; fileRef = 200745690DBC4D1300668B22 /* NTBoxView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2007456C0DBC4D1300668B22 /* NTBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2007456A0DBC4D1300668B22 /* NTBoxView.m */; };
+		2007456F0DBC4D2000668B22 /* NTBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2007456D0DBC4D2000668B22 /* NTBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		200745700DBC4D2000668B22 /* NTBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2007456E0DBC4D2000668B22 /* NTBackgroundView.m */; };
+		200747CF0DBC774600668B22 /* NTStandardImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 200747CD0DBC774600668B22 /* NTStandardImages.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		200747D00DBC774600668B22 /* NTStandardImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 200747CE0DBC774600668B22 /* NTStandardImages.m */; };
+		200747DA0DBC775800668B22 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 200747D70DBC775800668B22 /* images */; };
+		200747EE0DBC77BB00668B22 /* NSBundle-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 200747EC0DBC77BB00668B22 /* NSBundle-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		200747EF0DBC77BB00668B22 /* NSBundle-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 200747ED0DBC77BB00668B22 /* NSBundle-NTExtensions.m */; };
+		200B4A450D28B3930072FCB0 /* NTImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B4A430D28B3930072FCB0 /* NTImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		200B4A460D28B3930072FCB0 /* NTImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B4A440D28B3930072FCB0 /* NTImageButton.m */; };
+		200EAEF00C8A03E7001F7F97 /* NTColorSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 200EAEEE0C8A03E7001F7F97 /* NTColorSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		200EAEF10C8A03E7001F7F97 /* NTColorSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 200EAEEF0C8A03E7001F7F97 /* NTColorSet.m */; };
+		200EAF020C8A0A81001F7F97 /* NTStandardColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 200EAF000C8A0A81001F7F97 /* NTStandardColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		200EAF030C8A0A81001F7F97 /* NTStandardColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 200EAF010C8A0A81001F7F97 /* NTStandardColors.m */; };
+		201362370C63C63F006BFAA5 /* NTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 201362350C63C63F006BFAA5 /* NTFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		201362380C63C63F006BFAA5 /* NTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 201362360C63C63F006BFAA5 /* NTFont.m */; };
+		20139B010D826EF100DC615B /* NTStaticImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20139AFF0D826EF100DC615B /* NTStaticImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20139B020D826EF100DC615B /* NTStaticImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20139B000D826EF100DC615B /* NTStaticImageView.m */; };
+		2015E3A911268DF3009A85F0 /* NTMailDelivery.h in Headers */ = {isa = PBXBuildFile; fileRef = 2015E3A711268DF3009A85F0 /* NTMailDelivery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2015E3AA11268DF3009A85F0 /* NTMailDelivery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2015E3A811268DF3009A85F0 /* NTMailDelivery.m */; };
+		2015E3D611269634009A85F0 /* NTMobileMe.h in Headers */ = {isa = PBXBuildFile; fileRef = 2015E3D411269634009A85F0 /* NTMobileMe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2015E3D711269634009A85F0 /* NTMobileMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2015E3D511269634009A85F0 /* NTMobileMe.m */; };
+		20193B6E10F2AF58002735A8 /* NTTemporaryObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 20193B6C10F2AF58002735A8 /* NTTemporaryObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20193B6F10F2AF58002735A8 /* NTTemporaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 20193B6D10F2AF58002735A8 /* NTTemporaryObject.m */; };
+		201F80E00F7D80ED0076A5EE /* NTEventOverrideHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 201F80DE0F7D80ED0076A5EE /* NTEventOverrideHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		201F80E10F7D80ED0076A5EE /* NTEventOverrideHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F80DF0F7D80ED0076A5EE /* NTEventOverrideHandler.m */; };
+		20230C410D35AF4200C6553E /* NSSplitView-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20230C3F0D35AF4200C6553E /* NSSplitView-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20230C420D35AF4200C6553E /* NSSplitView-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20230C400D35AF4200C6553E /* NSSplitView-NTExtensions.m */; };
+		2027FF4E107BE2AF007354B7 /* NTQuitDisabler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2027FF4C107BE2AF007354B7 /* NTQuitDisabler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2027FF4F107BE2AF007354B7 /* NTQuitDisabler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2027FF4D107BE2AF007354B7 /* NTQuitDisabler.m */; };
+		202BED2D0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 202BED2B0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		202BED2E0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 202BED2C0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.m */; };
+		203446400D6F623E000B5495 /* NSAnimationContext-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2034463E0D6F623E000B5495 /* NSAnimationContext-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		203446410D6F623E000B5495 /* NSAnimationContext-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2034463F0D6F623E000B5495 /* NSAnimationContext-NTExtensions.m */; };
+		203A1C50112D3970007C94BE /* NTMessageProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 203A1C4E112D3970007C94BE /* NTMessageProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		203A1C51112D3970007C94BE /* NTMessageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 203A1C4F112D3970007C94BE /* NTMessageProxy.m */; };
+		203BCC1710857DFE002F2D3E /* NSMutableArray-ThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 203BCC1510857DFE002F2D3E /* NSMutableArray-ThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		203BCC1810857DFE002F2D3E /* NSMutableArray-ThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 203BCC1610857DFE002F2D3E /* NSMutableArray-ThreadSafe.m */; };
+		204012600BCC758900102A61 /* NTTableHeaderImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 2040125E0BCC758900102A61 /* NTTableHeaderImages.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204012610BCC758900102A61 /* NTTableHeaderImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040125F0BCC758900102A61 /* NTTableHeaderImages.m */; };
+		204012820BCC762A00102A61 /* NTAquaButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204012800BCC762A00102A61 /* NTAquaButtonCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204012830BCC762A00102A61 /* NTAquaButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204012810BCC762A00102A61 /* NTAquaButtonCell.m */; };
+		204020AE0B95616700131CDE /* NTAlertPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 204020AC0B95616700131CDE /* NTAlertPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204020AF0B95616700131CDE /* NTAlertPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 204020AD0B95616700131CDE /* NTAlertPanel.m */; };
+		2048619A0D7CEB5B0083D964 /* NTStringView.h in Headers */ = {isa = PBXBuildFile; fileRef = 204861980D7CEB5B0083D964 /* NTStringView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2048619B0D7CEB5B0083D964 /* NTStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204861990D7CEB5B0083D964 /* NTStringView.m */; };
+		204A62600D441E8200B6EB88 /* NSNumber-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 204A625E0D441E8200B6EB88 /* NSNumber-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204A62610D441E8200B6EB88 /* NSNumber-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 204A625F0D441E8200B6EB88 /* NSNumber-NTExtensions.m */; };
+		204CEC170ADCB0F200B25AD4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204CEC150ADCB0F200B25AD4 /* AddressBook.framework */; };
+		204CEC180ADCB0F200B25AD4 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204CEC160ADCB0F200B25AD4 /* IOKit.framework */; };
+		204CEE0E0ADCBC5C00B25AD4 /* NTSizeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 204CEE0C0ADCBC5C00B25AD4 /* NTSizeFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204CEE0F0ADCBC5C00B25AD4 /* NTSizeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 204CEE0D0ADCBC5C00B25AD4 /* NTSizeFormatter.m */; };
+		204CEE5F0ADCBDAF00B25AD4 /* NTSimpleAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 204CEE5D0ADCBDAF00B25AD4 /* NTSimpleAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204CEE600ADCBDAF00B25AD4 /* NTSimpleAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 204CEE5E0ADCBDAF00B25AD4 /* NTSimpleAlert.m */; };
+		204CEFA00ADCC36A00B25AD4 /* NTGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 204CEF9E0ADCC36A00B25AD4 /* NTGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204CEFA10ADCC36A00B25AD4 /* NTGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 204CEF9F0ADCC36A00B25AD4 /* NTGeometry.m */; };
+		204CEFD60ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 204CEFD40ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204CEFD70ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 204CEFD50ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.m */; };
+		204CF07E0ADCCCF600B25AD4 /* NTTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 204CF07C0ADCCCF600B25AD4 /* NTTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204CF07F0ADCCCF600B25AD4 /* NTTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 204CF07D0ADCCCF600B25AD4 /* NTTime.m */; };
+		2053D9E70DDBA72600098630 /* NTMenuSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2053D9E50DDBA72600098630 /* NTMenuSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2053D9E80DDBA72600098630 /* NTMenuSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2053D9E60DDBA72600098630 /* NTMenuSlider.m */; };
+		2053D9EE0DDBA73500098630 /* NTSliderGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2053D9EC0DDBA73500098630 /* NTSliderGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2053D9EF0DDBA73500098630 /* NTSliderGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2053D9ED0DDBA73500098630 /* NTSliderGradientView.m */; };
+		2053D9FF0DDBA9F000098630 /* NTSliderMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2053D9FD0DDBA9F000098630 /* NTSliderMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2053DA000DDBA9F000098630 /* NTSliderMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2053D9FE0DDBA9F000098630 /* NTSliderMenuItem.m */; };
+		2054A3BC116AB194007EF8F9 /* BGGradientTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A382116AB194007EF8F9 /* BGGradientTheme.h */; };
+		2054A3BD116AB194007EF8F9 /* BGGradientTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A383116AB194007EF8F9 /* BGGradientTheme.m */; };
+		2054A3BE116AB194007EF8F9 /* BGHUDAppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A384116AB194007EF8F9 /* BGHUDAppKit.h */; };
+		2054A3BF116AB194007EF8F9 /* BGHUDBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A385116AB194007EF8F9 /* BGHUDBox.h */; };
+		2054A3C0116AB194007EF8F9 /* BGHUDBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A386116AB194007EF8F9 /* BGHUDBox.m */; };
+		2054A3C1116AB194007EF8F9 /* BGHUDButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A387116AB194007EF8F9 /* BGHUDButtonCell.h */; };
+		2054A3C2116AB194007EF8F9 /* BGHUDButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A388116AB194007EF8F9 /* BGHUDButtonCell.m */; };
+		2054A3C3116AB194007EF8F9 /* BGHUDColorWell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A389116AB194007EF8F9 /* BGHUDColorWell.h */; };
+		2054A3C4116AB194007EF8F9 /* BGHUDColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A38A116AB194007EF8F9 /* BGHUDColorWell.m */; };
+		2054A3C5116AB194007EF8F9 /* BGHUDComboBoxCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A38B116AB194007EF8F9 /* BGHUDComboBoxCell.h */; };
+		2054A3C6116AB194007EF8F9 /* BGHUDComboBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A38C116AB194007EF8F9 /* BGHUDComboBoxCell.m */; };
+		2054A3C7116AB194007EF8F9 /* BGHUDGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A38D116AB194007EF8F9 /* BGHUDGeometry.h */; };
+		2054A3C8116AB194007EF8F9 /* BGHUDLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A38E116AB194007EF8F9 /* BGHUDLabel.h */; };
+		2054A3C9116AB194007EF8F9 /* BGHUDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A38F116AB194007EF8F9 /* BGHUDLabel.m */; };
+		2054A3CA116AB194007EF8F9 /* BGHUDOutlineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A390116AB194007EF8F9 /* BGHUDOutlineView.h */; };
+		2054A3CB116AB194007EF8F9 /* BGHUDOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A391116AB194007EF8F9 /* BGHUDOutlineView.m */; };
+		2054A3CC116AB194007EF8F9 /* BGHUDPopUpButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A392116AB194007EF8F9 /* BGHUDPopUpButtonCell.h */; };
+		2054A3CD116AB194007EF8F9 /* BGHUDPopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A393116AB194007EF8F9 /* BGHUDPopUpButtonCell.m */; };
+		2054A3CE116AB194007EF8F9 /* BGHUDProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A394116AB194007EF8F9 /* BGHUDProgressIndicator.h */; };
+		2054A3CF116AB194007EF8F9 /* BGHUDProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A395116AB194007EF8F9 /* BGHUDProgressIndicator.m */; };
+		2054A3D0116AB194007EF8F9 /* BGHUDScroller.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A396116AB194007EF8F9 /* BGHUDScroller.h */; };
+		2054A3D1116AB194007EF8F9 /* BGHUDScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A397116AB194007EF8F9 /* BGHUDScroller.m */; };
+		2054A3D2116AB194007EF8F9 /* BGHUDScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A398116AB194007EF8F9 /* BGHUDScrollView.h */; };
+		2054A3D3116AB194007EF8F9 /* BGHUDScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A399116AB194007EF8F9 /* BGHUDScrollView.m */; };
+		2054A3D4116AB194007EF8F9 /* BGHUDSearchFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A39A116AB194007EF8F9 /* BGHUDSearchFieldCell.h */; };
+		2054A3D5116AB194007EF8F9 /* BGHUDSearchFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A39B116AB194007EF8F9 /* BGHUDSearchFieldCell.m */; };
+		2054A3D6116AB194007EF8F9 /* BGHUDSecureTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A39C116AB194007EF8F9 /* BGHUDSecureTextFieldCell.h */; };
+		2054A3D7116AB194007EF8F9 /* BGHUDSecureTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A39D116AB194007EF8F9 /* BGHUDSecureTextFieldCell.m */; };
+		2054A3D8116AB194007EF8F9 /* BGHUDSegmentedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A39E116AB194007EF8F9 /* BGHUDSegmentedCell.h */; };
+		2054A3D9116AB194007EF8F9 /* BGHUDSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A39F116AB194007EF8F9 /* BGHUDSegmentedCell.m */; };
+		2054A3DA116AB194007EF8F9 /* BGHUDSliderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3A0116AB194007EF8F9 /* BGHUDSliderCell.h */; };
+		2054A3DB116AB194007EF8F9 /* BGHUDSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3A1116AB194007EF8F9 /* BGHUDSliderCell.m */; };
+		2054A3DC116AB194007EF8F9 /* BGHUDStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3A2116AB194007EF8F9 /* BGHUDStepperCell.h */; };
+		2054A3DD116AB194007EF8F9 /* BGHUDStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3A3116AB194007EF8F9 /* BGHUDStepperCell.m */; };
+		2054A3DE116AB194007EF8F9 /* BGHUDTableCornerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3A4116AB194007EF8F9 /* BGHUDTableCornerView.h */; };
+		2054A3DF116AB194007EF8F9 /* BGHUDTableCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3A5116AB194007EF8F9 /* BGHUDTableCornerView.m */; };
+		2054A3E0116AB194007EF8F9 /* BGHUDTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3A6116AB194007EF8F9 /* BGHUDTableView.h */; };
+		2054A3E1116AB194007EF8F9 /* BGHUDTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3A7116AB194007EF8F9 /* BGHUDTableView.m */; };
+		2054A3E2116AB194007EF8F9 /* BGHUDTableViewHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3A8116AB194007EF8F9 /* BGHUDTableViewHeaderCell.h */; };
+		2054A3E3116AB194007EF8F9 /* BGHUDTableViewHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3A9116AB194007EF8F9 /* BGHUDTableViewHeaderCell.m */; };
+		2054A3E4116AB194007EF8F9 /* BGHUDTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3AA116AB194007EF8F9 /* BGHUDTabView.h */; };
+		2054A3E5116AB194007EF8F9 /* BGHUDTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3AB116AB194007EF8F9 /* BGHUDTabView.m */; };
+		2054A3E6116AB194007EF8F9 /* BGHUDTabViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3AC116AB194007EF8F9 /* BGHUDTabViewItem.h */; };
+		2054A3E7116AB194007EF8F9 /* BGHUDTabViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3AD116AB194007EF8F9 /* BGHUDTabViewItem.m */; };
+		2054A3E8116AB194007EF8F9 /* BGHUDTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3AE116AB194007EF8F9 /* BGHUDTextFieldCell.h */; };
+		2054A3E9116AB194007EF8F9 /* BGHUDTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3AF116AB194007EF8F9 /* BGHUDTextFieldCell.m */; };
+		2054A3EE116AB194007EF8F9 /* BGHUDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3B4116AB194007EF8F9 /* BGHUDView.h */; };
+		2054A3EF116AB194007EF8F9 /* BGHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3B5116AB194007EF8F9 /* BGHUDView.m */; };
+		2054A3F0116AB194007EF8F9 /* BGTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3B6116AB194007EF8F9 /* BGTheme.h */; };
+		2054A3F1116AB194007EF8F9 /* BGTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3B7116AB194007EF8F9 /* BGTheme.m */; };
+		2054A3F2116AB194007EF8F9 /* BGThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3B8116AB194007EF8F9 /* BGThemeManager.h */; };
+		2054A3F3116AB194007EF8F9 /* BGThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3B9116AB194007EF8F9 /* BGThemeManager.m */; };
+		2054A400116AB602007EF8F9 /* NTBGHUDPopUpButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2054A3FE116AB602007EF8F9 /* NTBGHUDPopUpButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2054A401116AB602007EF8F9 /* NTBGHUDPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054A3FF116AB602007EF8F9 /* NTBGHUDPopUpButton.m */; };
+		205860310B98E8FB003B6A72 /* NTChooseDestinationPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2058602D0B98E8FB003B6A72 /* NTChooseDestinationPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205860320B98E8FB003B6A72 /* NTChooseDestinationPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058602E0B98E8FB003B6A72 /* NTChooseDestinationPanel.m */; };
+		205860330B98E8FB003B6A72 /* NTChooseFilePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2058602F0B98E8FB003B6A72 /* NTChooseFilePanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205860340B98E8FB003B6A72 /* NTChooseFilePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 205860300B98E8FB003B6A72 /* NTChooseFilePanel.m */; };
+		205860370B98E907003B6A72 /* NSSavePanel-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 205860350B98E907003B6A72 /* NSSavePanel-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205860380B98E907003B6A72 /* NSSavePanel-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 205860360B98E907003B6A72 /* NSSavePanel-NTExtensions.m */; };
+		2059D4A6104CD8B400B1FC10 /* NTSynchronousTaskRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 2059D4A4104CD8B400B1FC10 /* NTSynchronousTaskRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2059D4A7104CD8B400B1FC10 /* NTSynchronousTaskRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2059D4A5104CD8B400B1FC10 /* NTSynchronousTaskRunner.m */; };
+		205CEA730EB9353500F13171 /* NTSelectionGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 205CEA710EB9353500F13171 /* NTSelectionGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205CEA740EB9353500F13171 /* NTSelectionGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 205CEA720EB9353500F13171 /* NTSelectionGradient.m */; };
+		20631EBD0DE266E800AFE50A /* NTHotKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 20631EBB0DE266E800AFE50A /* NTHotKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20631EBE0DE266E800AFE50A /* NTHotKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20631EBC0DE266E800AFE50A /* NTHotKeyManager.m */; };
+		2064CAFE0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2064CAFC0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2064CAFF0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2064CAFD0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.m */; };
+		2064CB7F0EDB985700DCD342 /* NSLayoutManager-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2064CB7D0EDB985700DCD342 /* NSLayoutManager-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2064CB800EDB985700DCD342 /* NSLayoutManager-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2064CB7E0EDB985700DCD342 /* NSLayoutManager-NTExtensions.m */; };
+		2064CBEB0EDBA01C00DCD342 /* NSFont-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2064CBE90EDBA01C00DCD342 /* NSFont-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2064CBEC0EDBA01C00DCD342 /* NSFont-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2064CBEA0EDBA01C00DCD342 /* NSFont-NTExtensions.m */; };
+		2069DD0F11117CFB004872E8 /* NSObject-Dispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2069DD0D11117CFB004872E8 /* NSObject-Dispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2069DD1011117CFB004872E8 /* NSObject-Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2069DD0E11117CFB004872E8 /* NSObject-Dispatch.m */; };
+		206C76E90DA6C49D0026B17F /* NTTemplateButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 206C76E70DA6C49D0026B17F /* NTTemplateButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		206C76EA0DA6C49D0026B17F /* NTTemplateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C76E80DA6C49D0026B17F /* NTTemplateButton.m */; };
+		2072C5CE10661B740059C34B /* NTIconControlValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2072C5CC10661B740059C34B /* NTIconControlValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2072C5CF10661B740059C34B /* NTIconControlValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2072C5CD10661B740059C34B /* NTIconControlValueTransformer.m */; };
+		2072C748106641840059C34B /* NSValueTransformer-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2072C746106641840059C34B /* NSValueTransformer-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2072C749106641840059C34B /* NSValueTransformer-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2072C747106641840059C34B /* NSValueTransformer-NTExtensions.m */; };
+		20753FC30D1B3AF10015B9BA /* NTSplitViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 20753FC10D1B3AF10015B9BA /* NTSplitViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20753FC40D1B3AF10015B9BA /* NTSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753FC20D1B3AF10015B9BA /* NTSplitViewDelegate.m */; };
+		207E966A0DC7B80D00D0CC4E /* NTClickState.h in Headers */ = {isa = PBXBuildFile; fileRef = 207E96680DC7B80D00D0CC4E /* NTClickState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		207E966B0DC7B80D00D0CC4E /* NTClickState.m in Sources */ = {isa = PBXBuildFile; fileRef = 207E96690DC7B80D00D0CC4E /* NTClickState.m */; };
+		2080798510EB539D00F2BED0 /* NTShadowImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2080798310EB539D00F2BED0 /* NTShadowImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2080798610EB539D00F2BED0 /* NTShadowImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2080798410EB539D00F2BED0 /* NTShadowImage.m */; };
+		2084D4390F8337AD00E25B74 /* NTUInt64Container.h in Headers */ = {isa = PBXBuildFile; fileRef = 2084D4370F8337AD00E25B74 /* NTUInt64Container.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2084D43A0F8337AD00E25B74 /* NTUInt64Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 2084D4380F8337AD00E25B74 /* NTUInt64Container.m */; };
+		2084D43F0F8337B900E25B74 /* NTBaseContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2084D43D0F8337B900E25B74 /* NTBaseContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2084D4400F8337B900E25B74 /* NTBaseContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2084D43E0F8337B900E25B74 /* NTBaseContainer.m */; };
+		2084D4BB0F8346B300E25B74 /* NTUInt32Container.h in Headers */ = {isa = PBXBuildFile; fileRef = 2084D4B90F8346B300E25B74 /* NTUInt32Container.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2084D4BC0F8346B300E25B74 /* NTUInt32Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 2084D4BA0F8346B300E25B74 /* NTUInt32Container.m */; };
+		2086CAB10E245E46005F68AD /* NTMetalWindowTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 2086CAAF0E245E46005F68AD /* NTMetalWindowTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2086CAB20E245E46005F68AD /* NTMetalWindowTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2086CAB00E245E46005F68AD /* NTMetalWindowTheme.m */; };
+		20876FA40F82CD18002AF8E4 /* NTObjectContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20876FA20F82CD18002AF8E4 /* NTObjectContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20876FA50F82CD18002AF8E4 /* NTObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20876FA30F82CD18002AF8E4 /* NTObjectContainer.m */; };
+		2087DC560BBDBD1F00997205 /* NSTableViewNoFirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2087DC540BBDBD1F00997205 /* NSTableViewNoFirstResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2087DC570BBDBD1F00997205 /* NSTableViewNoFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2087DC550BBDBD1F00997205 /* NSTableViewNoFirstResponder.m */; };
+		2088EC340F2A686500542B51 /* NTTimeIntervalMeter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2088EC320F2A686500542B51 /* NTTimeIntervalMeter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2088EC350F2A686500542B51 /* NTTimeIntervalMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2088EC330F2A686500542B51 /* NTTimeIntervalMeter.m */; };
+		2088ED520F2AC83B00542B51 /* NTAnimationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2088ED500F2AC83B00542B51 /* NTAnimationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2088ED530F2AC83B00542B51 /* NTAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2088ED510F2AC83B00542B51 /* NTAnimationDelegate.m */; };
+		208A8D5F0B756AD300490432 /* NSWindow-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 208A8D5D0B756AD300490432 /* NSWindow-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		208A8D600B756AD300490432 /* NSWindow-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 208A8D5E0B756AD300490432 /* NSWindow-NTExtensions.m */; };
+		208A9E490D2C55BD00738198 /* NTAnimationsZoomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 208A9E470D2C55BD00738198 /* NTAnimationsZoomView.h */; };
+		208A9E4A0D2C55BD00738198 /* NTAnimationsZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208A9E480D2C55BD00738198 /* NTAnimationsZoomView.m */; };
+		2090BEC80E07384200BBBCA1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2090BEC70E07384200BBBCA1 /* SystemConfiguration.framework */; };
+		2094A1530DA4058A0024A7F6 /* NTDoubleClickHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2094A1510DA4058A0024A7F6 /* NTDoubleClickHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2094A1540DA4058A0024A7F6 /* NTDoubleClickHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2094A1520DA4058A0024A7F6 /* NTDoubleClickHandler.m */; };
+		2094A1950DA406380024A7F6 /* NTRevealParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 2094A1930DA406380024A7F6 /* NTRevealParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2094A1960DA406380024A7F6 /* NTRevealParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2094A1940DA406380024A7F6 /* NTRevealParameters.m */; };
+		2094C9CF0BCDB339007D1E6E /* NSTabView-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2094C9CD0BCDB339007D1E6E /* NSTabView-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2094C9D00BCDB339007D1E6E /* NSTabView-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2094C9CE0BCDB339007D1E6E /* NSTabView-NTExtensions.m */; };
+		209551150EC9313F001FA347 /* NTPasteboardHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 209551130EC9313F001FA347 /* NTPasteboardHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209551160EC9313F001FA347 /* NTPasteboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 209551140EC9313F001FA347 /* NTPasteboardHelper.m */; };
+		2095521E0EC93FED001FA347 /* NTWindowCascade.h in Headers */ = {isa = PBXBuildFile; fileRef = 2095521C0EC93FED001FA347 /* NTWindowCascade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2095521F0EC93FED001FA347 /* NTWindowCascade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2095521D0EC93FED001FA347 /* NTWindowCascade.m */; };
+		209552270EC940D9001FA347 /* CFArray-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209552250EC940D9001FA347 /* CFArray-NTExtensions.h */; };
+		209552280EC940D9001FA347 /* CFArray-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209552260EC940D9001FA347 /* CFArray-NTExtensions.m */; };
+		209556400EC966EC001FA347 /* NTDataBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2095563E0EC966EC001FA347 /* NTDataBuffer.h */; };
+		209556410EC966EC001FA347 /* NTDataBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2095563F0EC966EC001FA347 /* NTDataBuffer.m */; };
+		209556D90EC96D60001FA347 /* NTObjcRuntimeTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 209556D70EC96D60001FA347 /* NTObjcRuntimeTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209556DA0EC96D60001FA347 /* NTObjcRuntimeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 209556D80EC96D60001FA347 /* NTObjcRuntimeTools.m */; };
+		20986D250DF9CC6A00C43A18 /* CALayer-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20986D230DF9CC6A00C43A18 /* CALayer-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20986D260DF9CC6A00C43A18 /* CALayer-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20986D240DF9CC6A00C43A18 /* CALayer-NTExtensions.m */; };
+		209ADF290E04C17500F4C008 /* NTPopUpButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 209ADF270E04C17500F4C008 /* NTPopUpButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209ADF2A0E04C17500F4C008 /* NTPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 209ADF280E04C17500F4C008 /* NTPopUpButton.m */; };
+		209AE1E90E0607C300F4C008 /* CATransaction-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209AE1E70E0607C300F4C008 /* CATransaction-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209AE1EA0E0607C300F4C008 /* CATransaction-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209AE1E80E0607C300F4C008 /* CATransaction-NTExtensions.m */; };
+		209DC7160CB3399100168621 /* NTSynchronousTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 209DC7140CB3399100168621 /* NTSynchronousTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209DC7170CB3399100168621 /* NTSynchronousTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DC7150CB3399100168621 /* NTSynchronousTask.m */; };
+		209E2CC50E357A18007A0B81 /* NSButton-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E2CC30E357A18007A0B81 /* NSButton-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E2CC60E357A18007A0B81 /* NSButton-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E2CC40E357A18007A0B81 /* NSButton-NTExtensions.m */; };
+		209E3E5A0ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E410ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E5B0ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E420ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.m */; };
+		209E3E5C0ADC9CAE00DC888E /* NSData-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E430ADC9CAE00DC888E /* NSData-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E5D0ADC9CAE00DC888E /* NSData-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E440ADC9CAE00DC888E /* NSData-NTExtensions.m */; };
+		209E3E5E0ADC9CAE00DC888E /* NSError-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E450ADC9CAE00DC888E /* NSError-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E5F0ADC9CAE00DC888E /* NSError-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E460ADC9CAE00DC888E /* NSError-NTExtensions.m */; };
+		209E3E600ADC9CAE00DC888E /* NSObject-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E470ADC9CAE00DC888E /* NSObject-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E610ADC9CAE00DC888E /* NSObject-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E480ADC9CAE00DC888E /* NSObject-NTExtensions.m */; };
+		209E3E620ADC9CAE00DC888E /* NSString-Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E490ADC9CAE00DC888E /* NSString-Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E630ADC9CAE00DC888E /* NSString-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E4A0ADC9CAE00DC888E /* NSString-Utilities.m */; };
+		209E3E640ADC9CAE00DC888E /* NSThread-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E4B0ADC9CAE00DC888E /* NSThread-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E650ADC9CAE00DC888E /* NSThread-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E4C0ADC9CAE00DC888E /* NSThread-NTExtensions.m */; };
+		209E3E660ADC9CAE00DC888E /* NTCoreMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E4D0ADC9CAE00DC888E /* NTCoreMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E690ADC9CAE00DC888E /* NTDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E500ADC9CAE00DC888E /* NTDateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E6A0ADC9CAE00DC888E /* NTDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E510ADC9CAE00DC888E /* NTDateFormatter.m */; };
+		209E3E6D0ADC9CAE00DC888E /* NTGlobalPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E540ADC9CAE00DC888E /* NTGlobalPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E6E0ADC9CAE00DC888E /* NTGlobalPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E550ADC9CAE00DC888E /* NTGlobalPreferences.m */; };
+		209E3E6F0ADC9CAE00DC888E /* NTSingletonObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E560ADC9CAE00DC888E /* NTSingletonObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E700ADC9CAE00DC888E /* NTSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E570ADC9CAE00DC888E /* NTSingletonObject.m */; };
+		209E3E710ADC9CAE00DC888E /* NTTaskController.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E580ADC9CAE00DC888E /* NTTaskController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E720ADC9CAE00DC888E /* NTTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E590ADC9CAE00DC888E /* NTTaskController.m */; };
+		209E3E7B0ADC9CDD00DC888E /* CocoatechCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E7A0ADC9CDD00DC888E /* CocoatechCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E9E0ADC9D2900DC888E /* NTPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3E9C0ADC9D2900DC888E /* NTPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3E9F0ADC9D2900DC888E /* NTPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3E9D0ADC9D2900DC888E /* NTPath.m */; };
+		209E3EA20ADC9D3F00DC888E /* NTSimpleTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3EA00ADC9D3F00DC888E /* NTSimpleTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3EA30ADC9D3F00DC888E /* NTSimpleTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3EA10ADC9D3F00DC888E /* NTSimpleTimer.m */; };
+		209E3F870ADC9EE700DC888E /* NTNameAndID.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3F850ADC9EE700DC888E /* NTNameAndID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3F880ADC9EE700DC888E /* NTNameAndID.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3F860ADC9EE700DC888E /* NTNameAndID.m */; };
+		209E3F9E0ADC9F3F00DC888E /* NTUsersAndGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3F9C0ADC9F3F00DC888E /* NTUsersAndGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3F9F0ADC9F3F00DC888E /* NTUsersAndGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3F9D0ADC9F3F00DC888E /* NTUsersAndGroups.m */; };
+		209E3FBD0ADCA34300DC888E /* NSMenu-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3FB90ADCA34300DC888E /* NSMenu-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3FBE0ADCA34300DC888E /* NSMenu-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3FBA0ADCA34300DC888E /* NSMenu-NTExtensions.m */; };
+		209E3FBF0ADCA34300DC888E /* NSMenuItem-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E3FBB0ADCA34300DC888E /* NSMenuItem-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E3FC00ADCA34300DC888E /* NSMenuItem-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E3FBC0ADCA34300DC888E /* NSMenuItem-NTExtensions.m */; };
+		209E3FE30ADCA40500DC888E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209E3FE20ADCA40500DC888E /* Carbon.framework */; };
+		209E400D0ADCA4C500DC888E /* NTThreadHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E40090ADCA4C500DC888E /* NTThreadHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E400E0ADCA4C500DC888E /* NTThreadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E400A0ADCA4C500DC888E /* NTThreadHelper.m */; };
+		209E400F0ADCA4C500DC888E /* NTThreadRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E400B0ADCA4C500DC888E /* NTThreadRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E40100ADCA4C500DC888E /* NTThreadRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E400C0ADCA4C500DC888E /* NTThreadRunner.m */; };
+		209E41BC0ADCB02D00DC888E /* NTUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 209E41BA0ADCB02D00DC888E /* NTUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209E41BD0ADCB02D00DC888E /* NTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E41BB0ADCB02D00DC888E /* NTUtilities.m */; };
+		20A111B00D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A111AC0D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A111B10D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A111AD0D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.m */; };
+		20A111B20D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A111AE0D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A111B30D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A111AF0D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.m */; };
+		20A1E6BF0CED228B00EA0706 /* NTImageMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A1E6BD0CED228B00EA0706 /* NTImageMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A1E6C00CED228B00EA0706 /* NTImageMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A1E6BE0CED228B00EA0706 /* NTImageMaker.m */; };
+		20A5B34E0B3BD52100D4DAD6 /* NTView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A5B34C0B3BD52100D4DAD6 /* NTView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A5B34F0B3BD52100D4DAD6 /* NTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5B34D0B3BD52100D4DAD6 /* NTView.m */; };
+		20A5E0930DBF197B00A720E2 /* NTKVObserverProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A5E0910DBF197B00A720E2 /* NTKVObserverProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A5E0940DBF197B00A720E2 /* NTKVObserverProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5E0920DBF197B00A720E2 /* NTKVObserverProxy.m */; };
+		20A7389E0DC1B72300BE94FE /* NSColor-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A7389C0DC1B72300BE94FE /* NSColor-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A7389F0DC1B72300BE94FE /* NSColor-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A7389D0DC1B72300BE94FE /* NSColor-NTExtensions.m */; };
+		20AB50E31050D008009824F7 /* QLPreviewPanel-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AB50E11050D008009824F7 /* QLPreviewPanel-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AB50E41050D008009824F7 /* QLPreviewPanel-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AB50E21050D008009824F7 /* QLPreviewPanel-NTExtensions.m */; };
+		20AD05040DC5B9AB00CCDB62 /* NTFramedSplitView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AD05020DC5B9AB00CCDB62 /* NTFramedSplitView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AD05050DC5B9AB00CCDB62 /* NTFramedSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD05030DC5B9AB00CCDB62 /* NTFramedSplitView.m */; };
+		20AD91CF0F5CA615000B3310 /* NTSavePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AD91CD0F5CA615000B3310 /* NTSavePanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AD91D00F5CA615000B3310 /* NTSavePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD91CE0F5CA615000B3310 /* NTSavePanel.m */; };
+		20B107280E4148D400B2AE5C /* NTProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B107260E4148D400B2AE5C /* NTProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B107290E4148D400B2AE5C /* NTProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B107270E4148D400B2AE5C /* NTProxy.m */; };
+		20B107480E4149E600B2AE5C /* NSMutableArray-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B107460E4149E600B2AE5C /* NSMutableArray-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B107490E4149E600B2AE5C /* NSMutableArray-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B107470E4149E600B2AE5C /* NSMutableArray-NTExtensions.m */; };
+		20B2D7860BCE290E00CDD55A /* NTGradientDraw.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B2D7840BCE290E00CDD55A /* NTGradientDraw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B2D7870BCE290E00CDD55A /* NTGradientDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B2D7850BCE290E00CDD55A /* NTGradientDraw.m */; };
+		20B3E2C9100D2B6400288402 /* NTIndexCounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B3E2C7100D2B6400288402 /* NTIndexCounter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B3E2CA100D2B6400288402 /* NTIndexCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B3E2C8100D2B6400288402 /* NTIndexCounter.m */; };
+		20B79A310DDD39E400A3D6BB /* CATextLayer-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B79A2F0DDD39E400A3D6BB /* CATextLayer-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B79A320DDD39E400A3D6BB /* CATextLayer-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B79A300DDD39E400A3D6BB /* CATextLayer-NTExtensions.m */; };
+		20B79B090DDD3E0F00A3D6BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B79B080DDD3E0F00A3D6BB /* QuartzCore.framework */; };
+		20BF00D70E2DD249008D723C /* NTSCPrefsListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BF00D50E2DD249008D723C /* NTSCPrefsListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20BF00D80E2DD249008D723C /* NTSCPrefsListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BF00D60E2DD249008D723C /* NTSCPrefsListener.m */; };
+		20BF75E70D28C33600ADA999 /* NSDrawer-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BF75E50D28C33600ADA999 /* NSDrawer-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20BF75E80D28C33600ADA999 /* NSDrawer-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BF75E60D28C33600ADA999 /* NSDrawer-NTExtensions.m */; };
+		20BF9A8D10A295D300A6FA3E /* NSURL-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BF9A8B10A295D300A6FA3E /* NSURL-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20BF9A8E10A295D300A6FA3E /* NSURL-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BF9A8C10A295D300A6FA3E /* NSURL-NTExtensions.m */; };
+		20C10B0B0A3F6D9A00291B79 /* CocoaTechStrings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C10B0A0A3F6D9900291B79 /* CocoaTechStrings.framework */; };
+		20CA61BF0D72AA2C00697F7F /* NSArray-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CA61BD0D72AA2C00697F7F /* NSArray-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CA61C00D72AA2C00697F7F /* NSArray-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA61BE0D72AA2C00697F7F /* NSArray-NTExtensions.m */; };
+		20CCEAAE0CC56021009C75A5 /* NSEvent-Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CCEAAC0CC56021009C75A5 /* NSEvent-Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CCEAAF0CC56021009C75A5 /* NSEvent-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CCEAAD0CC56021009C75A5 /* NSEvent-Utilities.m */; };
+		20CD3EFA0D72287D0097EC8B /* NTSpringLoadedViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CD3EF80D72287D0097EC8B /* NTSpringLoadedViewHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CD3EFB0D72287D0097EC8B /* NTSpringLoadedViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD3EF90D72287D0097EC8B /* NTSpringLoadedViewHelper.m */; };
+		20D5B8510B5CAF7000ED9E9B /* NTCoordinate.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D5B84F0B5CAF7000ED9E9B /* NTCoordinate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D5B8520B5CAF7000ED9E9B /* NTCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5B8500B5CAF7000ED9E9B /* NTCoordinate.m */; };
+		20D7ECEC0B5EF8B6006F4452 /* NTEnablingTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D7ECEA0B5EF8B6006F4452 /* NTEnablingTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D7ECED0B5EF8B6006F4452 /* NTEnablingTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D7ECEB0B5EF8B6006F4452 /* NTEnablingTextFieldCell.m */; };
+		20D7ED130B5EFBA8006F4452 /* NTEnablingTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D7ED110B5EFBA8006F4452 /* NTEnablingTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D7ED140B5EFBA8006F4452 /* NTEnablingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D7ED120B5EFBA8006F4452 /* NTEnablingTextField.m */; };
+		20D905911080201C006282F2 /* NTViewOptionConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D905901080201C006282F2 /* NTViewOptionConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DAF7E6107316180057F7E8 /* NTKeyEventMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DAF7E4107316180057F7E8 /* NTKeyEventMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DAF7E7107316180057F7E8 /* NTKeyEventMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DAF7E5107316180057F7E8 /* NTKeyEventMonitor.m */; };
+		20DAF810107323110057F7E8 /* NTKeyEventMonitorToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DAF80E107323110057F7E8 /* NTKeyEventMonitorToken.h */; };
+		20DAF811107323110057F7E8 /* NTKeyEventMonitorToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DAF80F107323110057F7E8 /* NTKeyEventMonitorToken.m */; };
+		20DBC4530D2B212E0030C890 /* NTAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DBC44F0D2B212E0030C890 /* NTAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DBC4540D2B212E0030C890 /* NTAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBC4500D2B212E0030C890 /* NTAnimations.m */; };
+		20DBC4550D2B212E0030C890 /* NTAnimationsWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DBC4510D2B212E0030C890 /* NTAnimationsWindow.h */; };
+		20DBC4560D2B212E0030C890 /* NTAnimationsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBC4520D2B212E0030C890 /* NTAnimationsWindow.m */; };
+		20DBC4810D2B254F0030C890 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DBC4800D2B254F0030C890 /* Quartz.framework */; };
+		20DE4CBB0B52224F005B967B /* NSDate-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DE4CB90B52224F005B967B /* NSDate-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DE4CBC0B52224F005B967B /* NSDate-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE4CBA0B52224F005B967B /* NSDate-NTExtensions.m */; };
+		20DFD5F90ADDF09800BB6ACC /* NSShadow-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD5F70ADDF09800BB6ACC /* NSShadow-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD5FA0ADDF09800BB6ACC /* NSShadow-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD5F80ADDF09800BB6ACC /* NSShadow-NTExtensions.m */; };
+		20DFD6BC0ADDFA4700BB6ACC /* NTLazyMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD6BA0ADDFA4700BB6ACC /* NTLazyMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD6BD0ADDFA4700BB6ACC /* NTLazyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD6BB0ADDFA4700BB6ACC /* NTLazyMenu.m */; };
+		20DFD6F20ADDFB0E00BB6ACC /* NTCarbonGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD6F00ADDFB0E00BB6ACC /* NTCarbonGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD6F30ADDFB0E00BB6ACC /* NTCarbonGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD6F10ADDFB0E00BB6ACC /* NTCarbonGeometry.m */; };
+		20DFD70A0ADDFC0400BB6ACC /* NSImage-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD7080ADDFC0400BB6ACC /* NSImage-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD70B0ADDFC0400BB6ACC /* NSImage-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD7090ADDFC0400BB6ACC /* NSImage-NTExtensions.m */; };
+		20DFD77A0ADE012A00BB6ACC /* NTGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD7760ADE012A00BB6ACC /* NTGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD77B0ADE012A00BB6ACC /* NTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD7770ADE012A00BB6ACC /* NTGradient.m */; };
+		20DFD77C0ADE012A00BB6ACC /* NTGradientFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD7780ADE012A00BB6ACC /* NTGradientFill.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD77D0ADE012A00BB6ACC /* NTGradientFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD7790ADE012A00BB6ACC /* NTGradientFill.m */; };
+		20DFD8140ADE03A000BB6ACC /* NSBezierPath-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD8120ADE03A000BB6ACC /* NSBezierPath-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD8150ADE03A000BB6ACC /* NSBezierPath-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD8130ADE03A000BB6ACC /* NSBezierPath-NTExtensions.m */; };
+		20DFD84C0ADE05D800BB6ACC /* NSDictionary-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD8460ADE05D800BB6ACC /* NSDictionary-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD84D0ADE05D800BB6ACC /* NSDictionary-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD8470ADE05D800BB6ACC /* NSDictionary-NTExtensions.m */; };
+		20DFD84E0ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD8480ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD84F0ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD8490ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.m */; };
+		20DFD8500ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DFD84A0ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DFD8510ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD84B0ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.m */; };
+		20E3857C0B64A6DE00CC0D7B /* NSView-CoreExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E3857A0B64A6DE00CC0D7B /* NSView-CoreExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E3857D0B64A6DE00CC0D7B /* NSView-CoreExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E3857B0B64A6DE00CC0D7B /* NSView-CoreExtensions.m */; };
+		20E5317C0EBFF20C0006AEFE /* NTFontButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E5317A0EBFF20C0006AEFE /* NTFontButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E5317D0EBFF20C0006AEFE /* NTFontButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E5317B0EBFF20C0006AEFE /* NTFontButton.m */; };
+		20E5FC320B4F63CB0042CD80 /* NTKeyChainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E5FC300B4F63CB0042CD80 /* NTKeyChainUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E5FC330B4F63CB0042CD80 /* NTKeyChainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E5FC310B4F63CB0042CD80 /* NTKeyChainUtils.m */; };
+		20E5FF0A0B4F6A810042CD80 /* NSMatrix-CoreExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E5FF080B4F6A810042CD80 /* NSMatrix-CoreExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E5FF0B0B4F6A810042CD80 /* NSMatrix-CoreExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E5FF090B4F6A810042CD80 /* NSMatrix-CoreExtensions.m */; };
+		20E87F0F0EF90D3F00BD6893 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E87F0E0EF90D3F00BD6893 /* Security.framework */; };
+		20EBB5F20DE0ECB7008AD4F7 /* NTSpaceKeyPoll.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EBB5F00DE0ECB7008AD4F7 /* NTSpaceKeyPoll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20EBB5F30DE0ECB7008AD4F7 /* NTSpaceKeyPoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EBB5F10DE0ECB7008AD4F7 /* NTSpaceKeyPoll.m */; };
+		20EF58940E89840000A8CE26 /* NTPointerObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EF58920E89840000A8CE26 /* NTPointerObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20EF58950E89840000A8CE26 /* NTPointerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EF58930E89840000A8CE26 /* NTPointerObject.m */; };
+		20F0AF2A10686FDE00BA1387 /* NSUserDefaults-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F0AF2610686FDE00BA1387 /* NSUserDefaults-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F0AF2B10686FDE00BA1387 /* NSUserDefaults-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F0AF2710686FDE00BA1387 /* NSUserDefaults-NTExtensions.m */; };
+		20F0AF2C10686FDE00BA1387 /* NTUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F0AF2810686FDE00BA1387 /* NTUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F0AF2D10686FDE00BA1387 /* NTUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F0AF2910686FDE00BA1387 /* NTUserDefaults.m */; };
+		20F0AF3010686FF300BA1387 /* NTPrefNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F0AF2E10686FF300BA1387 /* NTPrefNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F0AF3110686FF300BA1387 /* NTPrefNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F0AF2F10686FF300BA1387 /* NTPrefNotification.m */; };
+		20F113FE0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F113FC0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F113FF0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F113FD0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.m */; };
+		20F35BC11117D13000B556AC /* NSScrollView-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F35BBF1117D13000B556AC /* NSScrollView-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F35BC21117D13000B556AC /* NSScrollView-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F35BC01117D13000B556AC /* NSScrollView-NTExtensions.m */; };
+		20F43BE6110824C800694504 /* NSSortDescriptor-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F43BE4110824C800694504 /* NSSortDescriptor-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F43BE7110824C800694504 /* NSSortDescriptor-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F43BE5110824C800694504 /* NSSortDescriptor-NTExtensions.m */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		202F646A0AA7CDE30026E5AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 202F64660AA7CDE30026E5AD /* CocoaTechStrings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20CD1C330546675C00A37B05;
+			remoteInfo = CocoaTechStrings;
+		};
+		202F646C0AA7CDF30026E5AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 202F64660AA7CDE30026E5AD /* CocoaTechStrings.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 20CD1C280546675B00A37B05;
+			remoteInfo = CocoaTechStrings;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		20061E020F8802CA00241369 /* NTAppearanceMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAppearanceMgr.h; sourceTree = "<group>"; };
+		20061E030F8802CA00241369 /* NTAppearanceMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAppearanceMgr.m; sourceTree = "<group>"; };
+		200745690DBC4D1300668B22 /* NTBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTBoxView.h; sourceTree = "<group>"; };
+		2007456A0DBC4D1300668B22 /* NTBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTBoxView.m; sourceTree = "<group>"; };
+		2007456D0DBC4D2000668B22 /* NTBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTBackgroundView.h; sourceTree = "<group>"; };
+		2007456E0DBC4D2000668B22 /* NTBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTBackgroundView.m; sourceTree = "<group>"; };
+		200747CD0DBC774600668B22 /* NTStandardImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTStandardImages.h; sourceTree = "<group>"; };
+		200747CE0DBC774600668B22 /* NTStandardImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTStandardImages.m; sourceTree = "<group>"; };
+		200747D70DBC775800668B22 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		200747EC0DBC77BB00668B22 /* NSBundle-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle-NTExtensions.h"; sourceTree = "<group>"; };
+		200747ED0DBC77BB00668B22 /* NSBundle-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle-NTExtensions.m"; sourceTree = "<group>"; };
+		200B4A430D28B3930072FCB0 /* NTImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTImageButton.h; sourceTree = "<group>"; };
+		200B4A440D28B3930072FCB0 /* NTImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTImageButton.m; sourceTree = "<group>"; };
+		200EAEEE0C8A03E7001F7F97 /* NTColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTColorSet.h; sourceTree = "<group>"; };
+		200EAEEF0C8A03E7001F7F97 /* NTColorSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTColorSet.m; sourceTree = "<group>"; };
+		200EAF000C8A0A81001F7F97 /* NTStandardColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTStandardColors.h; sourceTree = "<group>"; };
+		200EAF010C8A0A81001F7F97 /* NTStandardColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTStandardColors.m; sourceTree = "<group>"; };
+		201362350C63C63F006BFAA5 /* NTFont.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTFont.h; sourceTree = "<group>"; };
+		201362360C63C63F006BFAA5 /* NTFont.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTFont.m; sourceTree = "<group>"; };
+		20139AFF0D826EF100DC615B /* NTStaticImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTStaticImageView.h; sourceTree = "<group>"; };
+		20139B000D826EF100DC615B /* NTStaticImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTStaticImageView.m; sourceTree = "<group>"; };
+		2015E3A711268DF3009A85F0 /* NTMailDelivery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMailDelivery.h; sourceTree = "<group>"; };
+		2015E3A811268DF3009A85F0 /* NTMailDelivery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTMailDelivery.m; sourceTree = "<group>"; };
+		2015E3D411269634009A85F0 /* NTMobileMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMobileMe.h; sourceTree = "<group>"; };
+		2015E3D511269634009A85F0 /* NTMobileMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTMobileMe.m; sourceTree = "<group>"; };
+		20193B6C10F2AF58002735A8 /* NTTemporaryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTemporaryObject.h; sourceTree = "<group>"; };
+		20193B6D10F2AF58002735A8 /* NTTemporaryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTemporaryObject.m; sourceTree = "<group>"; };
+		201F80DE0F7D80ED0076A5EE /* NTEventOverrideHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTEventOverrideHandler.h; sourceTree = "<group>"; };
+		201F80DF0F7D80ED0076A5EE /* NTEventOverrideHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTEventOverrideHandler.m; sourceTree = "<group>"; };
+		20230C3F0D35AF4200C6553E /* NSSplitView-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSplitView-NTExtensions.h"; sourceTree = "<group>"; };
+		20230C400D35AF4200C6553E /* NSSplitView-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSplitView-NTExtensions.m"; sourceTree = "<group>"; wrapsLines = 0; };
+		2027FF4C107BE2AF007354B7 /* NTQuitDisabler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTQuitDisabler.h; sourceTree = "<group>"; };
+		2027FF4D107BE2AF007354B7 /* NTQuitDisabler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTQuitDisabler.m; sourceTree = "<group>"; };
+		202BED2B0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet-NTExtensions.h"; sourceTree = "<group>"; };
+		202BED2C0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet-NTExtensions.m"; sourceTree = "<group>"; };
+		202F64660AA7CDE30026E5AD /* CocoaTechStrings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaTechStrings.xcodeproj; path = ../CocoatechStrings/CocoaTechStrings.xcodeproj; sourceTree = SOURCE_ROOT; };
+		2034463E0D6F623E000B5495 /* NSAnimationContext-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAnimationContext-NTExtensions.h"; sourceTree = "<group>"; };
+		2034463F0D6F623E000B5495 /* NSAnimationContext-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAnimationContext-NTExtensions.m"; sourceTree = "<group>"; };
+		203A1C4E112D3970007C94BE /* NTMessageProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMessageProxy.h; sourceTree = "<group>"; };
+		203A1C4F112D3970007C94BE /* NTMessageProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTMessageProxy.m; sourceTree = "<group>"; };
+		203BCC1510857DFE002F2D3E /* NSMutableArray-ThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray-ThreadSafe.h"; sourceTree = "<group>"; };
+		203BCC1610857DFE002F2D3E /* NSMutableArray-ThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray-ThreadSafe.m"; sourceTree = "<group>"; };
+		2040125E0BCC758900102A61 /* NTTableHeaderImages.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTTableHeaderImages.h; sourceTree = "<group>"; };
+		2040125F0BCC758900102A61 /* NTTableHeaderImages.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTTableHeaderImages.m; sourceTree = "<group>"; };
+		204012800BCC762A00102A61 /* NTAquaButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAquaButtonCell.h; sourceTree = "<group>"; };
+		204012810BCC762A00102A61 /* NTAquaButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAquaButtonCell.m; sourceTree = "<group>"; };
+		204020AC0B95616700131CDE /* NTAlertPanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTAlertPanel.h; sourceTree = "<group>"; };
+		204020AD0B95616700131CDE /* NTAlertPanel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTAlertPanel.m; sourceTree = "<group>"; };
+		204861980D7CEB5B0083D964 /* NTStringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTStringView.h; sourceTree = "<group>"; };
+		204861990D7CEB5B0083D964 /* NTStringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTStringView.m; sourceTree = "<group>"; };
+		204A625E0D441E8200B6EB88 /* NSNumber-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber-NTExtensions.h"; sourceTree = "<group>"; };
+		204A625F0D441E8200B6EB88 /* NSNumber-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber-NTExtensions.m"; sourceTree = "<group>"; };
+		204CEC150ADCB0F200B25AD4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
+		204CEC160ADCB0F200B25AD4 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		204CEE0C0ADCBC5C00B25AD4 /* NTSizeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTSizeFormatter.h; sourceTree = "<group>"; };
+		204CEE0D0ADCBC5C00B25AD4 /* NTSizeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTSizeFormatter.m; sourceTree = "<group>"; };
+		204CEE5D0ADCBDAF00B25AD4 /* NTSimpleAlert.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTSimpleAlert.h; sourceTree = "<group>"; };
+		204CEE5E0ADCBDAF00B25AD4 /* NTSimpleAlert.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTSimpleAlert.m; sourceTree = "<group>"; };
+		204CEF9E0ADCC36A00B25AD4 /* NTGeometry.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTGeometry.h; sourceTree = "<group>"; };
+		204CEF9F0ADCC36A00B25AD4 /* NTGeometry.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTGeometry.m; sourceTree = "<group>"; };
+		204CEFD40ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSGraphicsContext-NTExtensions.h"; sourceTree = "<group>"; };
+		204CEFD50ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSGraphicsContext-NTExtensions.m"; sourceTree = "<group>"; };
+		204CF07C0ADCCCF600B25AD4 /* NTTime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTTime.h; sourceTree = "<group>"; };
+		204CF07D0ADCCCF600B25AD4 /* NTTime.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTTime.m; sourceTree = "<group>"; };
+		2053D9E50DDBA72600098630 /* NTMenuSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMenuSlider.h; sourceTree = "<group>"; };
+		2053D9E60DDBA72600098630 /* NTMenuSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTMenuSlider.m; sourceTree = "<group>"; };
+		2053D9EC0DDBA73500098630 /* NTSliderGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSliderGradientView.h; sourceTree = "<group>"; };
+		2053D9ED0DDBA73500098630 /* NTSliderGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSliderGradientView.m; sourceTree = "<group>"; };
+		2053D9FD0DDBA9F000098630 /* NTSliderMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSliderMenuItem.h; sourceTree = "<group>"; };
+		2053D9FE0DDBA9F000098630 /* NTSliderMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSliderMenuItem.m; sourceTree = "<group>"; };
+		2054A382116AB194007EF8F9 /* BGGradientTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGGradientTheme.h; path = BGHUD/BGGradientTheme.h; sourceTree = "<group>"; };
+		2054A383116AB194007EF8F9 /* BGGradientTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGGradientTheme.m; path = BGHUD/BGGradientTheme.m; sourceTree = "<group>"; };
+		2054A384116AB194007EF8F9 /* BGHUDAppKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDAppKit.h; path = BGHUD/BGHUDAppKit.h; sourceTree = "<group>"; };
+		2054A385116AB194007EF8F9 /* BGHUDBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDBox.h; path = BGHUD/BGHUDBox.h; sourceTree = "<group>"; };
+		2054A386116AB194007EF8F9 /* BGHUDBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDBox.m; path = BGHUD/BGHUDBox.m; sourceTree = "<group>"; };
+		2054A387116AB194007EF8F9 /* BGHUDButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDButtonCell.h; path = BGHUD/BGHUDButtonCell.h; sourceTree = "<group>"; };
+		2054A388116AB194007EF8F9 /* BGHUDButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDButtonCell.m; path = BGHUD/BGHUDButtonCell.m; sourceTree = "<group>"; };
+		2054A389116AB194007EF8F9 /* BGHUDColorWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDColorWell.h; path = BGHUD/BGHUDColorWell.h; sourceTree = "<group>"; };
+		2054A38A116AB194007EF8F9 /* BGHUDColorWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDColorWell.m; path = BGHUD/BGHUDColorWell.m; sourceTree = "<group>"; };
+		2054A38B116AB194007EF8F9 /* BGHUDComboBoxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDComboBoxCell.h; path = BGHUD/BGHUDComboBoxCell.h; sourceTree = "<group>"; };
+		2054A38C116AB194007EF8F9 /* BGHUDComboBoxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDComboBoxCell.m; path = BGHUD/BGHUDComboBoxCell.m; sourceTree = "<group>"; };
+		2054A38D116AB194007EF8F9 /* BGHUDGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDGeometry.h; path = BGHUD/BGHUDGeometry.h; sourceTree = "<group>"; };
+		2054A38E116AB194007EF8F9 /* BGHUDLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDLabel.h; path = BGHUD/BGHUDLabel.h; sourceTree = "<group>"; };
+		2054A38F116AB194007EF8F9 /* BGHUDLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDLabel.m; path = BGHUD/BGHUDLabel.m; sourceTree = "<group>"; };
+		2054A390116AB194007EF8F9 /* BGHUDOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDOutlineView.h; path = BGHUD/BGHUDOutlineView.h; sourceTree = "<group>"; };
+		2054A391116AB194007EF8F9 /* BGHUDOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDOutlineView.m; path = BGHUD/BGHUDOutlineView.m; sourceTree = "<group>"; };
+		2054A392116AB194007EF8F9 /* BGHUDPopUpButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDPopUpButtonCell.h; path = BGHUD/BGHUDPopUpButtonCell.h; sourceTree = "<group>"; };
+		2054A393116AB194007EF8F9 /* BGHUDPopUpButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDPopUpButtonCell.m; path = BGHUD/BGHUDPopUpButtonCell.m; sourceTree = "<group>"; };
+		2054A394116AB194007EF8F9 /* BGHUDProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDProgressIndicator.h; path = BGHUD/BGHUDProgressIndicator.h; sourceTree = "<group>"; };
+		2054A395116AB194007EF8F9 /* BGHUDProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDProgressIndicator.m; path = BGHUD/BGHUDProgressIndicator.m; sourceTree = "<group>"; };
+		2054A396116AB194007EF8F9 /* BGHUDScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDScroller.h; path = BGHUD/BGHUDScroller.h; sourceTree = "<group>"; };
+		2054A397116AB194007EF8F9 /* BGHUDScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDScroller.m; path = BGHUD/BGHUDScroller.m; sourceTree = "<group>"; };
+		2054A398116AB194007EF8F9 /* BGHUDScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDScrollView.h; path = BGHUD/BGHUDScrollView.h; sourceTree = "<group>"; };
+		2054A399116AB194007EF8F9 /* BGHUDScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDScrollView.m; path = BGHUD/BGHUDScrollView.m; sourceTree = "<group>"; };
+		2054A39A116AB194007EF8F9 /* BGHUDSearchFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDSearchFieldCell.h; path = BGHUD/BGHUDSearchFieldCell.h; sourceTree = "<group>"; };
+		2054A39B116AB194007EF8F9 /* BGHUDSearchFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDSearchFieldCell.m; path = BGHUD/BGHUDSearchFieldCell.m; sourceTree = "<group>"; };
+		2054A39C116AB194007EF8F9 /* BGHUDSecureTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDSecureTextFieldCell.h; path = BGHUD/BGHUDSecureTextFieldCell.h; sourceTree = "<group>"; };
+		2054A39D116AB194007EF8F9 /* BGHUDSecureTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDSecureTextFieldCell.m; path = BGHUD/BGHUDSecureTextFieldCell.m; sourceTree = "<group>"; };
+		2054A39E116AB194007EF8F9 /* BGHUDSegmentedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDSegmentedCell.h; path = BGHUD/BGHUDSegmentedCell.h; sourceTree = "<group>"; };
+		2054A39F116AB194007EF8F9 /* BGHUDSegmentedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDSegmentedCell.m; path = BGHUD/BGHUDSegmentedCell.m; sourceTree = "<group>"; };
+		2054A3A0116AB194007EF8F9 /* BGHUDSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDSliderCell.h; path = BGHUD/BGHUDSliderCell.h; sourceTree = "<group>"; };
+		2054A3A1116AB194007EF8F9 /* BGHUDSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDSliderCell.m; path = BGHUD/BGHUDSliderCell.m; sourceTree = "<group>"; };
+		2054A3A2116AB194007EF8F9 /* BGHUDStepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDStepperCell.h; path = BGHUD/BGHUDStepperCell.h; sourceTree = "<group>"; };
+		2054A3A3116AB194007EF8F9 /* BGHUDStepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDStepperCell.m; path = BGHUD/BGHUDStepperCell.m; sourceTree = "<group>"; };
+		2054A3A4116AB194007EF8F9 /* BGHUDTableCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDTableCornerView.h; path = BGHUD/BGHUDTableCornerView.h; sourceTree = "<group>"; };
+		2054A3A5116AB194007EF8F9 /* BGHUDTableCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDTableCornerView.m; path = BGHUD/BGHUDTableCornerView.m; sourceTree = "<group>"; };
+		2054A3A6116AB194007EF8F9 /* BGHUDTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDTableView.h; path = BGHUD/BGHUDTableView.h; sourceTree = "<group>"; };
+		2054A3A7116AB194007EF8F9 /* BGHUDTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDTableView.m; path = BGHUD/BGHUDTableView.m; sourceTree = "<group>"; };
+		2054A3A8116AB194007EF8F9 /* BGHUDTableViewHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDTableViewHeaderCell.h; path = BGHUD/BGHUDTableViewHeaderCell.h; sourceTree = "<group>"; };
+		2054A3A9116AB194007EF8F9 /* BGHUDTableViewHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDTableViewHeaderCell.m; path = BGHUD/BGHUDTableViewHeaderCell.m; sourceTree = "<group>"; };
+		2054A3AA116AB194007EF8F9 /* BGHUDTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDTabView.h; path = BGHUD/BGHUDTabView.h; sourceTree = "<group>"; };
+		2054A3AB116AB194007EF8F9 /* BGHUDTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDTabView.m; path = BGHUD/BGHUDTabView.m; sourceTree = "<group>"; };
+		2054A3AC116AB194007EF8F9 /* BGHUDTabViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDTabViewItem.h; path = BGHUD/BGHUDTabViewItem.h; sourceTree = "<group>"; };
+		2054A3AD116AB194007EF8F9 /* BGHUDTabViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDTabViewItem.m; path = BGHUD/BGHUDTabViewItem.m; sourceTree = "<group>"; };
+		2054A3AE116AB194007EF8F9 /* BGHUDTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDTextFieldCell.h; path = BGHUD/BGHUDTextFieldCell.h; sourceTree = "<group>"; };
+		2054A3AF116AB194007EF8F9 /* BGHUDTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDTextFieldCell.m; path = BGHUD/BGHUDTextFieldCell.m; sourceTree = "<group>"; };
+		2054A3B4116AB194007EF8F9 /* BGHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGHUDView.h; path = BGHUD/BGHUDView.h; sourceTree = "<group>"; };
+		2054A3B5116AB194007EF8F9 /* BGHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGHUDView.m; path = BGHUD/BGHUDView.m; sourceTree = "<group>"; };
+		2054A3B6116AB194007EF8F9 /* BGTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGTheme.h; path = BGHUD/BGTheme.h; sourceTree = "<group>"; };
+		2054A3B7116AB194007EF8F9 /* BGTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGTheme.m; path = BGHUD/BGTheme.m; sourceTree = "<group>"; };
+		2054A3B8116AB194007EF8F9 /* BGThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGThemeManager.h; path = BGHUD/BGThemeManager.h; sourceTree = "<group>"; };
+		2054A3B9116AB194007EF8F9 /* BGThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGThemeManager.m; path = BGHUD/BGThemeManager.m; sourceTree = "<group>"; };
+		2054A3FE116AB602007EF8F9 /* NTBGHUDPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTBGHUDPopUpButton.h; sourceTree = "<group>"; };
+		2054A3FF116AB602007EF8F9 /* NTBGHUDPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTBGHUDPopUpButton.m; sourceTree = "<group>"; };
+		2058602D0B98E8FB003B6A72 /* NTChooseDestinationPanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTChooseDestinationPanel.h; sourceTree = "<group>"; };
+		2058602E0B98E8FB003B6A72 /* NTChooseDestinationPanel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTChooseDestinationPanel.m; sourceTree = "<group>"; };
+		2058602F0B98E8FB003B6A72 /* NTChooseFilePanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTChooseFilePanel.h; sourceTree = "<group>"; };
+		205860300B98E8FB003B6A72 /* NTChooseFilePanel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTChooseFilePanel.m; sourceTree = "<group>"; };
+		205860350B98E907003B6A72 /* NSSavePanel-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSSavePanel-NTExtensions.h"; sourceTree = "<group>"; };
+		205860360B98E907003B6A72 /* NSSavePanel-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSSavePanel-NTExtensions.m"; sourceTree = "<group>"; };
+		2059D4A4104CD8B400B1FC10 /* NTSynchronousTaskRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSynchronousTaskRunner.h; sourceTree = "<group>"; };
+		2059D4A5104CD8B400B1FC10 /* NTSynchronousTaskRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSynchronousTaskRunner.m; sourceTree = "<group>"; };
+		205CEA710EB9353500F13171 /* NTSelectionGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSelectionGradient.h; sourceTree = "<group>"; };
+		205CEA720EB9353500F13171 /* NTSelectionGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSelectionGradient.m; sourceTree = "<group>"; };
+		20631EBB0DE266E800AFE50A /* NTHotKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTHotKeyManager.h; sourceTree = "<group>"; };
+		20631EBC0DE266E800AFE50A /* NTHotKeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTHotKeyManager.m; sourceTree = "<group>"; };
+		2064CAFC0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter-NTExtensions.h"; sourceTree = "<group>"; };
+		2064CAFD0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter-NTExtensions.m"; sourceTree = "<group>"; };
+		2064CB7D0EDB985700DCD342 /* NSLayoutManager-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutManager-NTExtensions.h"; sourceTree = "<group>"; };
+		2064CB7E0EDB985700DCD342 /* NSLayoutManager-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutManager-NTExtensions.m"; sourceTree = "<group>"; };
+		2064CBE90EDBA01C00DCD342 /* NSFont-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFont-NTExtensions.h"; sourceTree = "<group>"; };
+		2064CBEA0EDBA01C00DCD342 /* NSFont-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFont-NTExtensions.m"; sourceTree = "<group>"; };
+		2069DD0D11117CFB004872E8 /* NSObject-Dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Dispatch.h"; sourceTree = "<group>"; };
+		2069DD0E11117CFB004872E8 /* NSObject-Dispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-Dispatch.m"; sourceTree = "<group>"; };
+		206C76E70DA6C49D0026B17F /* NTTemplateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTemplateButton.h; sourceTree = "<group>"; };
+		206C76E80DA6C49D0026B17F /* NTTemplateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTemplateButton.m; sourceTree = "<group>"; };
+		2072C5CC10661B740059C34B /* NTIconControlValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTIconControlValueTransformer.h; sourceTree = "<group>"; };
+		2072C5CD10661B740059C34B /* NTIconControlValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTIconControlValueTransformer.m; sourceTree = "<group>"; };
+		2072C746106641840059C34B /* NSValueTransformer-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer-NTExtensions.h"; sourceTree = "<group>"; };
+		2072C747106641840059C34B /* NSValueTransformer-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer-NTExtensions.m"; sourceTree = "<group>"; };
+		20753FC10D1B3AF10015B9BA /* NTSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSplitViewDelegate.h; sourceTree = "<group>"; };
+		20753FC20D1B3AF10015B9BA /* NTSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSplitViewDelegate.m; sourceTree = "<group>"; };
+		207E96680DC7B80D00D0CC4E /* NTClickState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTClickState.h; sourceTree = "<group>"; };
+		207E96690DC7B80D00D0CC4E /* NTClickState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTClickState.m; sourceTree = "<group>"; };
+		2080798310EB539D00F2BED0 /* NTShadowImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTShadowImage.h; sourceTree = "<group>"; };
+		2080798410EB539D00F2BED0 /* NTShadowImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTShadowImage.m; sourceTree = "<group>"; };
+		2084D4370F8337AD00E25B74 /* NTUInt64Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTUInt64Container.h; sourceTree = "<group>"; };
+		2084D4380F8337AD00E25B74 /* NTUInt64Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTUInt64Container.m; sourceTree = "<group>"; };
+		2084D43D0F8337B900E25B74 /* NTBaseContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTBaseContainer.h; sourceTree = "<group>"; };
+		2084D43E0F8337B900E25B74 /* NTBaseContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTBaseContainer.m; sourceTree = "<group>"; };
+		2084D4B90F8346B300E25B74 /* NTUInt32Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTUInt32Container.h; sourceTree = "<group>"; };
+		2084D4BA0F8346B300E25B74 /* NTUInt32Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTUInt32Container.m; sourceTree = "<group>"; };
+		2086CAAF0E245E46005F68AD /* NTMetalWindowTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMetalWindowTheme.h; sourceTree = "<group>"; };
+		2086CAB00E245E46005F68AD /* NTMetalWindowTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTMetalWindowTheme.m; sourceTree = "<group>"; };
+		20876FA20F82CD18002AF8E4 /* NTObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTObjectContainer.h; sourceTree = "<group>"; };
+		20876FA30F82CD18002AF8E4 /* NTObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTObjectContainer.m; sourceTree = "<group>"; };
+		2087DC540BBDBD1F00997205 /* NSTableViewNoFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSTableViewNoFirstResponder.h; sourceTree = "<group>"; };
+		2087DC550BBDBD1F00997205 /* NSTableViewNoFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSTableViewNoFirstResponder.m; sourceTree = "<group>"; };
+		2088EC320F2A686500542B51 /* NTTimeIntervalMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTimeIntervalMeter.h; sourceTree = "<group>"; };
+		2088EC330F2A686500542B51 /* NTTimeIntervalMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTimeIntervalMeter.m; sourceTree = "<group>"; };
+		2088ED500F2AC83B00542B51 /* NTAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAnimationDelegate.h; sourceTree = "<group>"; };
+		2088ED510F2AC83B00542B51 /* NTAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAnimationDelegate.m; sourceTree = "<group>"; };
+		208A8D5D0B756AD300490432 /* NSWindow-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSWindow-NTExtensions.h"; sourceTree = "<group>"; };
+		208A8D5E0B756AD300490432 /* NSWindow-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSWindow-NTExtensions.m"; sourceTree = "<group>"; };
+		208A9E470D2C55BD00738198 /* NTAnimationsZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAnimationsZoomView.h; sourceTree = "<group>"; };
+		208A9E480D2C55BD00738198 /* NTAnimationsZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAnimationsZoomView.m; sourceTree = "<group>"; };
+		2090BEC70E07384200BBBCA1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		2094A1510DA4058A0024A7F6 /* NTDoubleClickHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDoubleClickHandler.h; sourceTree = "<group>"; };
+		2094A1520DA4058A0024A7F6 /* NTDoubleClickHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDoubleClickHandler.m; sourceTree = "<group>"; };
+		2094A1930DA406380024A7F6 /* NTRevealParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTRevealParameters.h; sourceTree = "<group>"; };
+		2094A1940DA406380024A7F6 /* NTRevealParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTRevealParameters.m; sourceTree = "<group>"; };
+		2094C9CD0BCDB339007D1E6E /* NSTabView-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSTabView-NTExtensions.h"; sourceTree = "<group>"; };
+		2094C9CE0BCDB339007D1E6E /* NSTabView-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSTabView-NTExtensions.m"; sourceTree = "<group>"; };
+		209551130EC9313F001FA347 /* NTPasteboardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPasteboardHelper.h; sourceTree = "<group>"; };
+		209551140EC9313F001FA347 /* NTPasteboardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTPasteboardHelper.m; sourceTree = "<group>"; };
+		2095521C0EC93FED001FA347 /* NTWindowCascade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTWindowCascade.h; sourceTree = "<group>"; };
+		2095521D0EC93FED001FA347 /* NTWindowCascade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTWindowCascade.m; sourceTree = "<group>"; };
+		209552250EC940D9001FA347 /* CFArray-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CFArray-NTExtensions.h"; sourceTree = "<group>"; };
+		209552260EC940D9001FA347 /* CFArray-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CFArray-NTExtensions.m"; sourceTree = "<group>"; };
+		2095563E0EC966EC001FA347 /* NTDataBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDataBuffer.h; sourceTree = "<group>"; };
+		2095563F0EC966EC001FA347 /* NTDataBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDataBuffer.m; sourceTree = "<group>"; };
+		209556D70EC96D60001FA347 /* NTObjcRuntimeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTObjcRuntimeTools.h; sourceTree = "<group>"; };
+		209556D80EC96D60001FA347 /* NTObjcRuntimeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTObjcRuntimeTools.m; sourceTree = "<group>"; };
+		20986D230DF9CC6A00C43A18 /* CALayer-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer-NTExtensions.h"; sourceTree = "<group>"; };
+		20986D240DF9CC6A00C43A18 /* CALayer-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer-NTExtensions.m"; sourceTree = "<group>"; };
+		209ADF270E04C17500F4C008 /* NTPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPopUpButton.h; sourceTree = "<group>"; };
+		209ADF280E04C17500F4C008 /* NTPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTPopUpButton.m; sourceTree = "<group>"; };
+		209AE1E70E0607C300F4C008 /* CATransaction-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction-NTExtensions.h"; sourceTree = "<group>"; };
+		209AE1E80E0607C300F4C008 /* CATransaction-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction-NTExtensions.m"; sourceTree = "<group>"; };
+		209DC7140CB3399100168621 /* NTSynchronousTask.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTSynchronousTask.h; sourceTree = "<group>"; };
+		209DC7150CB3399100168621 /* NTSynchronousTask.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTSynchronousTask.m; sourceTree = "<group>"; };
+		209E2CC30E357A18007A0B81 /* NSButton-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSButton-NTExtensions.h"; sourceTree = "<group>"; };
+		209E2CC40E357A18007A0B81 /* NSButton-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSButton-NTExtensions.m"; sourceTree = "<group>"; };
+		209E3E410ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSCalendarDate-NTExtensions.h"; sourceTree = "<group>"; };
+		209E3E420ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSCalendarDate-NTExtensions.m"; sourceTree = "<group>"; };
+		209E3E430ADC9CAE00DC888E /* NSData-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSData-NTExtensions.h"; sourceTree = "<group>"; };
+		209E3E440ADC9CAE00DC888E /* NSData-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSData-NTExtensions.m"; sourceTree = "<group>"; };
+		209E3E450ADC9CAE00DC888E /* NSError-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSError-NTExtensions.h"; sourceTree = "<group>"; };
+		209E3E460ADC9CAE00DC888E /* NSError-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSError-NTExtensions.m"; sourceTree = "<group>"; };
+		209E3E470ADC9CAE00DC888E /* NSObject-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSObject-NTExtensions.h"; sourceTree = "<group>"; };
+		209E3E480ADC9CAE00DC888E /* NSObject-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSObject-NTExtensions.m"; sourceTree = "<group>"; };
+		209E3E490ADC9CAE00DC888E /* NSString-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSString-Utilities.h"; sourceTree = "<group>"; };
+		209E3E4A0ADC9CAE00DC888E /* NSString-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString-Utilities.m"; sourceTree = "<group>"; };
+		209E3E4B0ADC9CAE00DC888E /* NSThread-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSThread-NTExtensions.h"; sourceTree = "<group>"; };
+		209E3E4C0ADC9CAE00DC888E /* NSThread-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSThread-NTExtensions.m"; sourceTree = "<group>"; };
+		209E3E4D0ADC9CAE00DC888E /* NTCoreMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTCoreMacros.h; sourceTree = "<group>"; };
+		209E3E500ADC9CAE00DC888E /* NTDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTDateFormatter.h; sourceTree = "<group>"; };
+		209E3E510ADC9CAE00DC888E /* NTDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTDateFormatter.m; sourceTree = "<group>"; };
+		209E3E540ADC9CAE00DC888E /* NTGlobalPreferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTGlobalPreferences.h; sourceTree = "<group>"; };
+		209E3E550ADC9CAE00DC888E /* NTGlobalPreferences.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTGlobalPreferences.m; sourceTree = "<group>"; };
+		209E3E560ADC9CAE00DC888E /* NTSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTSingletonObject.h; sourceTree = "<group>"; };
+		209E3E570ADC9CAE00DC888E /* NTSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTSingletonObject.m; sourceTree = "<group>"; };
+		209E3E580ADC9CAE00DC888E /* NTTaskController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTTaskController.h; sourceTree = "<group>"; };
+		209E3E590ADC9CAE00DC888E /* NTTaskController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTTaskController.m; sourceTree = "<group>"; };
+		209E3E7A0ADC9CDD00DC888E /* CocoatechCore.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CocoatechCore.h; sourceTree = "<group>"; };
+		209E3E9C0ADC9D2900DC888E /* NTPath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTPath.h; sourceTree = "<group>"; };
+		209E3E9D0ADC9D2900DC888E /* NTPath.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTPath.m; sourceTree = "<group>"; };
+		209E3EA00ADC9D3F00DC888E /* NTSimpleTimer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTSimpleTimer.h; sourceTree = "<group>"; };
+		209E3EA10ADC9D3F00DC888E /* NTSimpleTimer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTSimpleTimer.m; sourceTree = "<group>"; };
+		209E3F850ADC9EE700DC888E /* NTNameAndID.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTNameAndID.h; sourceTree = "<group>"; };
+		209E3F860ADC9EE700DC888E /* NTNameAndID.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTNameAndID.m; sourceTree = "<group>"; };
+		209E3F9C0ADC9F3F00DC888E /* NTUsersAndGroups.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTUsersAndGroups.h; sourceTree = "<group>"; };
+		209E3F9D0ADC9F3F00DC888E /* NTUsersAndGroups.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTUsersAndGroups.m; sourceTree = "<group>"; };
+		209E3FB90ADCA34300DC888E /* NSMenu-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSMenu-NTExtensions.h"; sourceTree = "<group>"; };
+		209E3FBA0ADCA34300DC888E /* NSMenu-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSMenu-NTExtensions.m"; sourceTree = "<group>"; };
+		209E3FBB0ADCA34300DC888E /* NSMenuItem-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSMenuItem-NTExtensions.h"; sourceTree = "<group>"; };
+		209E3FBC0ADCA34300DC888E /* NSMenuItem-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSMenuItem-NTExtensions.m"; sourceTree = "<group>"; };
+		209E3FE20ADCA40500DC888E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		209E40090ADCA4C500DC888E /* NTThreadHelper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTThreadHelper.h; sourceTree = "<group>"; };
+		209E400A0ADCA4C500DC888E /* NTThreadHelper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTThreadHelper.m; sourceTree = "<group>"; };
+		209E400B0ADCA4C500DC888E /* NTThreadRunner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTThreadRunner.h; sourceTree = "<group>"; };
+		209E400C0ADCA4C500DC888E /* NTThreadRunner.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTThreadRunner.m; sourceTree = "<group>"; };
+		209E41BA0ADCB02D00DC888E /* NTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTUtilities.h; sourceTree = "<group>"; };
+		209E41BB0ADCB02D00DC888E /* NTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTUtilities.m; sourceTree = "<group>"; };
+		20A111AC0D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-NTExtensions.h"; sourceTree = "<group>"; };
+		20A111AD0D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString-NTExtensions.m"; sourceTree = "<group>"; };
+		20A111AE0D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString-Extensions.h"; sourceTree = "<group>"; };
+		20A111AF0D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString-Extensions.m"; sourceTree = "<group>"; };
+		20A1E6BD0CED228B00EA0706 /* NTImageMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTImageMaker.h; sourceTree = "<group>"; };
+		20A1E6BE0CED228B00EA0706 /* NTImageMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTImageMaker.m; sourceTree = "<group>"; };
+		20A5B34C0B3BD52100D4DAD6 /* NTView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTView.h; sourceTree = "<group>"; };
+		20A5B34D0B3BD52100D4DAD6 /* NTView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTView.m; sourceTree = "<group>"; };
+		20A5E0910DBF197B00A720E2 /* NTKVObserverProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTKVObserverProxy.h; sourceTree = "<group>"; };
+		20A5E0920DBF197B00A720E2 /* NTKVObserverProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTKVObserverProxy.m; sourceTree = "<group>"; };
+		20A7389C0DC1B72300BE94FE /* NSColor-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor-NTExtensions.h"; sourceTree = "<group>"; };
+		20A7389D0DC1B72300BE94FE /* NSColor-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor-NTExtensions.m"; sourceTree = "<group>"; };
+		20AB50E11050D008009824F7 /* QLPreviewPanel-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QLPreviewPanel-NTExtensions.h"; sourceTree = "<group>"; };
+		20AB50E21050D008009824F7 /* QLPreviewPanel-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QLPreviewPanel-NTExtensions.m"; sourceTree = "<group>"; };
+		20AD05020DC5B9AB00CCDB62 /* NTFramedSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTFramedSplitView.h; sourceTree = "<group>"; };
+		20AD05030DC5B9AB00CCDB62 /* NTFramedSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTFramedSplitView.m; sourceTree = "<group>"; };
+		20AD91CD0F5CA615000B3310 /* NTSavePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSavePanel.h; sourceTree = "<group>"; };
+		20AD91CE0F5CA615000B3310 /* NTSavePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSavePanel.m; sourceTree = "<group>"; };
+		20B107260E4148D400B2AE5C /* NTProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTProxy.h; sourceTree = "<group>"; };
+		20B107270E4148D400B2AE5C /* NTProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTProxy.m; sourceTree = "<group>"; };
+		20B107460E4149E600B2AE5C /* NSMutableArray-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray-NTExtensions.h"; sourceTree = "<group>"; };
+		20B107470E4149E600B2AE5C /* NSMutableArray-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray-NTExtensions.m"; sourceTree = "<group>"; };
+		20B2D7840BCE290E00CDD55A /* NTGradientDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTGradientDraw.h; sourceTree = "<group>"; };
+		20B2D7850BCE290E00CDD55A /* NTGradientDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTGradientDraw.m; sourceTree = "<group>"; };
+		20B3E2C7100D2B6400288402 /* NTIndexCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTIndexCounter.h; sourceTree = "<group>"; };
+		20B3E2C8100D2B6400288402 /* NTIndexCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTIndexCounter.m; sourceTree = "<group>"; };
+		20B79A2F0DDD39E400A3D6BB /* CATextLayer-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATextLayer-NTExtensions.h"; sourceTree = "<group>"; };
+		20B79A300DDD39E400A3D6BB /* CATextLayer-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATextLayer-NTExtensions.m"; sourceTree = "<group>"; };
+		20B79B080DDD3E0F00A3D6BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		20BF00D50E2DD249008D723C /* NTSCPrefsListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSCPrefsListener.h; sourceTree = "<group>"; };
+		20BF00D60E2DD249008D723C /* NTSCPrefsListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSCPrefsListener.m; sourceTree = "<group>"; };
+		20BF75E50D28C33600ADA999 /* NSDrawer-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDrawer-NTExtensions.h"; sourceTree = "<group>"; };
+		20BF75E60D28C33600ADA999 /* NSDrawer-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDrawer-NTExtensions.m"; sourceTree = "<group>"; };
+		20BF9A8B10A295D300A6FA3E /* NSURL-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL-NTExtensions.h"; sourceTree = "<group>"; };
+		20BF9A8C10A295D300A6FA3E /* NSURL-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL-NTExtensions.m"; sourceTree = "<group>"; };
+		20C10B0A0A3F6D9900291B79 /* CocoaTechStrings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaTechStrings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CA61BD0D72AA2C00697F7F /* NSArray-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-NTExtensions.h"; sourceTree = "<group>"; };
+		20CA61BE0D72AA2C00697F7F /* NSArray-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray-NTExtensions.m"; sourceTree = "<group>"; };
+		20CCEAAC0CC56021009C75A5 /* NSEvent-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSEvent-Utilities.h"; sourceTree = "<group>"; };
+		20CCEAAD0CC56021009C75A5 /* NSEvent-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSEvent-Utilities.m"; sourceTree = "<group>"; };
+		20CD3EF80D72287D0097EC8B /* NTSpringLoadedViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSpringLoadedViewHelper.h; sourceTree = "<group>"; };
+		20CD3EF90D72287D0097EC8B /* NTSpringLoadedViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSpringLoadedViewHelper.m; sourceTree = "<group>"; };
+		20D5B84F0B5CAF7000ED9E9B /* NTCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTCoordinate.h; sourceTree = "<group>"; };
+		20D5B8500B5CAF7000ED9E9B /* NTCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTCoordinate.m; sourceTree = "<group>"; };
+		20D7ECEA0B5EF8B6006F4452 /* NTEnablingTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTEnablingTextFieldCell.h; sourceTree = "<group>"; };
+		20D7ECEB0B5EF8B6006F4452 /* NTEnablingTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTEnablingTextFieldCell.m; sourceTree = "<group>"; };
+		20D7ED110B5EFBA8006F4452 /* NTEnablingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTEnablingTextField.h; sourceTree = "<group>"; };
+		20D7ED120B5EFBA8006F4452 /* NTEnablingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTEnablingTextField.m; sourceTree = "<group>"; };
+		20D905901080201C006282F2 /* NTViewOptionConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTViewOptionConstants.h; sourceTree = "<group>"; };
+		20DAF7E4107316180057F7E8 /* NTKeyEventMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTKeyEventMonitor.h; sourceTree = "<group>"; };
+		20DAF7E5107316180057F7E8 /* NTKeyEventMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTKeyEventMonitor.m; sourceTree = "<group>"; };
+		20DAF80E107323110057F7E8 /* NTKeyEventMonitorToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTKeyEventMonitorToken.h; sourceTree = "<group>"; };
+		20DAF80F107323110057F7E8 /* NTKeyEventMonitorToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTKeyEventMonitorToken.m; sourceTree = "<group>"; };
+		20DBC44F0D2B212E0030C890 /* NTAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAnimations.h; sourceTree = "<group>"; };
+		20DBC4500D2B212E0030C890 /* NTAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAnimations.m; sourceTree = "<group>"; };
+		20DBC4510D2B212E0030C890 /* NTAnimationsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAnimationsWindow.h; sourceTree = "<group>"; };
+		20DBC4520D2B212E0030C890 /* NTAnimationsWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAnimationsWindow.m; sourceTree = "<group>"; };
+		20DBC4800D2B254F0030C890 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		20DE4CB90B52224F005B967B /* NSDate-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-NTExtensions.h"; sourceTree = "<group>"; };
+		20DE4CBA0B52224F005B967B /* NSDate-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-NTExtensions.m"; sourceTree = "<group>"; };
+		20DFD5F70ADDF09800BB6ACC /* NSShadow-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSShadow-NTExtensions.h"; sourceTree = "<group>"; };
+		20DFD5F80ADDF09800BB6ACC /* NSShadow-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSShadow-NTExtensions.m"; sourceTree = "<group>"; };
+		20DFD6BA0ADDFA4700BB6ACC /* NTLazyMenu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTLazyMenu.h; sourceTree = "<group>"; };
+		20DFD6BB0ADDFA4700BB6ACC /* NTLazyMenu.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTLazyMenu.m; sourceTree = "<group>"; };
+		20DFD6F00ADDFB0E00BB6ACC /* NTCarbonGeometry.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTCarbonGeometry.h; sourceTree = "<group>"; };
+		20DFD6F10ADDFB0E00BB6ACC /* NTCarbonGeometry.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTCarbonGeometry.m; sourceTree = "<group>"; };
+		20DFD7080ADDFC0400BB6ACC /* NSImage-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSImage-NTExtensions.h"; sourceTree = "<group>"; };
+		20DFD7090ADDFC0400BB6ACC /* NSImage-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSImage-NTExtensions.m"; sourceTree = "<group>"; };
+		20DFD7760ADE012A00BB6ACC /* NTGradient.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTGradient.h; sourceTree = "<group>"; };
+		20DFD7770ADE012A00BB6ACC /* NTGradient.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTGradient.m; sourceTree = "<group>"; };
+		20DFD7780ADE012A00BB6ACC /* NTGradientFill.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTGradientFill.h; sourceTree = "<group>"; };
+		20DFD7790ADE012A00BB6ACC /* NTGradientFill.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTGradientFill.m; sourceTree = "<group>"; };
+		20DFD8120ADE03A000BB6ACC /* NSBezierPath-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath-NTExtensions.h"; sourceTree = "<group>"; };
+		20DFD8130ADE03A000BB6ACC /* NSBezierPath-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath-NTExtensions.m"; sourceTree = "<group>"; };
+		20DFD8460ADE05D800BB6ACC /* NSDictionary-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-NTExtensions.h"; sourceTree = "<group>"; };
+		20DFD8470ADE05D800BB6ACC /* NSDictionary-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary-NTExtensions.m"; sourceTree = "<group>"; };
+		20DFD8480ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary-NTExtensions.h"; sourceTree = "<group>"; };
+		20DFD8490ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary-NTExtensions.m"; sourceTree = "<group>"; };
+		20DFD84A0ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary-ThreadSafe.h"; sourceTree = "<group>"; };
+		20DFD84B0ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary-ThreadSafe.m"; sourceTree = "<group>"; };
+		20E3857A0B64A6DE00CC0D7B /* NSView-CoreExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView-CoreExtensions.h"; sourceTree = "<group>"; };
+		20E3857B0B64A6DE00CC0D7B /* NSView-CoreExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView-CoreExtensions.m"; sourceTree = "<group>"; };
+		20E5317A0EBFF20C0006AEFE /* NTFontButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTFontButton.h; sourceTree = "<group>"; };
+		20E5317B0EBFF20C0006AEFE /* NTFontButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTFontButton.m; sourceTree = "<group>"; };
+		20E5FC300B4F63CB0042CD80 /* NTKeyChainUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NTKeyChainUtils.h; sourceTree = "<group>"; };
+		20E5FC310B4F63CB0042CD80 /* NTKeyChainUtils.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NTKeyChainUtils.m; sourceTree = "<group>"; };
+		20E5FF080B4F6A810042CD80 /* NSMatrix-CoreExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMatrix-CoreExtensions.h"; sourceTree = "<group>"; };
+		20E5FF090B4F6A810042CD80 /* NSMatrix-CoreExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMatrix-CoreExtensions.m"; sourceTree = "<group>"; };
+		20E87F0E0EF90D3F00BD6893 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		20EBB5F00DE0ECB7008AD4F7 /* NTSpaceKeyPoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSpaceKeyPoll.h; sourceTree = "<group>"; };
+		20EBB5F10DE0ECB7008AD4F7 /* NTSpaceKeyPoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSpaceKeyPoll.m; sourceTree = "<group>"; };
+		20EF58920E89840000A8CE26 /* NTPointerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPointerObject.h; sourceTree = "<group>"; };
+		20EF58930E89840000A8CE26 /* NTPointerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTPointerObject.m; sourceTree = "<group>"; };
+		20EF87010988603D006FA8BB /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = ../Configurations/Debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		20EF87020988603D006FA8BB /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = ../Configurations/Release.xcconfig; sourceTree = SOURCE_ROOT; };
+		20F0AF2610686FDE00BA1387 /* NSUserDefaults-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults-NTExtensions.h"; sourceTree = "<group>"; };
+		20F0AF2710686FDE00BA1387 /* NSUserDefaults-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults-NTExtensions.m"; sourceTree = "<group>"; };
+		20F0AF2810686FDE00BA1387 /* NTUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTUserDefaults.h; sourceTree = "<group>"; };
+		20F0AF2910686FDE00BA1387 /* NTUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTUserDefaults.m; sourceTree = "<group>"; };
+		20F0AF2E10686FF300BA1387 /* NTPrefNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPrefNotification.h; sourceTree = "<group>"; };
+		20F0AF2F10686FF300BA1387 /* NTPrefNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTPrefNotification.m; sourceTree = "<group>"; };
+		20F113FC0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView-NSSplitViewExtensions.h"; sourceTree = "<group>"; };
+		20F113FD0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView-NSSplitViewExtensions.m"; sourceTree = "<group>"; };
+		20F35BBF1117D13000B556AC /* NSScrollView-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScrollView-NTExtensions.h"; sourceTree = "<group>"; };
+		20F35BC01117D13000B556AC /* NSScrollView-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScrollView-NTExtensions.m"; sourceTree = "<group>"; };
+		20F43BE4110824C800694504 /* NSSortDescriptor-NTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSortDescriptor-NTExtensions.h"; sourceTree = "<group>"; };
+		20F43BE5110824C800694504 /* NSSortDescriptor-NTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSortDescriptor-NTExtensions.m"; sourceTree = "<group>"; };
+		32DBCF5E0370ADEE00C91783 /* CocoatechCore_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoatechCore_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* CocoatechCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoatechCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				20C10B0B0A3F6D9A00291B79 /* CocoaTechStrings.framework in Frameworks */,
+				209E3FE30ADCA40500DC888E /* Carbon.framework in Frameworks */,
+				204CEC170ADCB0F200B25AD4 /* AddressBook.framework in Frameworks */,
+				204CEC180ADCB0F200B25AD4 /* IOKit.framework in Frameworks */,
+				20DBC4810D2B254F0030C890 /* Quartz.framework in Frameworks */,
+				20B79B090DDD3E0F00A3D6BB /* QuartzCore.framework in Frameworks */,
+				2090BEC80E07384200BBBCA1 /* SystemConfiguration.framework in Frameworks */,
+				20E87F0F0EF90D3F00BD6893 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* CocoatechCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* CocoatechCore */ = {
+			isa = PBXGroup;
+			children = (
+				209E3E7A0ADC9CDD00DC888E /* CocoatechCore.h */,
+				32DBCF5E0370ADEE00C91783 /* CocoatechCore_Prefix.pch */,
+				20EF89ED09886BDE006FA8BB /* Project References */,
+				20EF87050988604D006FA8BB /* Configurations */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = CocoatechCore;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				20C10B0A0A3F6D9900291B79 /* CocoaTechStrings.framework */,
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				200747D70DBC775800668B22 /* images */,
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				20B07E8B0AD7502F00A25B54 /* Headers */,
+				200459FF0BCEBDEF00AEBD73 /* Gradients */,
+				2005AB0E0D36D5AF00F2A1D6 /* SplitViews */,
+				2053D9E20DDBA70A00098630 /* Menu Slider */,
+				2084D4430F8337C600E25B74 /* Containers */,
+				203BCC1C10857E0B002F2D3E /* Thread Safe */,
+				20E3857B0B64A6DE00CC0D7B /* NSView-CoreExtensions.m */,
+				204020AD0B95616700131CDE /* NTAlertPanel.m */,
+				209551140EC9313F001FA347 /* NTPasteboardHelper.m */,
+				20D7ED120B5EFBA8006F4452 /* NTEnablingTextField.m */,
+				2007456A0DBC4D1300668B22 /* NTBoxView.m */,
+				2054A37B116AB17E007EF8F9 /* BGHUD */,
+				2080798410EB539D00F2BED0 /* NTShadowImage.m */,
+				2007456E0DBC4D2000668B22 /* NTBackgroundView.m */,
+				2034463F0D6F623E000B5495 /* NSAnimationContext-NTExtensions.m */,
+				2027FF4D107BE2AF007354B7 /* NTQuitDisabler.m */,
+				20F43BE5110824C800694504 /* NSSortDescriptor-NTExtensions.m */,
+				20F0AF2710686FDE00BA1387 /* NSUserDefaults-NTExtensions.m */,
+				20F0AF2F10686FF300BA1387 /* NTPrefNotification.m */,
+				20F0AF2910686FDE00BA1387 /* NTUserDefaults.m */,
+				20061E030F8802CA00241369 /* NTAppearanceMgr.m */,
+				2015E3A811268DF3009A85F0 /* NTMailDelivery.m */,
+				209DC7150CB3399100168621 /* NTSynchronousTask.m */,
+				20F35BC01117D13000B556AC /* NSScrollView-NTExtensions.m */,
+				20BF9A8C10A295D300A6FA3E /* NSURL-NTExtensions.m */,
+				2094A1520DA4058A0024A7F6 /* NTDoubleClickHandler.m */,
+				2059D4A5104CD8B400B1FC10 /* NTSynchronousTaskRunner.m */,
+				20CA61BE0D72AA2C00697F7F /* NSArray-NTExtensions.m */,
+				209E2CC40E357A18007A0B81 /* NSButton-NTExtensions.m */,
+				209E3FBA0ADCA34300DC888E /* NSMenu-NTExtensions.m */,
+				20193B6D10F2AF58002735A8 /* NTTemporaryObject.m */,
+				2064CB7E0EDB985700DCD342 /* NSLayoutManager-NTExtensions.m */,
+				207E96690DC7B80D00D0CC4E /* NTClickState.m */,
+				20E5317B0EBFF20C0006AEFE /* NTFontButton.m */,
+				201362360C63C63F006BFAA5 /* NTFont.m */,
+				201F80DF0F7D80ED0076A5EE /* NTEventOverrideHandler.m */,
+				2064CAFD0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.m */,
+				209556D80EC96D60001FA347 /* NTObjcRuntimeTools.m */,
+				20B3E2C8100D2B6400288402 /* NTIndexCounter.m */,
+				2088EC330F2A686500542B51 /* NTTimeIntervalMeter.m */,
+				20AB50E21050D008009824F7 /* QLPreviewPanel-NTExtensions.m */,
+				2088ED510F2AC83B00542B51 /* NTAnimationDelegate.m */,
+				20986D240DF9CC6A00C43A18 /* CALayer-NTExtensions.m */,
+				20A5E0920DBF197B00A720E2 /* NTKVObserverProxy.m */,
+				202BED2C0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.m */,
+				200747CE0DBC774600668B22 /* NTStandardImages.m */,
+				209AE1E80E0607C300F4C008 /* CATransaction-NTExtensions.m */,
+				2094C9CE0BCDB339007D1E6E /* NSTabView-NTExtensions.m */,
+				204861990D7CEB5B0083D964 /* NTStringView.m */,
+				20631EBC0DE266E800AFE50A /* NTHotKeyManager.m */,
+				20DAF7E5107316180057F7E8 /* NTKeyEventMonitor.m */,
+				20DAF80F107323110057F7E8 /* NTKeyEventMonitorToken.m */,
+				20139B000D826EF100DC615B /* NTStaticImageView.m */,
+				2086CAB00E245E46005F68AD /* NTMetalWindowTheme.m */,
+				2095563F0EC966EC001FA347 /* NTDataBuffer.m */,
+				208A8D5E0B756AD300490432 /* NSWindow-NTExtensions.m */,
+				2095521D0EC93FED001FA347 /* NTWindowCascade.m */,
+				203A1C4C112D395E007C94BE /* Proxies */,
+				20B107470E4149E600B2AE5C /* NSMutableArray-NTExtensions.m */,
+				209552260EC940D9001FA347 /* CFArray-NTExtensions.m */,
+				20A7389D0DC1B72300BE94FE /* NSColor-NTExtensions.m */,
+				20BF75E60D28C33600ADA999 /* NSDrawer-NTExtensions.m */,
+				209E3E420ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.m */,
+				200EAEEF0C8A03E7001F7F97 /* NTColorSet.m */,
+				200B4A440D28B3930072FCB0 /* NTImageButton.m */,
+				206C76E80DA6C49D0026B17F /* NTTemplateButton.m */,
+				20B79A300DDD39E400A3D6BB /* CATextLayer-NTExtensions.m */,
+				2040125F0BCC758900102A61 /* NTTableHeaderImages.m */,
+				20EF58930E89840000A8CE26 /* NTPointerObject.m */,
+				209ADF280E04C17500F4C008 /* NTPopUpButton.m */,
+				204012810BCC762A00102A61 /* NTAquaButtonCell.m */,
+				200EAF010C8A0A81001F7F97 /* NTStandardColors.m */,
+				20A111AD0D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.m */,
+				20CD3EF90D72287D0097EC8B /* NTSpringLoadedViewHelper.m */,
+				20EBB5F10DE0ECB7008AD4F7 /* NTSpaceKeyPoll.m */,
+				20A111AF0D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.m */,
+				20D7ECEB0B5EF8B6006F4452 /* NTEnablingTextFieldCell.m */,
+				2087DC550BBDBD1F00997205 /* NSTableViewNoFirstResponder.m */,
+				20DBC4500D2B212E0030C890 /* NTAnimations.m */,
+				20DBC4520D2B212E0030C890 /* NTAnimationsWindow.m */,
+				208A9E480D2C55BD00738198 /* NTAnimationsZoomView.m */,
+				204A625F0D441E8200B6EB88 /* NSNumber-NTExtensions.m */,
+				20DE4CBA0B52224F005B967B /* NSDate-NTExtensions.m */,
+				2064CBEA0EDBA01C00DCD342 /* NSFont-NTExtensions.m */,
+				20E5FF090B4F6A810042CD80 /* NSMatrix-CoreExtensions.m */,
+				209E3E440ADC9CAE00DC888E /* NSData-NTExtensions.m */,
+				20CCEAAD0CC56021009C75A5 /* NSEvent-Utilities.m */,
+				2058602E0B98E8FB003B6A72 /* NTChooseDestinationPanel.m */,
+				205860300B98E8FB003B6A72 /* NTChooseFilePanel.m */,
+				20AD91CE0F5CA615000B3310 /* NTSavePanel.m */,
+				205860360B98E907003B6A72 /* NSSavePanel-NTExtensions.m */,
+				20DFD6F10ADDFB0E00BB6ACC /* NTCarbonGeometry.m */,
+				204CF07D0ADCCCF600B25AD4 /* NTTime.m */,
+				20D5B8500B5CAF7000ED9E9B /* NTCoordinate.m */,
+				20DFD8470ADE05D800BB6ACC /* NSDictionary-NTExtensions.m */,
+				20DFD8490ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.m */,
+				20E5FC310B4F63CB0042CD80 /* NTKeyChainUtils.m */,
+				209E3E460ADC9CAE00DC888E /* NSError-NTExtensions.m */,
+				204CEFD50ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.m */,
+				20DFD7090ADDFC0400BB6ACC /* NSImage-NTExtensions.m */,
+				209E3E480ADC9CAE00DC888E /* NSObject-NTExtensions.m */,
+				209E3E4A0ADC9CAE00DC888E /* NSString-Utilities.m */,
+				20A1E6BE0CED228B00EA0706 /* NTImageMaker.m */,
+				209E3E9D0ADC9D2900DC888E /* NTPath.m */,
+				20A5B34D0B3BD52100D4DAD6 /* NTView.m */,
+				204CEF9F0ADCC36A00B25AD4 /* NTGeometry.m */,
+				200747ED0DBC77BB00668B22 /* NSBundle-NTExtensions.m */,
+				20DFD5F80ADDF09800BB6ACC /* NSShadow-NTExtensions.m */,
+				20DFD6BB0ADDFA4700BB6ACC /* NTLazyMenu.m */,
+				209E41BB0ADCB02D00DC888E /* NTUtilities.m */,
+				20BF00D60E2DD249008D723C /* NTSCPrefsListener.m */,
+				209E3F860ADC9EE700DC888E /* NTNameAndID.m */,
+				2069DD0E11117CFB004872E8 /* NSObject-Dispatch.m */,
+				2094A1940DA406380024A7F6 /* NTRevealParameters.m */,
+				209E3E4C0ADC9CAE00DC888E /* NSThread-NTExtensions.m */,
+				209E400A0ADCA4C500DC888E /* NTThreadHelper.m */,
+				20DFD8130ADE03A000BB6ACC /* NSBezierPath-NTExtensions.m */,
+				204CEE0D0ADCBC5C00B25AD4 /* NTSizeFormatter.m */,
+				204CEE5E0ADCBDAF00B25AD4 /* NTSimpleAlert.m */,
+				209E400C0ADCA4C500DC888E /* NTThreadRunner.m */,
+				209E3EA10ADC9D3F00DC888E /* NTSimpleTimer.m */,
+				209E3E510ADC9CAE00DC888E /* NTDateFormatter.m */,
+				2015E3D511269634009A85F0 /* NTMobileMe.m */,
+				209E3FBC0ADCA34300DC888E /* NSMenuItem-NTExtensions.m */,
+				209E3F9D0ADC9F3F00DC888E /* NTUsersAndGroups.m */,
+				209E3E550ADC9CAE00DC888E /* NTGlobalPreferences.m */,
+				209E3E570ADC9CAE00DC888E /* NTSingletonObject.m */,
+				209E3E590ADC9CAE00DC888E /* NTTaskController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+				209E3FE20ADCA40500DC888E /* Carbon.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20DBC4800D2B254F0030C890 /* Quartz.framework */,
+				20E87F0E0EF90D3F00BD6893 /* Security.framework */,
+				2090BEC70E07384200BBBCA1 /* SystemConfiguration.framework */,
+				20B79B080DDD3E0F00A3D6BB /* QuartzCore.framework */,
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				204CEC150ADCB0F200B25AD4 /* AddressBook.framework */,
+				204CEC160ADCB0F200B25AD4 /* IOKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		200459FF0BCEBDEF00AEBD73 /* Gradients */ = {
+			isa = PBXGroup;
+			children = (
+				20B2D7850BCE290E00CDD55A /* NTGradientDraw.m */,
+				205CEA720EB9353500F13171 /* NTSelectionGradient.m */,
+				20DFD7770ADE012A00BB6ACC /* NTGradient.m */,
+				20DFD7790ADE012A00BB6ACC /* NTGradientFill.m */,
+			);
+			name = Gradients;
+			sourceTree = "<group>";
+		};
+		2005AB0E0D36D5AF00F2A1D6 /* SplitViews */ = {
+			isa = PBXGroup;
+			children = (
+				20230C400D35AF4200C6553E /* NSSplitView-NTExtensions.m */,
+				20753FC20D1B3AF10015B9BA /* NTSplitViewDelegate.m */,
+				20AD05030DC5B9AB00CCDB62 /* NTFramedSplitView.m */,
+				20F113FD0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.m */,
+			);
+			name = SplitViews;
+			sourceTree = "<group>";
+		};
+		202F64670AA7CDE30026E5AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				202F646B0AA7CDE30026E5AD /* CocoaTechStrings.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		203A1C4C112D395E007C94BE /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				20B107270E4148D400B2AE5C /* NTProxy.m */,
+				203A1C4F112D3970007C94BE /* NTMessageProxy.m */,
+			);
+			name = Proxies;
+			sourceTree = "<group>";
+		};
+		203BCC1C10857E0B002F2D3E /* Thread Safe */ = {
+			isa = PBXGroup;
+			children = (
+				20DFD84B0ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.m */,
+				203BCC1610857DFE002F2D3E /* NSMutableArray-ThreadSafe.m */,
+			);
+			name = "Thread Safe";
+			sourceTree = "<group>";
+		};
+		2053D9E20DDBA70A00098630 /* Menu Slider */ = {
+			isa = PBXGroup;
+			children = (
+				2053D9FE0DDBA9F000098630 /* NTSliderMenuItem.m */,
+				2053D9ED0DDBA73500098630 /* NTSliderGradientView.m */,
+				2053D9E60DDBA72600098630 /* NTMenuSlider.m */,
+				2072C5CD10661B740059C34B /* NTIconControlValueTransformer.m */,
+				2072C747106641840059C34B /* NSValueTransformer-NTExtensions.m */,
+			);
+			name = "Menu Slider";
+			sourceTree = "<group>";
+		};
+		2054A37B116AB17E007EF8F9 /* BGHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2054A404116AB622007EF8F9 /* NTViews */,
+				2054A383116AB194007EF8F9 /* BGGradientTheme.m */,
+				2054A386116AB194007EF8F9 /* BGHUDBox.m */,
+				2054A388116AB194007EF8F9 /* BGHUDButtonCell.m */,
+				2054A38A116AB194007EF8F9 /* BGHUDColorWell.m */,
+				2054A38C116AB194007EF8F9 /* BGHUDComboBoxCell.m */,
+				2054A38F116AB194007EF8F9 /* BGHUDLabel.m */,
+				2054A391116AB194007EF8F9 /* BGHUDOutlineView.m */,
+				2054A393116AB194007EF8F9 /* BGHUDPopUpButtonCell.m */,
+				2054A395116AB194007EF8F9 /* BGHUDProgressIndicator.m */,
+				2054A397116AB194007EF8F9 /* BGHUDScroller.m */,
+				2054A399116AB194007EF8F9 /* BGHUDScrollView.m */,
+				2054A39B116AB194007EF8F9 /* BGHUDSearchFieldCell.m */,
+				2054A39D116AB194007EF8F9 /* BGHUDSecureTextFieldCell.m */,
+				2054A39F116AB194007EF8F9 /* BGHUDSegmentedCell.m */,
+				2054A3A1116AB194007EF8F9 /* BGHUDSliderCell.m */,
+				2054A3A3116AB194007EF8F9 /* BGHUDStepperCell.m */,
+				2054A3A5116AB194007EF8F9 /* BGHUDTableCornerView.m */,
+				2054A3A7116AB194007EF8F9 /* BGHUDTableView.m */,
+				2054A3A9116AB194007EF8F9 /* BGHUDTableViewHeaderCell.m */,
+				2054A3AB116AB194007EF8F9 /* BGHUDTabView.m */,
+				2054A3AD116AB194007EF8F9 /* BGHUDTabViewItem.m */,
+				2054A3AF116AB194007EF8F9 /* BGHUDTextFieldCell.m */,
+				2054A3B5116AB194007EF8F9 /* BGHUDView.m */,
+				2054A3B7116AB194007EF8F9 /* BGTheme.m */,
+				2054A3B9116AB194007EF8F9 /* BGThemeManager.m */,
+				2054A3FC116AB207007EF8F9 /* Headers */,
+			);
+			name = BGHUD;
+			sourceTree = "<group>";
+		};
+		2054A3FC116AB207007EF8F9 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2054A3FE116AB602007EF8F9 /* NTBGHUDPopUpButton.h */,
+				2054A3A4116AB194007EF8F9 /* BGHUDTableCornerView.h */,
+				2054A3A6116AB194007EF8F9 /* BGHUDTableView.h */,
+				2054A3A8116AB194007EF8F9 /* BGHUDTableViewHeaderCell.h */,
+				2054A382116AB194007EF8F9 /* BGGradientTheme.h */,
+				2054A384116AB194007EF8F9 /* BGHUDAppKit.h */,
+				2054A385116AB194007EF8F9 /* BGHUDBox.h */,
+				2054A387116AB194007EF8F9 /* BGHUDButtonCell.h */,
+				2054A389116AB194007EF8F9 /* BGHUDColorWell.h */,
+				2054A38B116AB194007EF8F9 /* BGHUDComboBoxCell.h */,
+				2054A3AA116AB194007EF8F9 /* BGHUDTabView.h */,
+				2054A3AC116AB194007EF8F9 /* BGHUDTabViewItem.h */,
+				2054A3AE116AB194007EF8F9 /* BGHUDTextFieldCell.h */,
+				2054A38D116AB194007EF8F9 /* BGHUDGeometry.h */,
+				2054A38E116AB194007EF8F9 /* BGHUDLabel.h */,
+				2054A390116AB194007EF8F9 /* BGHUDOutlineView.h */,
+				2054A392116AB194007EF8F9 /* BGHUDPopUpButtonCell.h */,
+				2054A394116AB194007EF8F9 /* BGHUDProgressIndicator.h */,
+				2054A396116AB194007EF8F9 /* BGHUDScroller.h */,
+				2054A398116AB194007EF8F9 /* BGHUDScrollView.h */,
+				2054A39A116AB194007EF8F9 /* BGHUDSearchFieldCell.h */,
+				2054A39C116AB194007EF8F9 /* BGHUDSecureTextFieldCell.h */,
+				2054A39E116AB194007EF8F9 /* BGHUDSegmentedCell.h */,
+				2054A3A0116AB194007EF8F9 /* BGHUDSliderCell.h */,
+				2054A3A2116AB194007EF8F9 /* BGHUDStepperCell.h */,
+				2054A3B4116AB194007EF8F9 /* BGHUDView.h */,
+				2054A3B6116AB194007EF8F9 /* BGTheme.h */,
+				2054A3B8116AB194007EF8F9 /* BGThemeManager.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		2054A404116AB622007EF8F9 /* NTViews */ = {
+			isa = PBXGroup;
+			children = (
+				2054A3FF116AB602007EF8F9 /* NTBGHUDPopUpButton.m */,
+			);
+			name = NTViews;
+			sourceTree = "<group>";
+		};
+		2084D4430F8337C600E25B74 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				2084D43E0F8337B900E25B74 /* NTBaseContainer.m */,
+				20876FA30F82CD18002AF8E4 /* NTObjectContainer.m */,
+				2084D4380F8337AD00E25B74 /* NTUInt64Container.m */,
+				2084D4BA0F8346B300E25B74 /* NTUInt32Container.m */,
+			);
+			name = Containers;
+			sourceTree = "<group>";
+		};
+		20B07E8B0AD7502F00A25B54 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				203A1C4E112D3970007C94BE /* NTMessageProxy.h */,
+				2015E3D411269634009A85F0 /* NTMobileMe.h */,
+				2015E3A711268DF3009A85F0 /* NTMailDelivery.h */,
+				2069DD0D11117CFB004872E8 /* NSObject-Dispatch.h */,
+				20F35BBF1117D13000B556AC /* NSScrollView-NTExtensions.h */,
+				20F43BE4110824C800694504 /* NSSortDescriptor-NTExtensions.h */,
+				20193B6C10F2AF58002735A8 /* NTTemporaryObject.h */,
+				2080798310EB539D00F2BED0 /* NTShadowImage.h */,
+				20BF9A8B10A295D300A6FA3E /* NSURL-NTExtensions.h */,
+				203BCC1510857DFE002F2D3E /* NSMutableArray-ThreadSafe.h */,
+				2027FF4C107BE2AF007354B7 /* NTQuitDisabler.h */,
+				20DAF7E4107316180057F7E8 /* NTKeyEventMonitor.h */,
+				20F0AF2610686FDE00BA1387 /* NSUserDefaults-NTExtensions.h */,
+				20D905901080201C006282F2 /* NTViewOptionConstants.h */,
+				20F0AF2E10686FF300BA1387 /* NTPrefNotification.h */,
+				20F0AF2810686FDE00BA1387 /* NTUserDefaults.h */,
+				2072C5CC10661B740059C34B /* NTIconControlValueTransformer.h */,
+				2072C746106641840059C34B /* NSValueTransformer-NTExtensions.h */,
+				20AB50E11050D008009824F7 /* QLPreviewPanel-NTExtensions.h */,
+				2059D4A4104CD8B400B1FC10 /* NTSynchronousTaskRunner.h */,
+				20B3E2C7100D2B6400288402 /* NTIndexCounter.h */,
+				202BED2B0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.h */,
+				20061E020F8802CA00241369 /* NTAppearanceMgr.h */,
+				2084D4B90F8346B300E25B74 /* NTUInt32Container.h */,
+				2084D4370F8337AD00E25B74 /* NTUInt64Container.h */,
+				2084D43D0F8337B900E25B74 /* NTBaseContainer.h */,
+				20876FA20F82CD18002AF8E4 /* NTObjectContainer.h */,
+				201F80DE0F7D80ED0076A5EE /* NTEventOverrideHandler.h */,
+				20AD91CD0F5CA615000B3310 /* NTSavePanel.h */,
+				2088EC320F2A686500542B51 /* NTTimeIntervalMeter.h */,
+				2064CBE90EDBA01C00DCD342 /* NSFont-NTExtensions.h */,
+				2088ED500F2AC83B00542B51 /* NTAnimationDelegate.h */,
+				2064CB7D0EDB985700DCD342 /* NSLayoutManager-NTExtensions.h */,
+				2064CAFC0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.h */,
+				209556D70EC96D60001FA347 /* NTObjcRuntimeTools.h */,
+				2095563E0EC966EC001FA347 /* NTDataBuffer.h */,
+				209552250EC940D9001FA347 /* CFArray-NTExtensions.h */,
+				209551130EC9313F001FA347 /* NTPasteboardHelper.h */,
+				2095521C0EC93FED001FA347 /* NTWindowCascade.h */,
+				20E5317A0EBFF20C0006AEFE /* NTFontButton.h */,
+				20B107460E4149E600B2AE5C /* NSMutableArray-NTExtensions.h */,
+				205CEA710EB9353500F13171 /* NTSelectionGradient.h */,
+				20EF58920E89840000A8CE26 /* NTPointerObject.h */,
+				20B107260E4148D400B2AE5C /* NTProxy.h */,
+				209E2CC30E357A18007A0B81 /* NSButton-NTExtensions.h */,
+				20BF00D50E2DD249008D723C /* NTSCPrefsListener.h */,
+				2086CAAF0E245E46005F68AD /* NTMetalWindowTheme.h */,
+				209AE1E70E0607C300F4C008 /* CATransaction-NTExtensions.h */,
+				209ADF270E04C17500F4C008 /* NTPopUpButton.h */,
+				20986D230DF9CC6A00C43A18 /* CALayer-NTExtensions.h */,
+				20631EBB0DE266E800AFE50A /* NTHotKeyManager.h */,
+				20EBB5F00DE0ECB7008AD4F7 /* NTSpaceKeyPoll.h */,
+				20B79A2F0DDD39E400A3D6BB /* CATextLayer-NTExtensions.h */,
+				2053D9E50DDBA72600098630 /* NTMenuSlider.h */,
+				2053D9EC0DDBA73500098630 /* NTSliderGradientView.h */,
+				2053D9FD0DDBA9F000098630 /* NTSliderMenuItem.h */,
+				207E96680DC7B80D00D0CC4E /* NTClickState.h */,
+				20AD05020DC5B9AB00CCDB62 /* NTFramedSplitView.h */,
+				20A7389C0DC1B72300BE94FE /* NSColor-NTExtensions.h */,
+				200747EC0DBC77BB00668B22 /* NSBundle-NTExtensions.h */,
+				20A5E0910DBF197B00A720E2 /* NTKVObserverProxy.h */,
+				200747CD0DBC774600668B22 /* NTStandardImages.h */,
+				200745690DBC4D1300668B22 /* NTBoxView.h */,
+				2007456D0DBC4D2000668B22 /* NTBackgroundView.h */,
+				206C76E70DA6C49D0026B17F /* NTTemplateButton.h */,
+				20139AFF0D826EF100DC615B /* NTStaticImageView.h */,
+				204861980D7CEB5B0083D964 /* NTStringView.h */,
+				20CA61BD0D72AA2C00697F7F /* NSArray-NTExtensions.h */,
+				20CD3EF80D72287D0097EC8B /* NTSpringLoadedViewHelper.h */,
+				2034463E0D6F623E000B5495 /* NSAnimationContext-NTExtensions.h */,
+				204A625E0D441E8200B6EB88 /* NSNumber-NTExtensions.h */,
+				20F113FC0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.h */,
+				20230C3F0D35AF4200C6553E /* NSSplitView-NTExtensions.h */,
+				208A9E470D2C55BD00738198 /* NTAnimationsZoomView.h */,
+				20DBC44F0D2B212E0030C890 /* NTAnimations.h */,
+				20DBC4510D2B212E0030C890 /* NTAnimationsWindow.h */,
+				20BF75E50D28C33600ADA999 /* NSDrawer-NTExtensions.h */,
+				200B4A430D28B3930072FCB0 /* NTImageButton.h */,
+				20753FC10D1B3AF10015B9BA /* NTSplitViewDelegate.h */,
+				20A1E6BD0CED228B00EA0706 /* NTImageMaker.h */,
+				20CCEAAC0CC56021009C75A5 /* NSEvent-Utilities.h */,
+				209DC7140CB3399100168621 /* NTSynchronousTask.h */,
+				200EAF000C8A0A81001F7F97 /* NTStandardColors.h */,
+				200EAEEE0C8A03E7001F7F97 /* NTColorSet.h */,
+				201362350C63C63F006BFAA5 /* NTFont.h */,
+				20B2D7840BCE290E00CDD55A /* NTGradientDraw.h */,
+				2094C9CD0BCDB339007D1E6E /* NSTabView-NTExtensions.h */,
+				204012800BCC762A00102A61 /* NTAquaButtonCell.h */,
+				2040125E0BCC758900102A61 /* NTTableHeaderImages.h */,
+				2087DC540BBDBD1F00997205 /* NSTableViewNoFirstResponder.h */,
+				2058602D0B98E8FB003B6A72 /* NTChooseDestinationPanel.h */,
+				2058602F0B98E8FB003B6A72 /* NTChooseFilePanel.h */,
+				205860350B98E907003B6A72 /* NSSavePanel-NTExtensions.h */,
+				20D7ED110B5EFBA8006F4452 /* NTEnablingTextField.h */,
+				20D7ECEA0B5EF8B6006F4452 /* NTEnablingTextFieldCell.h */,
+				20D5B84F0B5CAF7000ED9E9B /* NTCoordinate.h */,
+				20E5FF080B4F6A810042CD80 /* NSMatrix-CoreExtensions.h */,
+				20A5B34C0B3BD52100D4DAD6 /* NTView.h */,
+				209E3E410ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.h */,
+				209E3E430ADC9CAE00DC888E /* NSData-NTExtensions.h */,
+				209E3E450ADC9CAE00DC888E /* NSError-NTExtensions.h */,
+				209E3E470ADC9CAE00DC888E /* NSObject-NTExtensions.h */,
+				209E3E490ADC9CAE00DC888E /* NSString-Utilities.h */,
+				209E3E4B0ADC9CAE00DC888E /* NSThread-NTExtensions.h */,
+				209E3E4D0ADC9CAE00DC888E /* NTCoreMacros.h */,
+				209E3E500ADC9CAE00DC888E /* NTDateFormatter.h */,
+				209E3E540ADC9CAE00DC888E /* NTGlobalPreferences.h */,
+				209E3E9C0ADC9D2900DC888E /* NTPath.h */,
+				209E41BA0ADCB02D00DC888E /* NTUtilities.h */,
+				209E3F850ADC9EE700DC888E /* NTNameAndID.h */,
+				209E3EA00ADC9D3F00DC888E /* NTSimpleTimer.h */,
+				204CEF9E0ADCC36A00B25AD4 /* NTGeometry.h */,
+				209E40090ADCA4C500DC888E /* NTThreadHelper.h */,
+				204CEE5D0ADCBDAF00B25AD4 /* NTSimpleAlert.h */,
+				20DFD6BA0ADDFA4700BB6ACC /* NTLazyMenu.h */,
+				20E5FC300B4F63CB0042CD80 /* NTKeyChainUtils.h */,
+				209E400B0ADCA4C500DC888E /* NTThreadRunner.h */,
+				20DFD5F70ADDF09800BB6ACC /* NSShadow-NTExtensions.h */,
+				209E3FB90ADCA34300DC888E /* NSMenu-NTExtensions.h */,
+				209E3FBB0ADCA34300DC888E /* NSMenuItem-NTExtensions.h */,
+				209E3F9C0ADC9F3F00DC888E /* NTUsersAndGroups.h */,
+				204CEFD40ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.h */,
+				20DFD8120ADE03A000BB6ACC /* NSBezierPath-NTExtensions.h */,
+				20DFD6F00ADDFB0E00BB6ACC /* NTCarbonGeometry.h */,
+				204CF07C0ADCCCF600B25AD4 /* NTTime.h */,
+				204CEE0C0ADCBC5C00B25AD4 /* NTSizeFormatter.h */,
+				20DAF80E107323110057F7E8 /* NTKeyEventMonitorToken.h */,
+				20DFD7780ADE012A00BB6ACC /* NTGradientFill.h */,
+				20DFD7760ADE012A00BB6ACC /* NTGradient.h */,
+				20DFD7080ADDFC0400BB6ACC /* NSImage-NTExtensions.h */,
+				20E3857A0B64A6DE00CC0D7B /* NSView-CoreExtensions.h */,
+				208A8D5D0B756AD300490432 /* NSWindow-NTExtensions.h */,
+				209E3E560ADC9CAE00DC888E /* NTSingletonObject.h */,
+				20DE4CB90B52224F005B967B /* NSDate-NTExtensions.h */,
+				204020AC0B95616700131CDE /* NTAlertPanel.h */,
+				209E3E580ADC9CAE00DC888E /* NTTaskController.h */,
+				2094A1930DA406380024A7F6 /* NTRevealParameters.h */,
+				20A111AC0D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.h */,
+				20DFD8460ADE05D800BB6ACC /* NSDictionary-NTExtensions.h */,
+				20A111AE0D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.h */,
+				20DFD8480ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.h */,
+				2094A1510DA4058A0024A7F6 /* NTDoubleClickHandler.h */,
+				20DFD84A0ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		20EF87050988604D006FA8BB /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				20EF87010988603D006FA8BB /* Debug.xcconfig */,
+				20EF87020988603D006FA8BB /* Release.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		20EF89ED09886BDE006FA8BB /* Project References */ = {
+			isa = PBXGroup;
+			children = (
+				202F64660AA7CDE30026E5AD /* CocoaTechStrings.xcodeproj */,
+			);
+			name = "Project References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209E3E5A0ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.h in Headers */,
+				209E3E5C0ADC9CAE00DC888E /* NSData-NTExtensions.h in Headers */,
+				209E3E5E0ADC9CAE00DC888E /* NSError-NTExtensions.h in Headers */,
+				209E3E600ADC9CAE00DC888E /* NSObject-NTExtensions.h in Headers */,
+				209E3E620ADC9CAE00DC888E /* NSString-Utilities.h in Headers */,
+				209E3E640ADC9CAE00DC888E /* NSThread-NTExtensions.h in Headers */,
+				209E3E660ADC9CAE00DC888E /* NTCoreMacros.h in Headers */,
+				209E3E690ADC9CAE00DC888E /* NTDateFormatter.h in Headers */,
+				209E3E6D0ADC9CAE00DC888E /* NTGlobalPreferences.h in Headers */,
+				209E3E6F0ADC9CAE00DC888E /* NTSingletonObject.h in Headers */,
+				209E3E710ADC9CAE00DC888E /* NTTaskController.h in Headers */,
+				209E3E7B0ADC9CDD00DC888E /* CocoatechCore.h in Headers */,
+				209E3E9E0ADC9D2900DC888E /* NTPath.h in Headers */,
+				209E3EA20ADC9D3F00DC888E /* NTSimpleTimer.h in Headers */,
+				209E3F870ADC9EE700DC888E /* NTNameAndID.h in Headers */,
+				209E3F9E0ADC9F3F00DC888E /* NTUsersAndGroups.h in Headers */,
+				209E3FBD0ADCA34300DC888E /* NSMenu-NTExtensions.h in Headers */,
+				209E3FBF0ADCA34300DC888E /* NSMenuItem-NTExtensions.h in Headers */,
+				209E400D0ADCA4C500DC888E /* NTThreadHelper.h in Headers */,
+				209E400F0ADCA4C500DC888E /* NTThreadRunner.h in Headers */,
+				209E41BC0ADCB02D00DC888E /* NTUtilities.h in Headers */,
+				204CEE0E0ADCBC5C00B25AD4 /* NTSizeFormatter.h in Headers */,
+				204CEE5F0ADCBDAF00B25AD4 /* NTSimpleAlert.h in Headers */,
+				204CEFA00ADCC36A00B25AD4 /* NTGeometry.h in Headers */,
+				204CEFD60ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.h in Headers */,
+				204CF07E0ADCCCF600B25AD4 /* NTTime.h in Headers */,
+				20DFD5F90ADDF09800BB6ACC /* NSShadow-NTExtensions.h in Headers */,
+				20DFD6BC0ADDFA4700BB6ACC /* NTLazyMenu.h in Headers */,
+				20DFD6F20ADDFB0E00BB6ACC /* NTCarbonGeometry.h in Headers */,
+				20DFD70A0ADDFC0400BB6ACC /* NSImage-NTExtensions.h in Headers */,
+				20DFD77A0ADE012A00BB6ACC /* NTGradient.h in Headers */,
+				20DFD77C0ADE012A00BB6ACC /* NTGradientFill.h in Headers */,
+				20DFD8140ADE03A000BB6ACC /* NSBezierPath-NTExtensions.h in Headers */,
+				20DFD84C0ADE05D800BB6ACC /* NSDictionary-NTExtensions.h in Headers */,
+				20DFD84E0ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.h in Headers */,
+				20DFD8500ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.h in Headers */,
+				20A5B34E0B3BD52100D4DAD6 /* NTView.h in Headers */,
+				20E5FC320B4F63CB0042CD80 /* NTKeyChainUtils.h in Headers */,
+				20E5FF0A0B4F6A810042CD80 /* NSMatrix-CoreExtensions.h in Headers */,
+				20DE4CBB0B52224F005B967B /* NSDate-NTExtensions.h in Headers */,
+				20D5B8510B5CAF7000ED9E9B /* NTCoordinate.h in Headers */,
+				20D7ECEC0B5EF8B6006F4452 /* NTEnablingTextFieldCell.h in Headers */,
+				20D7ED130B5EFBA8006F4452 /* NTEnablingTextField.h in Headers */,
+				20E3857C0B64A6DE00CC0D7B /* NSView-CoreExtensions.h in Headers */,
+				208A8D5F0B756AD300490432 /* NSWindow-NTExtensions.h in Headers */,
+				204020AE0B95616700131CDE /* NTAlertPanel.h in Headers */,
+				205860310B98E8FB003B6A72 /* NTChooseDestinationPanel.h in Headers */,
+				205860330B98E8FB003B6A72 /* NTChooseFilePanel.h in Headers */,
+				205860370B98E907003B6A72 /* NSSavePanel-NTExtensions.h in Headers */,
+				2087DC560BBDBD1F00997205 /* NSTableViewNoFirstResponder.h in Headers */,
+				204012600BCC758900102A61 /* NTTableHeaderImages.h in Headers */,
+				204012820BCC762A00102A61 /* NTAquaButtonCell.h in Headers */,
+				2094C9CF0BCDB339007D1E6E /* NSTabView-NTExtensions.h in Headers */,
+				20B2D7860BCE290E00CDD55A /* NTGradientDraw.h in Headers */,
+				201362370C63C63F006BFAA5 /* NTFont.h in Headers */,
+				200EAEF00C8A03E7001F7F97 /* NTColorSet.h in Headers */,
+				200EAF020C8A0A81001F7F97 /* NTStandardColors.h in Headers */,
+				209DC7160CB3399100168621 /* NTSynchronousTask.h in Headers */,
+				20CCEAAE0CC56021009C75A5 /* NSEvent-Utilities.h in Headers */,
+				20A1E6BF0CED228B00EA0706 /* NTImageMaker.h in Headers */,
+				20753FC30D1B3AF10015B9BA /* NTSplitViewDelegate.h in Headers */,
+				200B4A450D28B3930072FCB0 /* NTImageButton.h in Headers */,
+				20BF75E70D28C33600ADA999 /* NSDrawer-NTExtensions.h in Headers */,
+				20DBC4530D2B212E0030C890 /* NTAnimations.h in Headers */,
+				20DBC4550D2B212E0030C890 /* NTAnimationsWindow.h in Headers */,
+				208A9E490D2C55BD00738198 /* NTAnimationsZoomView.h in Headers */,
+				20230C410D35AF4200C6553E /* NSSplitView-NTExtensions.h in Headers */,
+				20F113FE0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.h in Headers */,
+				204A62600D441E8200B6EB88 /* NSNumber-NTExtensions.h in Headers */,
+				20A111B00D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.h in Headers */,
+				20A111B20D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.h in Headers */,
+				203446400D6F623E000B5495 /* NSAnimationContext-NTExtensions.h in Headers */,
+				20CD3EFA0D72287D0097EC8B /* NTSpringLoadedViewHelper.h in Headers */,
+				20CA61BF0D72AA2C00697F7F /* NSArray-NTExtensions.h in Headers */,
+				2048619A0D7CEB5B0083D964 /* NTStringView.h in Headers */,
+				20139B010D826EF100DC615B /* NTStaticImageView.h in Headers */,
+				2094A1530DA4058A0024A7F6 /* NTDoubleClickHandler.h in Headers */,
+				2094A1950DA406380024A7F6 /* NTRevealParameters.h in Headers */,
+				206C76E90DA6C49D0026B17F /* NTTemplateButton.h in Headers */,
+				2007456B0DBC4D1300668B22 /* NTBoxView.h in Headers */,
+				2007456F0DBC4D2000668B22 /* NTBackgroundView.h in Headers */,
+				200747CF0DBC774600668B22 /* NTStandardImages.h in Headers */,
+				200747EE0DBC77BB00668B22 /* NSBundle-NTExtensions.h in Headers */,
+				20A5E0930DBF197B00A720E2 /* NTKVObserverProxy.h in Headers */,
+				20A7389E0DC1B72300BE94FE /* NSColor-NTExtensions.h in Headers */,
+				20AD05040DC5B9AB00CCDB62 /* NTFramedSplitView.h in Headers */,
+				207E966A0DC7B80D00D0CC4E /* NTClickState.h in Headers */,
+				2053D9E70DDBA72600098630 /* NTMenuSlider.h in Headers */,
+				2053D9EE0DDBA73500098630 /* NTSliderGradientView.h in Headers */,
+				2053D9FF0DDBA9F000098630 /* NTSliderMenuItem.h in Headers */,
+				20B79A310DDD39E400A3D6BB /* CATextLayer-NTExtensions.h in Headers */,
+				20EBB5F20DE0ECB7008AD4F7 /* NTSpaceKeyPoll.h in Headers */,
+				20631EBD0DE266E800AFE50A /* NTHotKeyManager.h in Headers */,
+				20986D250DF9CC6A00C43A18 /* CALayer-NTExtensions.h in Headers */,
+				209ADF290E04C17500F4C008 /* NTPopUpButton.h in Headers */,
+				209AE1E90E0607C300F4C008 /* CATransaction-NTExtensions.h in Headers */,
+				2086CAB10E245E46005F68AD /* NTMetalWindowTheme.h in Headers */,
+				20BF00D70E2DD249008D723C /* NTSCPrefsListener.h in Headers */,
+				209E2CC50E357A18007A0B81 /* NSButton-NTExtensions.h in Headers */,
+				20B107280E4148D400B2AE5C /* NTProxy.h in Headers */,
+				20B107480E4149E600B2AE5C /* NSMutableArray-NTExtensions.h in Headers */,
+				20EF58940E89840000A8CE26 /* NTPointerObject.h in Headers */,
+				205CEA730EB9353500F13171 /* NTSelectionGradient.h in Headers */,
+				20E5317C0EBFF20C0006AEFE /* NTFontButton.h in Headers */,
+				209551150EC9313F001FA347 /* NTPasteboardHelper.h in Headers */,
+				2095521E0EC93FED001FA347 /* NTWindowCascade.h in Headers */,
+				209552270EC940D9001FA347 /* CFArray-NTExtensions.h in Headers */,
+				209556400EC966EC001FA347 /* NTDataBuffer.h in Headers */,
+				209556D90EC96D60001FA347 /* NTObjcRuntimeTools.h in Headers */,
+				2064CAFE0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.h in Headers */,
+				2064CB7F0EDB985700DCD342 /* NSLayoutManager-NTExtensions.h in Headers */,
+				2064CBEB0EDBA01C00DCD342 /* NSFont-NTExtensions.h in Headers */,
+				2088EC340F2A686500542B51 /* NTTimeIntervalMeter.h in Headers */,
+				2088ED520F2AC83B00542B51 /* NTAnimationDelegate.h in Headers */,
+				20AD91CF0F5CA615000B3310 /* NTSavePanel.h in Headers */,
+				201F80E00F7D80ED0076A5EE /* NTEventOverrideHandler.h in Headers */,
+				20876FA40F82CD18002AF8E4 /* NTObjectContainer.h in Headers */,
+				2084D4390F8337AD00E25B74 /* NTUInt64Container.h in Headers */,
+				2084D43F0F8337B900E25B74 /* NTBaseContainer.h in Headers */,
+				2084D4BB0F8346B300E25B74 /* NTUInt32Container.h in Headers */,
+				20061E040F8802CA00241369 /* NTAppearanceMgr.h in Headers */,
+				202BED2D0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.h in Headers */,
+				20B3E2C9100D2B6400288402 /* NTIndexCounter.h in Headers */,
+				2059D4A6104CD8B400B1FC10 /* NTSynchronousTaskRunner.h in Headers */,
+				20AB50E31050D008009824F7 /* QLPreviewPanel-NTExtensions.h in Headers */,
+				2072C5CE10661B740059C34B /* NTIconControlValueTransformer.h in Headers */,
+				2072C748106641840059C34B /* NSValueTransformer-NTExtensions.h in Headers */,
+				20F0AF2A10686FDE00BA1387 /* NSUserDefaults-NTExtensions.h in Headers */,
+				20F0AF2C10686FDE00BA1387 /* NTUserDefaults.h in Headers */,
+				20F0AF3010686FF300BA1387 /* NTPrefNotification.h in Headers */,
+				20DAF7E6107316180057F7E8 /* NTKeyEventMonitor.h in Headers */,
+				20DAF810107323110057F7E8 /* NTKeyEventMonitorToken.h in Headers */,
+				2027FF4E107BE2AF007354B7 /* NTQuitDisabler.h in Headers */,
+				20D905911080201C006282F2 /* NTViewOptionConstants.h in Headers */,
+				203BCC1710857DFE002F2D3E /* NSMutableArray-ThreadSafe.h in Headers */,
+				20BF9A8D10A295D300A6FA3E /* NSURL-NTExtensions.h in Headers */,
+				2080798510EB539D00F2BED0 /* NTShadowImage.h in Headers */,
+				20193B6E10F2AF58002735A8 /* NTTemporaryObject.h in Headers */,
+				20F43BE6110824C800694504 /* NSSortDescriptor-NTExtensions.h in Headers */,
+				2069DD0F11117CFB004872E8 /* NSObject-Dispatch.h in Headers */,
+				20F35BC11117D13000B556AC /* NSScrollView-NTExtensions.h in Headers */,
+				2015E3A911268DF3009A85F0 /* NTMailDelivery.h in Headers */,
+				2015E3D611269634009A85F0 /* NTMobileMe.h in Headers */,
+				203A1C50112D3970007C94BE /* NTMessageProxy.h in Headers */,
+				2054A3BC116AB194007EF8F9 /* BGGradientTheme.h in Headers */,
+				2054A3BE116AB194007EF8F9 /* BGHUDAppKit.h in Headers */,
+				2054A3BF116AB194007EF8F9 /* BGHUDBox.h in Headers */,
+				2054A3C1116AB194007EF8F9 /* BGHUDButtonCell.h in Headers */,
+				2054A3C3116AB194007EF8F9 /* BGHUDColorWell.h in Headers */,
+				2054A3C5116AB194007EF8F9 /* BGHUDComboBoxCell.h in Headers */,
+				2054A3C7116AB194007EF8F9 /* BGHUDGeometry.h in Headers */,
+				2054A3C8116AB194007EF8F9 /* BGHUDLabel.h in Headers */,
+				2054A3CA116AB194007EF8F9 /* BGHUDOutlineView.h in Headers */,
+				2054A3CC116AB194007EF8F9 /* BGHUDPopUpButtonCell.h in Headers */,
+				2054A3CE116AB194007EF8F9 /* BGHUDProgressIndicator.h in Headers */,
+				2054A3D0116AB194007EF8F9 /* BGHUDScroller.h in Headers */,
+				2054A3D2116AB194007EF8F9 /* BGHUDScrollView.h in Headers */,
+				2054A3D4116AB194007EF8F9 /* BGHUDSearchFieldCell.h in Headers */,
+				2054A3D6116AB194007EF8F9 /* BGHUDSecureTextFieldCell.h in Headers */,
+				2054A3D8116AB194007EF8F9 /* BGHUDSegmentedCell.h in Headers */,
+				2054A3DA116AB194007EF8F9 /* BGHUDSliderCell.h in Headers */,
+				2054A3DC116AB194007EF8F9 /* BGHUDStepperCell.h in Headers */,
+				2054A3DE116AB194007EF8F9 /* BGHUDTableCornerView.h in Headers */,
+				2054A3E0116AB194007EF8F9 /* BGHUDTableView.h in Headers */,
+				2054A3E2116AB194007EF8F9 /* BGHUDTableViewHeaderCell.h in Headers */,
+				2054A3E4116AB194007EF8F9 /* BGHUDTabView.h in Headers */,
+				2054A3E6116AB194007EF8F9 /* BGHUDTabViewItem.h in Headers */,
+				2054A3E8116AB194007EF8F9 /* BGHUDTextFieldCell.h in Headers */,
+				2054A3EE116AB194007EF8F9 /* BGHUDView.h in Headers */,
+				2054A3F0116AB194007EF8F9 /* BGTheme.h in Headers */,
+				2054A3F2116AB194007EF8F9 /* BGThemeManager.h in Headers */,
+				2054A400116AB602007EF8F9 /* NTBGHUDPopUpButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* CocoatechCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CocoatechCore" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				202F646D0AA7CDF30026E5AD /* PBXTargetDependency */,
+			);
+			name = CocoatechCore;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = CocoatechCore;
+			productReference = 8DC2EF5B0486A6940098B216 /* CocoatechCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CocoatechCore" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* CocoatechCore */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 202F64670AA7CDE30026E5AD /* Products */;
+					ProjectRef = 202F64660AA7CDE30026E5AD /* CocoaTechStrings.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* CocoatechCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		202F646B0AA7CDE30026E5AD /* CocoaTechStrings.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaTechStrings.framework;
+			remoteRef = 202F646A0AA7CDE30026E5AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				200747DA0DBC775800668B22 /* images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209E3E5B0ADC9CAE00DC888E /* NSCalendarDate-NTExtensions.m in Sources */,
+				209E3E5D0ADC9CAE00DC888E /* NSData-NTExtensions.m in Sources */,
+				209E3E5F0ADC9CAE00DC888E /* NSError-NTExtensions.m in Sources */,
+				209E3E610ADC9CAE00DC888E /* NSObject-NTExtensions.m in Sources */,
+				209E3E630ADC9CAE00DC888E /* NSString-Utilities.m in Sources */,
+				209E3E650ADC9CAE00DC888E /* NSThread-NTExtensions.m in Sources */,
+				209E3E6A0ADC9CAE00DC888E /* NTDateFormatter.m in Sources */,
+				209E3E6E0ADC9CAE00DC888E /* NTGlobalPreferences.m in Sources */,
+				209E3E700ADC9CAE00DC888E /* NTSingletonObject.m in Sources */,
+				209E3E720ADC9CAE00DC888E /* NTTaskController.m in Sources */,
+				209E3E9F0ADC9D2900DC888E /* NTPath.m in Sources */,
+				209E3EA30ADC9D3F00DC888E /* NTSimpleTimer.m in Sources */,
+				209E3F880ADC9EE700DC888E /* NTNameAndID.m in Sources */,
+				209E3F9F0ADC9F3F00DC888E /* NTUsersAndGroups.m in Sources */,
+				209E3FBE0ADCA34300DC888E /* NSMenu-NTExtensions.m in Sources */,
+				209E3FC00ADCA34300DC888E /* NSMenuItem-NTExtensions.m in Sources */,
+				209E400E0ADCA4C500DC888E /* NTThreadHelper.m in Sources */,
+				209E40100ADCA4C500DC888E /* NTThreadRunner.m in Sources */,
+				209E41BD0ADCB02D00DC888E /* NTUtilities.m in Sources */,
+				204CEE0F0ADCBC5C00B25AD4 /* NTSizeFormatter.m in Sources */,
+				204CEE600ADCBDAF00B25AD4 /* NTSimpleAlert.m in Sources */,
+				204CEFA10ADCC36A00B25AD4 /* NTGeometry.m in Sources */,
+				204CEFD70ADCC46A00B25AD4 /* NSGraphicsContext-NTExtensions.m in Sources */,
+				204CF07F0ADCCCF600B25AD4 /* NTTime.m in Sources */,
+				20DFD5FA0ADDF09800BB6ACC /* NSShadow-NTExtensions.m in Sources */,
+				20DFD6BD0ADDFA4700BB6ACC /* NTLazyMenu.m in Sources */,
+				20DFD6F30ADDFB0E00BB6ACC /* NTCarbonGeometry.m in Sources */,
+				20DFD70B0ADDFC0400BB6ACC /* NSImage-NTExtensions.m in Sources */,
+				20DFD77B0ADE012A00BB6ACC /* NTGradient.m in Sources */,
+				20DFD77D0ADE012A00BB6ACC /* NTGradientFill.m in Sources */,
+				20DFD8150ADE03A000BB6ACC /* NSBezierPath-NTExtensions.m in Sources */,
+				20DFD84D0ADE05D800BB6ACC /* NSDictionary-NTExtensions.m in Sources */,
+				20DFD84F0ADE05D800BB6ACC /* NSMutableDictionary-NTExtensions.m in Sources */,
+				20DFD8510ADE05D800BB6ACC /* NSMutableDictionary-ThreadSafe.m in Sources */,
+				20A5B34F0B3BD52100D4DAD6 /* NTView.m in Sources */,
+				20E5FC330B4F63CB0042CD80 /* NTKeyChainUtils.m in Sources */,
+				20E5FF0B0B4F6A810042CD80 /* NSMatrix-CoreExtensions.m in Sources */,
+				20DE4CBC0B52224F005B967B /* NSDate-NTExtensions.m in Sources */,
+				20D5B8520B5CAF7000ED9E9B /* NTCoordinate.m in Sources */,
+				20D7ECED0B5EF8B6006F4452 /* NTEnablingTextFieldCell.m in Sources */,
+				20D7ED140B5EFBA8006F4452 /* NTEnablingTextField.m in Sources */,
+				20E3857D0B64A6DE00CC0D7B /* NSView-CoreExtensions.m in Sources */,
+				208A8D600B756AD300490432 /* NSWindow-NTExtensions.m in Sources */,
+				204020AF0B95616700131CDE /* NTAlertPanel.m in Sources */,
+				205860320B98E8FB003B6A72 /* NTChooseDestinationPanel.m in Sources */,
+				205860340B98E8FB003B6A72 /* NTChooseFilePanel.m in Sources */,
+				205860380B98E907003B6A72 /* NSSavePanel-NTExtensions.m in Sources */,
+				2087DC570BBDBD1F00997205 /* NSTableViewNoFirstResponder.m in Sources */,
+				204012610BCC758900102A61 /* NTTableHeaderImages.m in Sources */,
+				204012830BCC762A00102A61 /* NTAquaButtonCell.m in Sources */,
+				2094C9D00BCDB339007D1E6E /* NSTabView-NTExtensions.m in Sources */,
+				20B2D7870BCE290E00CDD55A /* NTGradientDraw.m in Sources */,
+				201362380C63C63F006BFAA5 /* NTFont.m in Sources */,
+				200EAEF10C8A03E7001F7F97 /* NTColorSet.m in Sources */,
+				200EAF030C8A0A81001F7F97 /* NTStandardColors.m in Sources */,
+				209DC7170CB3399100168621 /* NTSynchronousTask.m in Sources */,
+				20CCEAAF0CC56021009C75A5 /* NSEvent-Utilities.m in Sources */,
+				20A1E6C00CED228B00EA0706 /* NTImageMaker.m in Sources */,
+				20753FC40D1B3AF10015B9BA /* NTSplitViewDelegate.m in Sources */,
+				200B4A460D28B3930072FCB0 /* NTImageButton.m in Sources */,
+				20BF75E80D28C33600ADA999 /* NSDrawer-NTExtensions.m in Sources */,
+				20DBC4540D2B212E0030C890 /* NTAnimations.m in Sources */,
+				20DBC4560D2B212E0030C890 /* NTAnimationsWindow.m in Sources */,
+				208A9E4A0D2C55BD00738198 /* NTAnimationsZoomView.m in Sources */,
+				20230C420D35AF4200C6553E /* NSSplitView-NTExtensions.m in Sources */,
+				20F113FF0D3C6D82002D5AC1 /* NSView-NSSplitViewExtensions.m in Sources */,
+				204A62610D441E8200B6EB88 /* NSNumber-NTExtensions.m in Sources */,
+				20A111B10D6E1E1A0088BDB6 /* NSAttributedString-NTExtensions.m in Sources */,
+				20A111B30D6E1E1A0088BDB6 /* NSMutableAttributedString-Extensions.m in Sources */,
+				203446410D6F623E000B5495 /* NSAnimationContext-NTExtensions.m in Sources */,
+				20CD3EFB0D72287D0097EC8B /* NTSpringLoadedViewHelper.m in Sources */,
+				20CA61C00D72AA2C00697F7F /* NSArray-NTExtensions.m in Sources */,
+				2048619B0D7CEB5B0083D964 /* NTStringView.m in Sources */,
+				20139B020D826EF100DC615B /* NTStaticImageView.m in Sources */,
+				2094A1540DA4058A0024A7F6 /* NTDoubleClickHandler.m in Sources */,
+				2094A1960DA406380024A7F6 /* NTRevealParameters.m in Sources */,
+				206C76EA0DA6C49D0026B17F /* NTTemplateButton.m in Sources */,
+				2007456C0DBC4D1300668B22 /* NTBoxView.m in Sources */,
+				200745700DBC4D2000668B22 /* NTBackgroundView.m in Sources */,
+				200747D00DBC774600668B22 /* NTStandardImages.m in Sources */,
+				200747EF0DBC77BB00668B22 /* NSBundle-NTExtensions.m in Sources */,
+				20A5E0940DBF197B00A720E2 /* NTKVObserverProxy.m in Sources */,
+				20A7389F0DC1B72300BE94FE /* NSColor-NTExtensions.m in Sources */,
+				20AD05050DC5B9AB00CCDB62 /* NTFramedSplitView.m in Sources */,
+				207E966B0DC7B80D00D0CC4E /* NTClickState.m in Sources */,
+				2053D9E80DDBA72600098630 /* NTMenuSlider.m in Sources */,
+				2053D9EF0DDBA73500098630 /* NTSliderGradientView.m in Sources */,
+				2053DA000DDBA9F000098630 /* NTSliderMenuItem.m in Sources */,
+				20B79A320DDD39E400A3D6BB /* CATextLayer-NTExtensions.m in Sources */,
+				20EBB5F30DE0ECB7008AD4F7 /* NTSpaceKeyPoll.m in Sources */,
+				20631EBE0DE266E800AFE50A /* NTHotKeyManager.m in Sources */,
+				20986D260DF9CC6A00C43A18 /* CALayer-NTExtensions.m in Sources */,
+				209ADF2A0E04C17500F4C008 /* NTPopUpButton.m in Sources */,
+				209AE1EA0E0607C300F4C008 /* CATransaction-NTExtensions.m in Sources */,
+				2086CAB20E245E46005F68AD /* NTMetalWindowTheme.m in Sources */,
+				20BF00D80E2DD249008D723C /* NTSCPrefsListener.m in Sources */,
+				209E2CC60E357A18007A0B81 /* NSButton-NTExtensions.m in Sources */,
+				20B107290E4148D400B2AE5C /* NTProxy.m in Sources */,
+				20B107490E4149E600B2AE5C /* NSMutableArray-NTExtensions.m in Sources */,
+				20EF58950E89840000A8CE26 /* NTPointerObject.m in Sources */,
+				205CEA740EB9353500F13171 /* NTSelectionGradient.m in Sources */,
+				20E5317D0EBFF20C0006AEFE /* NTFontButton.m in Sources */,
+				209551160EC9313F001FA347 /* NTPasteboardHelper.m in Sources */,
+				2095521F0EC93FED001FA347 /* NTWindowCascade.m in Sources */,
+				209552280EC940D9001FA347 /* CFArray-NTExtensions.m in Sources */,
+				209556410EC966EC001FA347 /* NTDataBuffer.m in Sources */,
+				209556DA0EC96D60001FA347 /* NTObjcRuntimeTools.m in Sources */,
+				2064CAFF0EDB8A9400DCD342 /* NSDateFormatter-NTExtensions.m in Sources */,
+				2064CB800EDB985700DCD342 /* NSLayoutManager-NTExtensions.m in Sources */,
+				2064CBEC0EDBA01C00DCD342 /* NSFont-NTExtensions.m in Sources */,
+				2088EC350F2A686500542B51 /* NTTimeIntervalMeter.m in Sources */,
+				2088ED530F2AC83B00542B51 /* NTAnimationDelegate.m in Sources */,
+				20AD91D00F5CA615000B3310 /* NTSavePanel.m in Sources */,
+				201F80E10F7D80ED0076A5EE /* NTEventOverrideHandler.m in Sources */,
+				20876FA50F82CD18002AF8E4 /* NTObjectContainer.m in Sources */,
+				2084D43A0F8337AD00E25B74 /* NTUInt64Container.m in Sources */,
+				2084D4400F8337B900E25B74 /* NTBaseContainer.m in Sources */,
+				2084D4BC0F8346B300E25B74 /* NTUInt32Container.m in Sources */,
+				20061E050F8802CA00241369 /* NTAppearanceMgr.m in Sources */,
+				202BED2E0F8AF21F00C5DEFB /* NSCharacterSet-NTExtensions.m in Sources */,
+				20B3E2CA100D2B6400288402 /* NTIndexCounter.m in Sources */,
+				2059D4A7104CD8B400B1FC10 /* NTSynchronousTaskRunner.m in Sources */,
+				20AB50E41050D008009824F7 /* QLPreviewPanel-NTExtensions.m in Sources */,
+				2072C5CF10661B740059C34B /* NTIconControlValueTransformer.m in Sources */,
+				2072C749106641840059C34B /* NSValueTransformer-NTExtensions.m in Sources */,
+				20F0AF2B10686FDE00BA1387 /* NSUserDefaults-NTExtensions.m in Sources */,
+				20F0AF2D10686FDE00BA1387 /* NTUserDefaults.m in Sources */,
+				20F0AF3110686FF300BA1387 /* NTPrefNotification.m in Sources */,
+				20DAF7E7107316180057F7E8 /* NTKeyEventMonitor.m in Sources */,
+				20DAF811107323110057F7E8 /* NTKeyEventMonitorToken.m in Sources */,
+				2027FF4F107BE2AF007354B7 /* NTQuitDisabler.m in Sources */,
+				203BCC1810857DFE002F2D3E /* NSMutableArray-ThreadSafe.m in Sources */,
+				20BF9A8E10A295D300A6FA3E /* NSURL-NTExtensions.m in Sources */,
+				2080798610EB539D00F2BED0 /* NTShadowImage.m in Sources */,
+				20193B6F10F2AF58002735A8 /* NTTemporaryObject.m in Sources */,
+				20F43BE7110824C800694504 /* NSSortDescriptor-NTExtensions.m in Sources */,
+				2069DD1011117CFB004872E8 /* NSObject-Dispatch.m in Sources */,
+				20F35BC21117D13000B556AC /* NSScrollView-NTExtensions.m in Sources */,
+				2015E3AA11268DF3009A85F0 /* NTMailDelivery.m in Sources */,
+				2015E3D711269634009A85F0 /* NTMobileMe.m in Sources */,
+				203A1C51112D3970007C94BE /* NTMessageProxy.m in Sources */,
+				2054A3BD116AB194007EF8F9 /* BGGradientTheme.m in Sources */,
+				2054A3C0116AB194007EF8F9 /* BGHUDBox.m in Sources */,
+				2054A3C2116AB194007EF8F9 /* BGHUDButtonCell.m in Sources */,
+				2054A3C4116AB194007EF8F9 /* BGHUDColorWell.m in Sources */,
+				2054A3C6116AB194007EF8F9 /* BGHUDComboBoxCell.m in Sources */,
+				2054A3C9116AB194007EF8F9 /* BGHUDLabel.m in Sources */,
+				2054A3CB116AB194007EF8F9 /* BGHUDOutlineView.m in Sources */,
+				2054A3CD116AB194007EF8F9 /* BGHUDPopUpButtonCell.m in Sources */,
+				2054A3CF116AB194007EF8F9 /* BGHUDProgressIndicator.m in Sources */,
+				2054A3D1116AB194007EF8F9 /* BGHUDScroller.m in Sources */,
+				2054A3D3116AB194007EF8F9 /* BGHUDScrollView.m in Sources */,
+				2054A3D5116AB194007EF8F9 /* BGHUDSearchFieldCell.m in Sources */,
+				2054A3D7116AB194007EF8F9 /* BGHUDSecureTextFieldCell.m in Sources */,
+				2054A3D9116AB194007EF8F9 /* BGHUDSegmentedCell.m in Sources */,
+				2054A3DB116AB194007EF8F9 /* BGHUDSliderCell.m in Sources */,
+				2054A3DD116AB194007EF8F9 /* BGHUDStepperCell.m in Sources */,
+				2054A3DF116AB194007EF8F9 /* BGHUDTableCornerView.m in Sources */,
+				2054A3E1116AB194007EF8F9 /* BGHUDTableView.m in Sources */,
+				2054A3E3116AB194007EF8F9 /* BGHUDTableViewHeaderCell.m in Sources */,
+				2054A3E5116AB194007EF8F9 /* BGHUDTabView.m in Sources */,
+				2054A3E7116AB194007EF8F9 /* BGHUDTabViewItem.m in Sources */,
+				2054A3E9116AB194007EF8F9 /* BGHUDTextFieldCell.m in Sources */,
+				2054A3EF116AB194007EF8F9 /* BGHUDView.m in Sources */,
+				2054A3F1116AB194007EF8F9 /* BGTheme.m in Sources */,
+				2054A3F3116AB194007EF8F9 /* BGThemeManager.m in Sources */,
+				2054A401116AB602007EF8F9 /* NTBGHUDPopUpButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		202F646D0AA7CDF30026E5AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaTechStrings;
+			targetProxy = 202F646C0AA7CDF30026E5AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoatechCore_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-headerpad_max_install_names",
+				);
+				PRODUCT_NAME = CocoatechCore;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoatechCore_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-headerpad_max_install_names",
+				);
+				PRODUCT_NAME = CocoatechCore;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20EF87010988603D006FA8BB /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20EF87020988603D006FA8BB /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CocoatechCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CocoatechCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,1196 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2005EF4B0B73E42500CBF08D /* ITPopUpButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2005EF490B73E42500CBF08D /* ITPopUpButton.h */; };
+		2005EF4C0B73E42500CBF08D /* ITPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005EF4A0B73E42500CBF08D /* ITPopUpButton.m */; };
+		2005EF560B73E5DB00CBF08D /* ITIconStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2005EF540B73E5DB00CBF08D /* ITIconStore.h */; };
+		2005EF570B73E5DB00CBF08D /* ITIconStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005EF550B73E5DB00CBF08D /* ITIconStore.m */; };
+		20147BA00B6702D8004D8B48 /* PTYScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B990B6702D8004D8B48 /* PTYScrollView.h */; };
+		20147BA10B6702D8004D8B48 /* PTYSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9A0B6702D8004D8B48 /* PTYSession.h */; };
+		20147BA20B6702D8004D8B48 /* PTYTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9B0B6702D8004D8B48 /* PTYTabView.h */; };
+		20147BA30B6702D8004D8B48 /* PTYTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9C0B6702D8004D8B48 /* PTYTask.h */; };
+		20147BA40B6702D8004D8B48 /* PTYTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9D0B6702D8004D8B48 /* PTYTextView.h */; };
+		20147BA50B6702D8004D8B48 /* PTYWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9E0B6702D8004D8B48 /* PTYWindow.h */; };
+		20147BA60B6702D8004D8B48 /* VT100Terminal.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147B9F0B6702D8004D8B48 /* VT100Terminal.h */; };
+		20147BB30B670351004D8B48 /* NSStringITerm.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147BAF0B670351004D8B48 /* NSStringITerm.h */; };
+		20147BB40B670351004D8B48 /* PreferencePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147BB00B670351004D8B48 /* PreferencePanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20147BB50B670351004D8B48 /* ITTerminalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147BB10B670351004D8B48 /* ITTerminalView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20147BB60B670351004D8B48 /* VT100Terminal.h in Headers */ = {isa = PBXBuildFile; fileRef = 20147BB20B670351004D8B48 /* VT100Terminal.h */; };
+		205034470B76ED1400AFF542 /* ITSharedActionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 205034450B76ED1400AFF542 /* ITSharedActionHandler.h */; };
+		205034480B76ED1400AFF542 /* ITSharedActionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 205034460B76ED1400AFF542 /* ITSharedActionHandler.m */; };
+		20616FD10B69D16300342BC2 /* MyTerminalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20616FCF0B69D16300342BC2 /* MyTerminalView.m */; };
+		20616FD20B69D16300342BC2 /* MyTerminalView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 20616FD00B69D16300342BC2 /* MyTerminalView.h */; };
+		206719CC0BFE721C00757734 /* CocoaTechStrings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */; };
+		206C9AD90B673A34002128A0 /* ITTerminalWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 206C9AD70B673A34002128A0 /* ITTerminalWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		206C9ADA0B673A34002128A0 /* ITTerminalWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C9AD80B673A34002128A0 /* ITTerminalWindowController.m */; };
+		206C9B450B673FB3002128A0 /* ITMiscNibController.h in Headers */ = {isa = PBXBuildFile; fileRef = 206C9B430B673FB3002128A0 /* ITMiscNibController.h */; };
+		206C9B460B673FB3002128A0 /* ITMiscNibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C9B440B673FB3002128A0 /* ITMiscNibController.m */; };
+		20788CF20BE129A60013A705 /* iTerm_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 20788CF10BE129A60013A705 /* iTerm_Prefix.pch */; };
+		208447E20BD45C49001446EA /* newwin.icns in Resources */ = {isa = PBXBuildFile; fileRef = 208447E10BD45C49001446EA /* newwin.icns */; };
+		208448DF0BD4B352001446EA /* ITProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 208448DD0BD4B351001446EA /* ITProcess.h */; };
+		208448E00BD4B352001446EA /* ITProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 208448DE0BD4B352001446EA /* ITProcess.m */; };
+		2094D2B10CC6A47A00D5F32C /* CocoatechCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2094D2B00CC6A47A00D5F32C /* CocoatechCore.framework */; };
+		2094D2EA0CC6A57900D5F32C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2094D2E90CC6A57900D5F32C /* Carbon.framework */; };
+		20C6678D0B6701ED00533B48 /* charmaps.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6678C0B6701ED00533B48 /* charmaps.h */; };
+		20C6678F0B6701F700533B48 /* FindPanelWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6678E0B6701F700533B48 /* FindPanelWindowController.h */; };
+		20C667910B67020000533B48 /* iTerm.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C667900B67020000533B48 /* iTerm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C667930B67020E00533B48 /* iTermController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C667920B67020E00533B48 /* iTermController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C667950B67022100533B48 /* iTermDisplayProfileMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C667940B67022100533B48 /* iTermDisplayProfileMgr.h */; };
+		20C667970B67023000533B48 /* iTermKeyBindingMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C667960B67023000533B48 /* iTermKeyBindingMgr.h */; };
+		20C667990B67023F00533B48 /* iTermProfileWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C667980B67023F00533B48 /* iTermProfileWindowController.h */; };
+		20C6679B0B67025000533B48 /* iTermTerminalProfileMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6679A0B67025000533B48 /* iTermTerminalProfileMgr.h */; };
+		20C6679D0B67026F00533B48 /* Tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6679C0B67026F00533B48 /* Tree.h */; };
+		20C6679F0B67027D00533B48 /* VT100Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6679E0B67027D00533B48 /* VT100Screen.h */; };
+		20F0F2490BFE23D700689231 /* CocoaTechStrings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */; };
+		20F0F24A0BFE23E700689231 /* CocoaTechStrings.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */; };
+		874206050564168A00CFC3F1 /* PTToolbarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2076B15704E8817300000106 /* PTToolbarController.h */; };
+		874206060564168A00CFC3F1 /* ITAddressBookMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E74F4804E9089700000106 /* ITAddressBookMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		874206070564168A00CFC3F1 /* ITViewLocalizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B8892A04E9342100000106 /* ITViewLocalizer.h */; };
+		874206080564168A00CFC3F1 /* ITConfigPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B8891904E924CD00000106 /* ITConfigPanelController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8742060C0564168A00CFC3F1 /* Misc.nib in Resources */ = {isa = PBXBuildFile; fileRef = E813FB86029754BB03A80106 /* Misc.nib */; };
+		8742060D0564168A00CFC3F1 /* iTerm.png in Resources */ = {isa = PBXBuildFile; fileRef = FBBB8B60039FC04E01F955DB /* iTerm.png */; };
+		8742060E0564168A00CFC3F1 /* addressbook.png in Resources */ = {isa = PBXBuildFile; fileRef = FB094A14033D58AE01F955DB /* addressbook.png */; };
+		8742060F0564168A00CFC3F1 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = FB094A16033D58B601F955DB /* close.png */; };
+		874206100564168A00CFC3F1 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = FB754C5F036EFC5301F955DB /* config.png */; };
+		874206110564168A00CFC3F1 /* exec.png in Resources */ = {isa = PBXBuildFile; fileRef = FB47BCC403686CAC01F955DB /* exec.png */; };
+		874206120564168A00CFC3F1 /* important.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB2EBCD040AC7C201F955DB /* important.png */; };
+		874206150564168A00CFC3F1 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = FB094A18033D58BD01F955DB /* new.png */; };
+		8742061B0564168A00CFC3F1 /* PreferencePanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 870EAAB504325A880073D10E /* PreferencePanel.nib */; };
+		8742061C0564168A00CFC3F1 /* FindPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 870BCD83047070AC0073D10E /* FindPanel.nib */; };
+		8742061D0564168A00CFC3F1 /* ITConfigPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8723EDEC04EAADBB0073D10E /* ITConfigPanel.nib */; };
+		8742061E0564168A00CFC3F1 /* iTerm-Aqua.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD9C1AE2051F45C000A8A065 /* iTerm-Aqua.jpg */; };
+		874206200564168A00CFC3F1 /* ITTerminalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD0AD0A0337A5B701F955DB /* ITTerminalView.m */; };
+		874206210564168A00CFC3F1 /* PTYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF755F026DDA6303A80106 /* PTYScrollView.m */; };
+		874206220564168A00CFC3F1 /* PTYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF7561026DDA6303A80106 /* PTYTextView.m */; };
+		874206230564168A00CFC3F1 /* PTYTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF7560026DDA6303A80106 /* PTYTask.m */; };
+		874206240564168A00CFC3F1 /* VT100Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF7562026DDA6303A80106 /* VT100Screen.m */; };
+		874206250564168A00CFC3F1 /* VT100Terminal.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF7563026DDA6303A80106 /* VT100Terminal.m */; };
+		874206260564168A00CFC3F1 /* iTermController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A66F030272453F03A80106 /* iTermController.m */; };
+		874206270564168A00CFC3F1 /* NSStringITerm.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E901A202743CA303A80106 /* NSStringITerm.m */; };
+		874206280564168A00CFC3F1 /* PreferencePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB019DE103670C6501F955DB /* PreferencePanel.m */; };
+		874206290564168A00CFC3F1 /* PTYSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F52ED8DD037F0A7D01A8A066 /* PTYSession.m */; };
+		8742062A0564168A00CFC3F1 /* PTYTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E533B403B2959201A8A066 /* PTYTabView.m */; };
+		8742062C0564168A00CFC3F1 /* PTYWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B230B03A1B36701A8A066 /* PTYWindow.m */; };
+		8742062E0564168A00CFC3F1 /* FindPanelWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4BAB7C0470C44C00A8A065 /* FindPanelWindowController.m */; };
+		874206320564168A00CFC3F1 /* PTToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2076B15804E8817300000106 /* PTToolbarController.m */; };
+		874206330564168A00CFC3F1 /* ITAddressBookMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E74F4904E9089700000106 /* ITAddressBookMgr.m */; };
+		874206340564168A00CFC3F1 /* ITViewLocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8892B04E9342100000106 /* ITViewLocalizer.m */; };
+		874206350564168A00CFC3F1 /* ITConfigPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8891A04E924CD00000106 /* ITConfigPanelController.m */; };
+		874206390564168A00CFC3F1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0464AB2F006CD2EC7F000001 /* AppKit.framework */; };
+		8742063A0564168A00CFC3F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0464AB30006CD2EC7F000001 /* Foundation.framework */; };
+		8742064B0564169600CFC3F1 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = E813FB7D0297522703A80106 /* MainMenu.nib */; };
+		8742064D0564169600CFC3F1 /* iTerm.icns in Resources */ = {isa = PBXBuildFile; fileRef = E8EDCE69015E0A5703000001 /* iTerm.icns */; };
+		8742064F0564169600CFC3F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF757F026DDAD703A80106 /* main.m */; };
+		874206500564169600CFC3F1 /* iTermApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CC6404E7AA0500000106 /* iTermApplicationDelegate.m */; };
+		874206520564169600CFC3F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0464AB30006CD2EC7F000001 /* Foundation.framework */; };
+		874206530564169600CFC3F1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0464AB2F006CD2EC7F000001 /* AppKit.framework */; };
+		8742069E056416F600CFC3F1 /* iTerm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874206430564168A00CFC3F1 /* iTerm.framework */; };
+		8742069F0564170000CFC3F1 /* iTerm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 874206430564168A00CFC3F1 /* iTerm.framework */; };
+		8787B0DA05FD160F00901149 /* iTermProfileWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8787B0D805FD160F00901149 /* iTermProfileWindowController.m */; };
+		DD02573F09CB9399008F320C /* PSMAquaTabStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02572409CB9398008F320C /* PSMAquaTabStyle.h */; };
+		DD02574009CB9399008F320C /* PSMAquaTabStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD02572509CB9398008F320C /* PSMAquaTabStyle.m */; };
+		DD02574109CB9399008F320C /* PSMMetalTabStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02572609CB9398008F320C /* PSMMetalTabStyle.h */; };
+		DD02574209CB9399008F320C /* PSMMetalTabStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD02572709CB9398008F320C /* PSMMetalTabStyle.m */; };
+		DD02574309CB9399008F320C /* PSMOverflowPopUpButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02572809CB9398008F320C /* PSMOverflowPopUpButton.h */; };
+		DD02574509CB9399008F320C /* PSMOverflowPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD02572A09CB9398008F320C /* PSMOverflowPopUpButton.m */; };
+		DD02574709CB9399008F320C /* PSMProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02572C09CB9398008F320C /* PSMProgressIndicator.h */; };
+		DD02574809CB9399008F320C /* PSMProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD02572D09CB9398008F320C /* PSMProgressIndicator.m */; };
+		DD02574909CB9399008F320C /* PSMRolloverButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02572E09CB9398008F320C /* PSMRolloverButton.h */; };
+		DD02574A09CB9399008F320C /* PSMRolloverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD02572F09CB9398008F320C /* PSMRolloverButton.m */; };
+		DD02574B09CB9399008F320C /* PSMTabBarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02573009CB9398008F320C /* PSMTabBarCell.h */; };
+		DD02574C09CB9399008F320C /* PSMTabBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD02573109CB9398008F320C /* PSMTabBarCell.m */; };
+		DD02574D09CB9399008F320C /* PSMTabBarControl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02573209CB9398008F320C /* PSMTabBarControl.h */; };
+		DD02574E09CB9399008F320C /* PSMTabBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DD02573309CB9398008F320C /* PSMTabBarControl.m */; };
+		DD02575409CB9399008F320C /* PSMTabStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02573909CB9398008F320C /* PSMTabStyle.h */; };
+		DD02577409CB93C2008F320C /* AquaTabClose_Front.tif in Resources */ = {isa = PBXBuildFile; fileRef = DD02575809CB93C2008F320C /* AquaTabClose_Front.tif */; };
+		DD02577509CB93C2008F320C /* AquaTabClose_Front_Pressed.tif in Resources */ = {isa = PBXBuildFile; fileRef = DD02575909CB93C2008F320C /* AquaTabClose_Front_Pressed.tif */; };
+		DD02577609CB93C2008F320C /* AquaTabClose_Front_Rollover.tif in Resources */ = {isa = PBXBuildFile; fileRef = DD02575A09CB93C2008F320C /* AquaTabClose_Front_Rollover.tif */; };
+		DD02577709CB93C2008F320C /* AquaTabNew.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02575B09CB93C2008F320C /* AquaTabNew.png */; };
+		DD02577809CB93C2008F320C /* AquaTabNewPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02575C09CB93C2008F320C /* AquaTabNewPressed.png */; };
+		DD02577909CB93C2008F320C /* AquaTabNewRollover.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02575D09CB93C2008F320C /* AquaTabNewRollover.png */; };
+		DD02577A09CB93C2008F320C /* AquaTabsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02575E09CB93C2008F320C /* AquaTabsBackground.png */; };
+		DD02577B09CB93C2008F320C /* AquaTabsDown.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02575F09CB93C2008F320C /* AquaTabsDown.png */; };
+		DD02577C09CB93C2008F320C /* AquaTabsDownGraphite.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02576009CB93C2008F320C /* AquaTabsDownGraphite.png */; };
+		DD02577D09CB93C2008F320C /* AquaTabsDownNonKey.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02576109CB93C2008F320C /* AquaTabsDownNonKey.png */; };
+		DD02577E09CB93C2008F320C /* AquaTabsSeparator.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02576209CB93C2008F320C /* AquaTabsSeparator.png */; };
+		DD02577F09CB93C2008F320C /* AquaTabsSeparatorDown.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02576309CB93C2008F320C /* AquaTabsSeparatorDown.png */; };
+		DD02578209CB93C2008F320C /* overflowImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = DD02576609CB93C2008F320C /* overflowImage.tiff */; };
+		DD02578309CB93C2008F320C /* overflowImagePressed.tif in Resources */ = {isa = PBXBuildFile; fileRef = DD02576709CB93C2008F320C /* overflowImagePressed.tif */; };
+		DD02578409CB93C2008F320C /* pi.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02576809CB93C2008F320C /* pi.png */; };
+		DD02578509CB93C2008F320C /* TabClose_Front.tif in Resources */ = {isa = PBXBuildFile; fileRef = DD02576909CB93C2008F320C /* TabClose_Front.tif */; };
+		DD02578609CB93C2008F320C /* TabClose_Front_Pressed.tif in Resources */ = {isa = PBXBuildFile; fileRef = DD02576A09CB93C2008F320C /* TabClose_Front_Pressed.tif */; };
+		DD02578709CB93C2008F320C /* TabClose_Front_Rollover.tif in Resources */ = {isa = PBXBuildFile; fileRef = DD02576B09CB93C2008F320C /* TabClose_Front_Rollover.tif */; };
+		DD02578A09CB93C2008F320C /* TabNewMetal.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02576E09CB93C2008F320C /* TabNewMetal.png */; };
+		DD02578B09CB93C2008F320C /* TabNewMetalPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02576F09CB93C2008F320C /* TabNewMetalPressed.png */; };
+		DD02578C09CB93C2008F320C /* TabNewMetalRollover.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02577009CB93C2008F320C /* TabNewMetalRollover.png */; };
+		DD02578D09CB93C2008F320C /* Warning.png in Resources */ = {isa = PBXBuildFile; fileRef = DD02577109CB93C2008F320C /* Warning.png */; };
+		DD46BAC605FD689F00027283 /* iTermDisplayProfileMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = DD46BAC405FD689F00027283 /* iTermDisplayProfileMgr.m */; };
+		DD8EC83106095CDA0085A27D /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8EC82F06095CDA0085A27D /* Tree.m */; };
+		DDB79A9B0612BBBF00EAE159 /* Profiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDB79A9A0612BBBF00EAE159 /* Profiles.plist */; };
+		DDDB7ABF05D7736600E197C2 /* iTermKeyBindingMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDB7ABD05D7736600E197C2 /* iTermKeyBindingMgr.m */; };
+		DDF0FD66062916F70080EF74 /* iTermApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0FD64062916F70080EF74 /* iTermApplication.m */; };
+		F62D15F20AA64B2F0075A287 /* PSMAdiumTabStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D15EE0AA64B2F0075A287 /* PSMAdiumTabStyle.h */; };
+		F62D15F30AA64B2F0075A287 /* PSMAdiumTabStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D15EF0AA64B2F0075A287 /* PSMAdiumTabStyle.m */; };
+		F62D15F40AA64B2F0075A287 /* PSMTabDragWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D15F00AA64B2F0075A287 /* PSMTabDragWindow.h */; };
+		F62D15F50AA64B2F0075A287 /* PSMTabDragWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D15F10AA64B2F0075A287 /* PSMTabDragWindow.m */; };
+		F658C86E06054425000A13D5 /* iTermTerminalProfileMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = F658C86C06054425000A13D5 /* iTermTerminalProfileMgr.m */; };
+		F67332410AED82E5003D786E /* iTermOutlineView.h in Headers */ = {isa = PBXBuildFile; fileRef = F673323F0AED82E5003D786E /* iTermOutlineView.h */; };
+		F67332420AED82E5003D786E /* iTermOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F67332400AED82E5003D786E /* iTermOutlineView.m */; };
+		F6B077100ADDB7D400F4BB37 /* iTermBookmarkController.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B0770E0ADDB7D400F4BB37 /* iTermBookmarkController.h */; };
+		F6B077110ADDB7D400F4BB37 /* iTermBookmarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B0770F0ADDB7D400F4BB37 /* iTermBookmarkController.m */; };
+		F6B078900ADDF1BE00F4BB37 /* Bookmarks.nib in Resources */ = {isa = PBXBuildFile; fileRef = F6B0788E0ADDF1BE00F4BB37 /* Bookmarks.nib */; };
+		F6B07D990ADE1B9B00F4BB37 /* ProfilesWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = F6B07D970ADE1B9B00F4BB37 /* ProfilesWindow.nib */; };
+		F6CDC4E70AE6D3E2005E7D4F /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = F6CDC4E60AE6D3E2005E7D4F /* folder.png */; };
+		F6DA0AFD0AF066EE0098EFEB /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DA0AFC0AF066EE0098EFEB /* edit.png */; };
+		F6E708BB0A9D0EA400D0C4EF /* NSBezierPath_AMShading.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E708B50A9D0EA400D0C4EF /* NSBezierPath_AMShading.h */; };
+		F6E708BC0A9D0EA400D0C4EF /* NSBezierPath_AMShading.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E708B60A9D0EA400D0C4EF /* NSBezierPath_AMShading.m */; };
+		F6E708BD0A9D0EA400D0C4EF /* PSMTabDragAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E708B70A9D0EA400D0C4EF /* PSMTabDragAssistant.h */; };
+		F6E708BE0A9D0EA400D0C4EF /* PSMTabDragAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E708B80A9D0EA400D0C4EF /* PSMTabDragAssistant.m */; };
+		F6E708BF0A9D0EA400D0C4EF /* PSMUnifiedTabStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E708B90A9D0EA400D0C4EF /* PSMUnifiedTabStyle.h */; };
+		F6E708C00A9D0EA400D0C4EF /* PSMUnifiedTabStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E708BA0A9D0EA400D0C4EF /* PSMUnifiedTabStyle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20671A030BFE72FF00757734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 206719FF0BFE72FF00757734 /* CocoaTechStrings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20CD1C330546675C00A37B05;
+			remoteInfo = CocoaTechStrings;
+		};
+		20671A070BFE730F00757734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 206719FF0BFE72FF00757734 /* CocoaTechStrings.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 20CD1C280546675B00A37B05;
+			remoteInfo = CocoaTechStrings;
+		};
+		2094D2BF0CC6A4B100D5F32C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2094D2BB0CC6A4B100D5F32C /* CocoatechCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = CocoatechCore;
+		};
+		2094D2C30CC6A4B900D5F32C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2094D2BB0CC6A4B100D5F32C /* CocoatechCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = CocoatechCore;
+		};
+		8742069A056416D000CFC3F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0464AB0C006CD2EC7F000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 874205EE0564168A00CFC3F1;
+			remoteInfo = "iTerm Framework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		874206560564169600CFC3F1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20F0F24A0BFE23E700689231 /* CocoaTechStrings.framework in CopyFiles */,
+				8742069F0564170000CFC3F1 /* iTerm.framework in CopyFiles */,
+				20616FD20B69D16300342BC2 /* MyTerminalView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0464AB2F006CD2EC7F000001 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		0464AB30006CD2EC7F000001 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2005EF490B73E42500CBF08D /* ITPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITPopUpButton.h; sourceTree = "<group>"; };
+		2005EF4A0B73E42500CBF08D /* ITPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITPopUpButton.m; sourceTree = "<group>"; };
+		2005EF540B73E5DB00CBF08D /* ITIconStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITIconStore.h; sourceTree = "<group>"; };
+		2005EF550B73E5DB00CBF08D /* ITIconStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITIconStore.m; sourceTree = "<group>"; };
+		20147B990B6702D8004D8B48 /* PTYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PTYScrollView.h; sourceTree = "<group>"; };
+		20147B9A0B6702D8004D8B48 /* PTYSession.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PTYSession.h; sourceTree = "<group>"; };
+		20147B9B0B6702D8004D8B48 /* PTYTabView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PTYTabView.h; sourceTree = "<group>"; };
+		20147B9C0B6702D8004D8B48 /* PTYTask.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PTYTask.h; sourceTree = "<group>"; };
+		20147B9D0B6702D8004D8B48 /* PTYTextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PTYTextView.h; sourceTree = "<group>"; };
+		20147B9E0B6702D8004D8B48 /* PTYWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PTYWindow.h; sourceTree = "<group>"; };
+		20147B9F0B6702D8004D8B48 /* VT100Terminal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VT100Terminal.h; sourceTree = "<group>"; };
+		20147BAF0B670351004D8B48 /* NSStringITerm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSStringITerm.h; sourceTree = "<group>"; };
+		20147BB00B670351004D8B48 /* PreferencePanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PreferencePanel.h; sourceTree = "<group>"; };
+		20147BB10B670351004D8B48 /* ITTerminalView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ITTerminalView.h; sourceTree = "<group>"; };
+		20147BB20B670351004D8B48 /* VT100Terminal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VT100Terminal.h; sourceTree = "<group>"; };
+		205034450B76ED1400AFF542 /* ITSharedActionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSharedActionHandler.h; sourceTree = "<group>"; };
+		205034460B76ED1400AFF542 /* ITSharedActionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITSharedActionHandler.m; sourceTree = "<group>"; };
+		20616FCF0B69D16300342BC2 /* MyTerminalView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyTerminalView.m; sourceTree = "<group>"; };
+		20616FD00B69D16300342BC2 /* MyTerminalView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyTerminalView.h; sourceTree = "<group>"; };
+		206719FF0BFE72FF00757734 /* CocoaTechStrings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaTechStrings.xcodeproj; path = ../CocoatechStrings/CocoaTechStrings.xcodeproj; sourceTree = SOURCE_ROOT; };
+		206C9AD70B673A34002128A0 /* ITTerminalWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITTerminalWindowController.h; sourceTree = "<group>"; };
+		206C9AD80B673A34002128A0 /* ITTerminalWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITTerminalWindowController.m; sourceTree = "<group>"; };
+		206C9B430B673FB3002128A0 /* ITMiscNibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITMiscNibController.h; sourceTree = "<group>"; };
+		206C9B440B673FB3002128A0 /* ITMiscNibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITMiscNibController.m; sourceTree = "<group>"; };
+		2076B15704E8817300000106 /* PTToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTToolbarController.h; sourceTree = "<group>"; };
+		2076B15804E8817300000106 /* PTToolbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTToolbarController.m; sourceTree = "<group>"; };
+		20788CF10BE129A60013A705 /* iTerm_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTerm_Prefix.pch; sourceTree = "<group>"; };
+		208447E10BD45C49001446EA /* newwin.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = newwin.icns; path = images/newwin.icns; sourceTree = "<group>"; };
+		208448DD0BD4B351001446EA /* ITProcess.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ITProcess.h; sourceTree = "<group>"; };
+		208448DE0BD4B352001446EA /* ITProcess.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ITProcess.m; sourceTree = "<group>"; };
+		20881DB10EF8D917008D9CB9 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = ../Configurations/Debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		20881DB20EF8D917008D9CB9 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = ../Configurations/Release.xcconfig; sourceTree = SOURCE_ROOT; };
+		2094D2B00CC6A47A00D5F32C /* CocoatechCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoatechCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2094D2BB0CC6A4B100D5F32C /* CocoatechCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoatechCore.xcodeproj; path = ../CocoatechCore/CocoatechCore.xcodeproj; sourceTree = SOURCE_ROOT; };
+		2094D2E90CC6A57900D5F32C /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		20B8891904E924CD00000106 /* ITConfigPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITConfigPanelController.h; sourceTree = "<group>"; };
+		20B8891A04E924CD00000106 /* ITConfigPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITConfigPanelController.m; sourceTree = "<group>"; };
+		20B8892A04E9342100000106 /* ITViewLocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITViewLocalizer.h; sourceTree = "<group>"; };
+		20B8892B04E9342100000106 /* ITViewLocalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITViewLocalizer.m; sourceTree = "<group>"; };
+		20C6678C0B6701ED00533B48 /* charmaps.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = charmaps.h; sourceTree = "<group>"; };
+		20C6678E0B6701F700533B48 /* FindPanelWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FindPanelWindowController.h; sourceTree = "<group>"; };
+		20C667900B67020000533B48 /* iTerm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTerm.h; sourceTree = "<group>"; };
+		20C667920B67020E00533B48 /* iTermController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTermController.h; sourceTree = "<group>"; };
+		20C667940B67022100533B48 /* iTermDisplayProfileMgr.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTermDisplayProfileMgr.h; sourceTree = "<group>"; };
+		20C667960B67023000533B48 /* iTermKeyBindingMgr.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTermKeyBindingMgr.h; sourceTree = "<group>"; };
+		20C667980B67023F00533B48 /* iTermProfileWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTermProfileWindowController.h; sourceTree = "<group>"; };
+		20C6679A0B67025000533B48 /* iTermTerminalProfileMgr.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTermTerminalProfileMgr.h; sourceTree = "<group>"; };
+		20C6679C0B67026F00533B48 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		20C6679E0B67027D00533B48 /* VT100Screen.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VT100Screen.h; sourceTree = "<group>"; };
+		20D5CC6304E7AA0500000106 /* iTermApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTermApplicationDelegate.h; sourceTree = "<group>"; };
+		20D5CC6404E7AA0500000106 /* iTermApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermApplicationDelegate.m; sourceTree = "<group>"; };
+		20E74F4804E9089700000106 /* ITAddressBookMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITAddressBookMgr.h; sourceTree = "<group>"; };
+		20E74F4904E9089700000106 /* ITAddressBookMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITAddressBookMgr.m; sourceTree = "<group>"; };
+		20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaTechStrings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		870BCD84047070AC0073D10E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/FindPanel.nib; sourceTree = "<group>"; };
+		870EAAB604325A880073D10E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PreferencePanel.nib; sourceTree = "<group>"; };
+		8723EDED04EAADBB0073D10E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ITConfigPanel.nib; sourceTree = "<group>"; };
+		874206430564168A00CFC3F1 /* iTerm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iTerm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8742065A0564169600CFC3F1 /* iTerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8786A96E052CEC220073D10E /* script.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = script.png; path = images/script.png; sourceTree = "<group>"; };
+		8787B0D805FD160F00901149 /* iTermProfileWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermProfileWindowController.m; sourceTree = "<group>"; };
+		DD02572409CB9398008F320C /* PSMAquaTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMAquaTabStyle.h; sourceTree = "<group>"; };
+		DD02572509CB9398008F320C /* PSMAquaTabStyle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMAquaTabStyle.m; sourceTree = "<group>"; };
+		DD02572609CB9398008F320C /* PSMMetalTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMMetalTabStyle.h; sourceTree = "<group>"; };
+		DD02572709CB9398008F320C /* PSMMetalTabStyle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMMetalTabStyle.m; sourceTree = "<group>"; };
+		DD02572809CB9398008F320C /* PSMOverflowPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMOverflowPopUpButton.h; sourceTree = "<group>"; };
+		DD02572A09CB9398008F320C /* PSMOverflowPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMOverflowPopUpButton.m; sourceTree = "<group>"; };
+		DD02572C09CB9398008F320C /* PSMProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMProgressIndicator.h; sourceTree = "<group>"; };
+		DD02572D09CB9398008F320C /* PSMProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMProgressIndicator.m; sourceTree = "<group>"; };
+		DD02572E09CB9398008F320C /* PSMRolloverButton.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMRolloverButton.h; sourceTree = "<group>"; };
+		DD02572F09CB9398008F320C /* PSMRolloverButton.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMRolloverButton.m; sourceTree = "<group>"; };
+		DD02573009CB9398008F320C /* PSMTabBarCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMTabBarCell.h; sourceTree = "<group>"; };
+		DD02573109CB9398008F320C /* PSMTabBarCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMTabBarCell.m; sourceTree = "<group>"; };
+		DD02573209CB9398008F320C /* PSMTabBarControl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMTabBarControl.h; sourceTree = "<group>"; };
+		DD02573309CB9398008F320C /* PSMTabBarControl.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMTabBarControl.m; sourceTree = "<group>"; };
+		DD02573909CB9398008F320C /* PSMTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMTabStyle.h; sourceTree = "<group>"; };
+		DD02575809CB93C2008F320C /* AquaTabClose_Front.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AquaTabClose_Front.tif; sourceTree = "<group>"; };
+		DD02575909CB93C2008F320C /* AquaTabClose_Front_Pressed.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AquaTabClose_Front_Pressed.tif; sourceTree = "<group>"; };
+		DD02575A09CB93C2008F320C /* AquaTabClose_Front_Rollover.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AquaTabClose_Front_Rollover.tif; sourceTree = "<group>"; };
+		DD02575B09CB93C2008F320C /* AquaTabNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AquaTabNew.png; sourceTree = "<group>"; };
+		DD02575C09CB93C2008F320C /* AquaTabNewPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AquaTabNewPressed.png; sourceTree = "<group>"; };
+		DD02575D09CB93C2008F320C /* AquaTabNewRollover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AquaTabNewRollover.png; sourceTree = "<group>"; };
+		DD02575E09CB93C2008F320C /* AquaTabsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AquaTabsBackground.png; sourceTree = "<group>"; };
+		DD02575F09CB93C2008F320C /* AquaTabsDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AquaTabsDown.png; sourceTree = "<group>"; };
+		DD02576009CB93C2008F320C /* AquaTabsDownGraphite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AquaTabsDownGraphite.png; sourceTree = "<group>"; };
+		DD02576109CB93C2008F320C /* AquaTabsDownNonKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AquaTabsDownNonKey.png; sourceTree = "<group>"; };
+		DD02576209CB93C2008F320C /* AquaTabsSeparator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AquaTabsSeparator.png; sourceTree = "<group>"; };
+		DD02576309CB93C2008F320C /* AquaTabsSeparatorDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AquaTabsSeparatorDown.png; sourceTree = "<group>"; };
+		DD02576609CB93C2008F320C /* overflowImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = overflowImage.tiff; sourceTree = "<group>"; };
+		DD02576709CB93C2008F320C /* overflowImagePressed.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = overflowImagePressed.tif; sourceTree = "<group>"; };
+		DD02576809CB93C2008F320C /* pi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pi.png; sourceTree = "<group>"; };
+		DD02576909CB93C2008F320C /* TabClose_Front.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TabClose_Front.tif; sourceTree = "<group>"; };
+		DD02576A09CB93C2008F320C /* TabClose_Front_Pressed.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TabClose_Front_Pressed.tif; sourceTree = "<group>"; };
+		DD02576B09CB93C2008F320C /* TabClose_Front_Rollover.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TabClose_Front_Rollover.tif; sourceTree = "<group>"; };
+		DD02576E09CB93C2008F320C /* TabNewMetal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabNewMetal.png; sourceTree = "<group>"; };
+		DD02576F09CB93C2008F320C /* TabNewMetalPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabNewMetalPressed.png; sourceTree = "<group>"; };
+		DD02577009CB93C2008F320C /* TabNewMetalRollover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabNewMetalRollover.png; sourceTree = "<group>"; };
+		DD02577109CB93C2008F320C /* Warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Warning.png; sourceTree = "<group>"; };
+		DD46BAC405FD689F00027283 /* iTermDisplayProfileMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermDisplayProfileMgr.m; sourceTree = "<group>"; };
+		DD4BAB7C0470C44C00A8A065 /* FindPanelWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPanelWindowController.m; sourceTree = "<group>"; };
+		DD57633005653C2E00F1905E /* iTerm_Framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = iTerm_Framework.plist; sourceTree = "<group>"; };
+		DD57633605653C5F00F1905E /* iTerm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = iTerm.plist; sourceTree = "<group>"; };
+		DD8EC82F06095CDA0085A27D /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
+		DD9C1AE2051F45C000A8A065 /* iTerm-Aqua.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iTerm-Aqua.jpg"; path = "images/iTerm-Aqua.jpg"; sourceTree = "<group>"; };
+		DDB79A9A0612BBBF00EAE159 /* Profiles.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Profiles.plist; sourceTree = "<group>"; };
+		DDDB7ABD05D7736600E197C2 /* iTermKeyBindingMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermKeyBindingMgr.m; sourceTree = "<group>"; };
+		DDF0FD63062916F70080EF74 /* iTermApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTermApplication.h; sourceTree = "<group>"; };
+		DDF0FD64062916F70080EF74 /* iTermApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermApplication.m; sourceTree = "<group>"; };
+		E813FB7E0297522703A80106 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		E813FB87029754BB03A80106 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Misc.nib; sourceTree = "<group>"; };
+		E8A66F030272453F03A80106 /* iTermController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = iTermController.m; sourceTree = "<group>"; };
+		E8CF755F026DDA6303A80106 /* PTYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PTYScrollView.m; sourceTree = "<group>"; };
+		E8CF7560026DDA6303A80106 /* PTYTask.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PTYTask.m; sourceTree = "<group>"; };
+		E8CF7561026DDA6303A80106 /* PTYTextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PTYTextView.m; sourceTree = "<group>"; };
+		E8CF7562026DDA6303A80106 /* VT100Screen.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VT100Screen.m; sourceTree = "<group>"; };
+		E8CF7563026DDA6303A80106 /* VT100Terminal.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VT100Terminal.m; sourceTree = "<group>"; };
+		E8CF757F026DDAD703A80106 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8E901A202743CA303A80106 /* NSStringITerm.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSStringITerm.m; sourceTree = "<group>"; };
+		E8EDCE69015E0A5703000001 /* iTerm.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iTerm.icns; sourceTree = "<group>"; };
+		F52ED8DD037F0A7D01A8A066 /* PTYSession.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PTYSession.m; sourceTree = "<group>"; };
+		F56B230B03A1B36701A8A066 /* PTYWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PTYWindow.m; sourceTree = "<group>"; };
+		F5E533B403B2959201A8A066 /* PTYTabView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PTYTabView.m; sourceTree = "<group>"; };
+		F62D15EE0AA64B2F0075A287 /* PSMAdiumTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMAdiumTabStyle.h; sourceTree = "<group>"; };
+		F62D15EF0AA64B2F0075A287 /* PSMAdiumTabStyle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMAdiumTabStyle.m; sourceTree = "<group>"; };
+		F62D15F00AA64B2F0075A287 /* PSMTabDragWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMTabDragWindow.h; sourceTree = "<group>"; };
+		F62D15F10AA64B2F0075A287 /* PSMTabDragWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMTabDragWindow.m; sourceTree = "<group>"; };
+		F658C86C06054425000A13D5 /* iTermTerminalProfileMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermTerminalProfileMgr.m; sourceTree = "<group>"; };
+		F673323F0AED82E5003D786E /* iTermOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTermOutlineView.h; sourceTree = "<group>"; };
+		F67332400AED82E5003D786E /* iTermOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermOutlineView.m; sourceTree = "<group>"; };
+		F6B0770E0ADDB7D400F4BB37 /* iTermBookmarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTermBookmarkController.h; sourceTree = "<group>"; };
+		F6B0770F0ADDB7D400F4BB37 /* iTermBookmarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermBookmarkController.m; sourceTree = "<group>"; };
+		F6B0788F0ADDF1BE00F4BB37 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Bookmarks.nib; sourceTree = "<group>"; };
+		F6B07D980ADE1B9B00F4BB37 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ProfilesWindow.nib; sourceTree = "<group>"; };
+		F6CDC4E60AE6D3E2005E7D4F /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = folder.png; path = images/folder.png; sourceTree = "<group>"; };
+		F6DA0AFC0AF066EE0098EFEB /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edit.png; path = images/edit.png; sourceTree = "<group>"; };
+		F6E708B50A9D0EA400D0C4EF /* NSBezierPath_AMShading.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSBezierPath_AMShading.h; sourceTree = "<group>"; };
+		F6E708B60A9D0EA400D0C4EF /* NSBezierPath_AMShading.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSBezierPath_AMShading.m; sourceTree = "<group>"; };
+		F6E708B70A9D0EA400D0C4EF /* PSMTabDragAssistant.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMTabDragAssistant.h; sourceTree = "<group>"; };
+		F6E708B80A9D0EA400D0C4EF /* PSMTabDragAssistant.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMTabDragAssistant.m; sourceTree = "<group>"; };
+		F6E708B90A9D0EA400D0C4EF /* PSMUnifiedTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMUnifiedTabStyle.h; sourceTree = "<group>"; };
+		F6E708BA0A9D0EA400D0C4EF /* PSMUnifiedTabStyle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMUnifiedTabStyle.m; sourceTree = "<group>"; };
+		FB019DE103670C6501F955DB /* PreferencePanel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PreferencePanel.m; sourceTree = "<group>"; };
+		FB094A14033D58AE01F955DB /* addressbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addressbook.png; path = images/addressbook.png; sourceTree = "<group>"; };
+		FB094A16033D58B601F955DB /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = images/close.png; sourceTree = "<group>"; };
+		FB094A18033D58BD01F955DB /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = new.png; path = images/new.png; sourceTree = "<group>"; };
+		FB47BCC403686CAC01F955DB /* exec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exec.png; path = images/exec.png; sourceTree = "<group>"; };
+		FB754C5F036EFC5301F955DB /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = config.png; path = images/config.png; sourceTree = "<group>"; };
+		FBB2EBCD040AC7C201F955DB /* important.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = important.png; path = images/important.png; sourceTree = "<group>"; };
+		FBBB8B60039FC04E01F955DB /* iTerm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTerm.png; path = images/iTerm.png; sourceTree = "<group>"; };
+		FBD0AD0A0337A5B701F955DB /* ITTerminalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITTerminalView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		874206380564168A00CFC3F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874206390564168A00CFC3F1 /* AppKit.framework in Frameworks */,
+				8742063A0564168A00CFC3F1 /* Foundation.framework in Frameworks */,
+				20F0F2490BFE23D700689231 /* CocoaTechStrings.framework in Frameworks */,
+				2094D2B10CC6A47A00D5F32C /* CocoatechCore.framework in Frameworks */,
+				2094D2EA0CC6A57900D5F32C /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874206510564169600CFC3F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206719CC0BFE721C00757734 /* CocoaTechStrings.framework in Frameworks */,
+				874206520564169600CFC3F1 /* Foundation.framework in Frameworks */,
+				874206530564169600CFC3F1 /* AppKit.framework in Frameworks */,
+				8742069E056416F600CFC3F1 /* iTerm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0464AB0D006CD2EC7F000001 /* JTerminal */ = {
+			isa = PBXGroup;
+			children = (
+				2094D2BB0CC6A4B100D5F32C /* CocoatechCore.xcodeproj */,
+				206719FF0BFE72FF00757734 /* CocoaTechStrings.xcodeproj */,
+				0464AB0E006CD2EC7F000001 /* Classes */,
+				DD02571D09CB9363008F320C /* PSMTabBarControl */,
+				0464AB22006CD2EC7F000001 /* Resources */,
+				0464AB27006CD2EC7F000001 /* Supporting Files */,
+				0464AB2E006CD2EC7F000001 /* External Frameworks and Libraries */,
+				0464AB32006CD2EC7F000001 /* Products */,
+			);
+			name = JTerminal;
+			sourceTree = "<group>";
+		};
+		0464AB0E006CD2EC7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				20881DB10EF8D917008D9CB9 /* Debug.xcconfig */,
+				20881DB20EF8D917008D9CB9 /* Release.xcconfig */,
+				206042C10B66FD8300FD2068 /* Application */,
+				206042C40B66FDEE00FD2068 /* Framework */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		0464AB15006CD2EC7F000001 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				208448DD0BD4B351001446EA /* ITProcess.h */,
+				2005EF490B73E42500CBF08D /* ITPopUpButton.h */,
+				20616FD00B69D16300342BC2 /* MyTerminalView.h */,
+				206C9B430B673FB3002128A0 /* ITMiscNibController.h */,
+				2005EF540B73E5DB00CBF08D /* ITIconStore.h */,
+				20C6678C0B6701ED00533B48 /* charmaps.h */,
+				20C6678E0B6701F700533B48 /* FindPanelWindowController.h */,
+				206C9AD70B673A34002128A0 /* ITTerminalWindowController.h */,
+				20C667920B67020E00533B48 /* iTermController.h */,
+				20C6679A0B67025000533B48 /* iTermTerminalProfileMgr.h */,
+				20C6679E0B67027D00533B48 /* VT100Screen.h */,
+				205034450B76ED1400AFF542 /* ITSharedActionHandler.h */,
+				F6B0770E0ADDB7D400F4BB37 /* iTermBookmarkController.h */,
+				20C6679C0B67026F00533B48 /* Tree.h */,
+				20C667960B67023000533B48 /* iTermKeyBindingMgr.h */,
+				20C667980B67023F00533B48 /* iTermProfileWindowController.h */,
+				20C667940B67022100533B48 /* iTermDisplayProfileMgr.h */,
+				20E74F4804E9089700000106 /* ITAddressBookMgr.h */,
+				20B8891904E924CD00000106 /* ITConfigPanelController.h */,
+				F673323F0AED82E5003D786E /* iTermOutlineView.h */,
+				20B8892A04E9342100000106 /* ITViewLocalizer.h */,
+				20147B990B6702D8004D8B48 /* PTYScrollView.h */,
+				20147B9A0B6702D8004D8B48 /* PTYSession.h */,
+				20147B9B0B6702D8004D8B48 /* PTYTabView.h */,
+				20147B9C0B6702D8004D8B48 /* PTYTask.h */,
+				20147B9D0B6702D8004D8B48 /* PTYTextView.h */,
+				20147B9E0B6702D8004D8B48 /* PTYWindow.h */,
+				20147B9F0B6702D8004D8B48 /* VT100Terminal.h */,
+				20147BAF0B670351004D8B48 /* NSStringITerm.h */,
+				20147BB00B670351004D8B48 /* PreferencePanel.h */,
+				20147BB10B670351004D8B48 /* ITTerminalView.h */,
+				20147BB20B670351004D8B48 /* VT100Terminal.h */,
+				2076B15704E8817300000106 /* PTToolbarController.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		0464AB22006CD2EC7F000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E813FB86029754BB03A80106 /* Misc.nib */,
+				870EAAB504325A880073D10E /* PreferencePanel.nib */,
+				870BCD83047070AC0073D10E /* FindPanel.nib */,
+				8723EDEC04EAADBB0073D10E /* ITConfigPanel.nib */,
+				F6B0788E0ADDF1BE00F4BB37 /* Bookmarks.nib */,
+				F6B07D970ADE1B9B00F4BB37 /* ProfilesWindow.nib */,
+				E8EDCE69015E0A5703000001 /* iTerm.icns */,
+				FBBB8B60039FC04E01F955DB /* iTerm.png */,
+				DD9C1AE2051F45C000A8A065 /* iTerm-Aqua.jpg */,
+				FB094A14033D58AE01F955DB /* addressbook.png */,
+				FB094A16033D58B601F955DB /* close.png */,
+				FB754C5F036EFC5301F955DB /* config.png */,
+				F6DA0AFC0AF066EE0098EFEB /* edit.png */,
+				208447E10BD45C49001446EA /* newwin.icns */,
+				FB47BCC403686CAC01F955DB /* exec.png */,
+				F6CDC4E60AE6D3E2005E7D4F /* folder.png */,
+				FBB2EBCD040AC7C201F955DB /* important.png */,
+				FB094A18033D58BD01F955DB /* new.png */,
+				8786A96E052CEC220073D10E /* script.png */,
+				DD57633005653C2E00F1905E /* iTerm_Framework.plist */,
+				DD57633605653C5F00F1905E /* iTerm.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0464AB27006CD2EC7F000001 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDB79A9A0612BBBF00EAE159 /* Profiles.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0464AB2E006CD2EC7F000001 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2094D2E90CC6A57900D5F32C /* Carbon.framework */,
+				2094D2B00CC6A47A00D5F32C /* CocoatechCore.framework */,
+				20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */,
+				0464AB2F006CD2EC7F000001 /* AppKit.framework */,
+				0464AB30006CD2EC7F000001 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		0464AB32006CD2EC7F000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				874206430564168A00CFC3F1 /* iTerm.framework */,
+				8742065A0564169600CFC3F1 /* iTerm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		201484B80B67132F004D8B48 /* Terminal View */ = {
+			isa = PBXGroup;
+			children = (
+				FBD0AD0A0337A5B701F955DB /* ITTerminalView.m */,
+				F5E533B403B2959201A8A066 /* PTYTabView.m */,
+				E8CF7561026DDA6303A80106 /* PTYTextView.m */,
+				F52ED8DD037F0A7D01A8A066 /* PTYSession.m */,
+			);
+			name = "Terminal View";
+			sourceTree = "<group>";
+		};
+		201484BB0B671349004D8B48 /* Terminal Window */ = {
+			isa = PBXGroup;
+			children = (
+				F56B230B03A1B36701A8A066 /* PTYWindow.m */,
+				206C9AD80B673A34002128A0 /* ITTerminalWindowController.m */,
+				2076B15804E8817300000106 /* PTToolbarController.m */,
+				2005EF4A0B73E42500CBF08D /* ITPopUpButton.m */,
+				2005EF550B73E5DB00CBF08D /* ITIconStore.m */,
+				205034460B76ED1400AFF542 /* ITSharedActionHandler.m */,
+			);
+			name = "Terminal Window";
+			sourceTree = "<group>";
+		};
+		206042C10B66FD8300FD2068 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E813FB7D0297522703A80106 /* MainMenu.nib */,
+				20D5CC6304E7AA0500000106 /* iTermApplicationDelegate.h */,
+				20C667900B67020000533B48 /* iTerm.h */,
+				20788CF10BE129A60013A705 /* iTerm_Prefix.pch */,
+				DDF0FD63062916F70080EF74 /* iTermApplication.h */,
+				E8CF757F026DDAD703A80106 /* main.m */,
+				DDF0FD64062916F70080EF74 /* iTermApplication.m */,
+				20D5CC6404E7AA0500000106 /* iTermApplicationDelegate.m */,
+				20616FCF0B69D16300342BC2 /* MyTerminalView.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		206042C40B66FDEE00FD2068 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E8A66F030272453F03A80106 /* iTermController.m */,
+				201484B80B67132F004D8B48 /* Terminal View */,
+				201484BB0B671349004D8B48 /* Terminal Window */,
+				20DD50B70B6C2B4800BF94CB /* Panels */,
+				F67332400AED82E5003D786E /* iTermOutlineView.m */,
+				206C9B440B673FB3002128A0 /* ITMiscNibController.m */,
+				DD46BAC405FD689F00027283 /* iTermDisplayProfileMgr.m */,
+				DDDB7ABD05D7736600E197C2 /* iTermKeyBindingMgr.m */,
+				F658C86C06054425000A13D5 /* iTermTerminalProfileMgr.m */,
+				20E74F4904E9089700000106 /* ITAddressBookMgr.m */,
+				20B8892B04E9342100000106 /* ITViewLocalizer.m */,
+				E8E901A202743CA303A80106 /* NSStringITerm.m */,
+				208448DE0BD4B352001446EA /* ITProcess.m */,
+				E8CF755F026DDA6303A80106 /* PTYScrollView.m */,
+				E8CF7560026DDA6303A80106 /* PTYTask.m */,
+				DD8EC82F06095CDA0085A27D /* Tree.m */,
+				E8CF7562026DDA6303A80106 /* VT100Screen.m */,
+				E8CF7563026DDA6303A80106 /* VT100Terminal.m */,
+				0464AB15006CD2EC7F000001 /* Headers */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		20671A000BFE72FF00757734 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20671A040BFE72FF00757734 /* CocoaTechStrings.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2094D2BC0CC6A4B100D5F32C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2094D2C00CC6A4B100D5F32C /* CocoatechCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20DD50B70B6C2B4800BF94CB /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				F6B0770F0ADDB7D400F4BB37 /* iTermBookmarkController.m */,
+				FB019DE103670C6501F955DB /* PreferencePanel.m */,
+				20B8891A04E924CD00000106 /* ITConfigPanelController.m */,
+				DD4BAB7C0470C44C00A8A065 /* FindPanelWindowController.m */,
+				8787B0D805FD160F00901149 /* iTermProfileWindowController.m */,
+			);
+			name = Panels;
+			sourceTree = "<group>";
+		};
+		DD02571D09CB9363008F320C /* PSMTabBarControl */ = {
+			isa = PBXGroup;
+			children = (
+				DD02571E09CB9398008F320C /* source */,
+				DD02575509CB93C2008F320C /* images */,
+			);
+			name = PSMTabBarControl;
+			sourceTree = "<group>";
+		};
+		DD02571E09CB9398008F320C /* source */ = {
+			isa = PBXGroup;
+			children = (
+				F62D15EE0AA64B2F0075A287 /* PSMAdiumTabStyle.h */,
+				F62D15EF0AA64B2F0075A287 /* PSMAdiumTabStyle.m */,
+				F62D15F00AA64B2F0075A287 /* PSMTabDragWindow.h */,
+				F62D15F10AA64B2F0075A287 /* PSMTabDragWindow.m */,
+				F6E708B50A9D0EA400D0C4EF /* NSBezierPath_AMShading.h */,
+				F6E708B60A9D0EA400D0C4EF /* NSBezierPath_AMShading.m */,
+				F6E708B70A9D0EA400D0C4EF /* PSMTabDragAssistant.h */,
+				F6E708B80A9D0EA400D0C4EF /* PSMTabDragAssistant.m */,
+				DD02572809CB9398008F320C /* PSMOverflowPopUpButton.h */,
+				DD02572A09CB9398008F320C /* PSMOverflowPopUpButton.m */,
+				DD02572C09CB9398008F320C /* PSMProgressIndicator.h */,
+				DD02572D09CB9398008F320C /* PSMProgressIndicator.m */,
+				DD02572E09CB9398008F320C /* PSMRolloverButton.h */,
+				DD02572F09CB9398008F320C /* PSMRolloverButton.m */,
+				DD02573009CB9398008F320C /* PSMTabBarCell.h */,
+				DD02573109CB9398008F320C /* PSMTabBarCell.m */,
+				DD02573209CB9398008F320C /* PSMTabBarControl.h */,
+				DD02573309CB9398008F320C /* PSMTabBarControl.m */,
+				F6E708B90A9D0EA400D0C4EF /* PSMUnifiedTabStyle.h */,
+				F6E708BA0A9D0EA400D0C4EF /* PSMUnifiedTabStyle.m */,
+				DD02572409CB9398008F320C /* PSMAquaTabStyle.h */,
+				DD02572509CB9398008F320C /* PSMAquaTabStyle.m */,
+				DD02572609CB9398008F320C /* PSMMetalTabStyle.h */,
+				DD02572709CB9398008F320C /* PSMMetalTabStyle.m */,
+				DD02573909CB9398008F320C /* PSMTabStyle.h */,
+			);
+			name = source;
+			path = PSMTabBarControl/source;
+			sourceTree = "<group>";
+		};
+		DD02575509CB93C2008F320C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DD02575809CB93C2008F320C /* AquaTabClose_Front.tif */,
+				DD02575909CB93C2008F320C /* AquaTabClose_Front_Pressed.tif */,
+				DD02575A09CB93C2008F320C /* AquaTabClose_Front_Rollover.tif */,
+				DD02575B09CB93C2008F320C /* AquaTabNew.png */,
+				DD02575C09CB93C2008F320C /* AquaTabNewPressed.png */,
+				DD02575D09CB93C2008F320C /* AquaTabNewRollover.png */,
+				DD02575E09CB93C2008F320C /* AquaTabsBackground.png */,
+				DD02575F09CB93C2008F320C /* AquaTabsDown.png */,
+				DD02576009CB93C2008F320C /* AquaTabsDownGraphite.png */,
+				DD02576109CB93C2008F320C /* AquaTabsDownNonKey.png */,
+				DD02576209CB93C2008F320C /* AquaTabsSeparator.png */,
+				DD02576309CB93C2008F320C /* AquaTabsSeparatorDown.png */,
+				DD02576609CB93C2008F320C /* overflowImage.tiff */,
+				DD02576709CB93C2008F320C /* overflowImagePressed.tif */,
+				DD02576809CB93C2008F320C /* pi.png */,
+				DD02576909CB93C2008F320C /* TabClose_Front.tif */,
+				DD02576A09CB93C2008F320C /* TabClose_Front_Pressed.tif */,
+				DD02576B09CB93C2008F320C /* TabClose_Front_Rollover.tif */,
+				DD02576E09CB93C2008F320C /* TabNewMetal.png */,
+				DD02576F09CB93C2008F320C /* TabNewMetalPressed.png */,
+				DD02577009CB93C2008F320C /* TabNewMetalRollover.png */,
+				DD02577109CB93C2008F320C /* Warning.png */,
+			);
+			name = images;
+			path = PSMTabBarControl/images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		874205EF0564168A00CFC3F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874206050564168A00CFC3F1 /* PTToolbarController.h in Headers */,
+				874206060564168A00CFC3F1 /* ITAddressBookMgr.h in Headers */,
+				874206070564168A00CFC3F1 /* ITViewLocalizer.h in Headers */,
+				874206080564168A00CFC3F1 /* ITConfigPanelController.h in Headers */,
+				DD02573F09CB9399008F320C /* PSMAquaTabStyle.h in Headers */,
+				DD02574109CB9399008F320C /* PSMMetalTabStyle.h in Headers */,
+				DD02574309CB9399008F320C /* PSMOverflowPopUpButton.h in Headers */,
+				DD02574709CB9399008F320C /* PSMProgressIndicator.h in Headers */,
+				DD02574909CB9399008F320C /* PSMRolloverButton.h in Headers */,
+				DD02574B09CB9399008F320C /* PSMTabBarCell.h in Headers */,
+				DD02574D09CB9399008F320C /* PSMTabBarControl.h in Headers */,
+				DD02575409CB9399008F320C /* PSMTabStyle.h in Headers */,
+				F6E708BB0A9D0EA400D0C4EF /* NSBezierPath_AMShading.h in Headers */,
+				F6E708BD0A9D0EA400D0C4EF /* PSMTabDragAssistant.h in Headers */,
+				F6E708BF0A9D0EA400D0C4EF /* PSMUnifiedTabStyle.h in Headers */,
+				F62D15F20AA64B2F0075A287 /* PSMAdiumTabStyle.h in Headers */,
+				F62D15F40AA64B2F0075A287 /* PSMTabDragWindow.h in Headers */,
+				F6B077100ADDB7D400F4BB37 /* iTermBookmarkController.h in Headers */,
+				F67332410AED82E5003D786E /* iTermOutlineView.h in Headers */,
+				20C6678D0B6701ED00533B48 /* charmaps.h in Headers */,
+				20C6678F0B6701F700533B48 /* FindPanelWindowController.h in Headers */,
+				20C667910B67020000533B48 /* iTerm.h in Headers */,
+				20C667930B67020E00533B48 /* iTermController.h in Headers */,
+				20C667950B67022100533B48 /* iTermDisplayProfileMgr.h in Headers */,
+				20C667970B67023000533B48 /* iTermKeyBindingMgr.h in Headers */,
+				20C667990B67023F00533B48 /* iTermProfileWindowController.h in Headers */,
+				20C6679B0B67025000533B48 /* iTermTerminalProfileMgr.h in Headers */,
+				20C6679D0B67026F00533B48 /* Tree.h in Headers */,
+				20C6679F0B67027D00533B48 /* VT100Screen.h in Headers */,
+				20147BA00B6702D8004D8B48 /* PTYScrollView.h in Headers */,
+				20147BA10B6702D8004D8B48 /* PTYSession.h in Headers */,
+				20147BA20B6702D8004D8B48 /* PTYTabView.h in Headers */,
+				20147BA30B6702D8004D8B48 /* PTYTask.h in Headers */,
+				20147BA40B6702D8004D8B48 /* PTYTextView.h in Headers */,
+				20147BA50B6702D8004D8B48 /* PTYWindow.h in Headers */,
+				20147BA60B6702D8004D8B48 /* VT100Terminal.h in Headers */,
+				20147BB30B670351004D8B48 /* NSStringITerm.h in Headers */,
+				20147BB40B670351004D8B48 /* PreferencePanel.h in Headers */,
+				20147BB50B670351004D8B48 /* ITTerminalView.h in Headers */,
+				20147BB60B670351004D8B48 /* VT100Terminal.h in Headers */,
+				206C9AD90B673A34002128A0 /* ITTerminalWindowController.h in Headers */,
+				206C9B450B673FB3002128A0 /* ITMiscNibController.h in Headers */,
+				2005EF4B0B73E42500CBF08D /* ITPopUpButton.h in Headers */,
+				2005EF560B73E5DB00CBF08D /* ITIconStore.h in Headers */,
+				205034470B76ED1400AFF542 /* ITSharedActionHandler.h in Headers */,
+				208448DF0BD4B352001446EA /* ITProcess.h in Headers */,
+				20788CF20BE129A60013A705 /* iTerm_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		874205EE0564168A00CFC3F1 /* iTerm Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB024D31096EE4080021E793 /* Build configuration list for PBXNativeTarget "iTerm Framework" */;
+			buildPhases = (
+				874205EF0564168A00CFC3F1 /* Headers */,
+				8742060B0564168A00CFC3F1 /* Resources */,
+				8742061F0564168A00CFC3F1 /* Sources */,
+				874206380564168A00CFC3F1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20671A080BFE730F00757734 /* PBXTargetDependency */,
+				2094D2C40CC6A4B900D5F32C /* PBXTargetDependency */,
+			);
+			name = "iTerm Framework";
+			productInstallPath = "@executable_path/../Frameworks";
+			productName = "iTerm Framework";
+			productReference = 874206430564168A00CFC3F1 /* iTerm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		874206460564169600CFC3F1 /* iTerm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB024D35096EE4080021E793 /* Build configuration list for PBXNativeTarget "iTerm" */;
+			buildPhases = (
+				8742064A0564169600CFC3F1 /* Resources */,
+				8742064E0564169600CFC3F1 /* Sources */,
+				874206510564169600CFC3F1 /* Frameworks */,
+				874206560564169600CFC3F1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8742069B056416D000CFC3F1 /* PBXTargetDependency */,
+			);
+			name = iTerm;
+			productName = "JTerminal (Application)";
+			productReference = 8742065A0564169600CFC3F1 /* iTerm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0464AB0C006CD2EC7F000001 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = BB024D39096EE4080021E793 /* Build configuration list for PBXProject "iTerm" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Chinese,
+				zh_CN,
+				zh_TW,
+				Korean,
+			);
+			mainGroup = 0464AB0D006CD2EC7F000001 /* JTerminal */;
+			productRefGroup = 0464AB32006CD2EC7F000001 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2094D2BC0CC6A4B100D5F32C /* Products */;
+					ProjectRef = 2094D2BB0CC6A4B100D5F32C /* CocoatechCore.xcodeproj */;
+				},
+				{
+					ProductGroup = 20671A000BFE72FF00757734 /* Products */;
+					ProjectRef = 206719FF0BFE72FF00757734 /* CocoaTechStrings.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				874206460564169600CFC3F1 /* iTerm */,
+				874205EE0564168A00CFC3F1 /* iTerm Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		20671A040BFE72FF00757734 /* CocoaTechStrings.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaTechStrings.framework;
+			remoteRef = 20671A030BFE72FF00757734 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2094D2C00CC6A4B100D5F32C /* CocoatechCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoatechCore.framework;
+			remoteRef = 2094D2BF0CC6A4B100D5F32C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8742060B0564168A00CFC3F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8742060C0564168A00CFC3F1 /* Misc.nib in Resources */,
+				8742060D0564168A00CFC3F1 /* iTerm.png in Resources */,
+				8742060E0564168A00CFC3F1 /* addressbook.png in Resources */,
+				8742060F0564168A00CFC3F1 /* close.png in Resources */,
+				874206100564168A00CFC3F1 /* config.png in Resources */,
+				874206110564168A00CFC3F1 /* exec.png in Resources */,
+				874206120564168A00CFC3F1 /* important.png in Resources */,
+				874206150564168A00CFC3F1 /* new.png in Resources */,
+				8742061B0564168A00CFC3F1 /* PreferencePanel.nib in Resources */,
+				8742061C0564168A00CFC3F1 /* FindPanel.nib in Resources */,
+				8742061D0564168A00CFC3F1 /* ITConfigPanel.nib in Resources */,
+				8742061E0564168A00CFC3F1 /* iTerm-Aqua.jpg in Resources */,
+				DDB79A9B0612BBBF00EAE159 /* Profiles.plist in Resources */,
+				DD02577409CB93C2008F320C /* AquaTabClose_Front.tif in Resources */,
+				DD02577509CB93C2008F320C /* AquaTabClose_Front_Pressed.tif in Resources */,
+				DD02577609CB93C2008F320C /* AquaTabClose_Front_Rollover.tif in Resources */,
+				DD02577709CB93C2008F320C /* AquaTabNew.png in Resources */,
+				DD02577809CB93C2008F320C /* AquaTabNewPressed.png in Resources */,
+				DD02577909CB93C2008F320C /* AquaTabNewRollover.png in Resources */,
+				DD02577A09CB93C2008F320C /* AquaTabsBackground.png in Resources */,
+				DD02577B09CB93C2008F320C /* AquaTabsDown.png in Resources */,
+				DD02577C09CB93C2008F320C /* AquaTabsDownGraphite.png in Resources */,
+				DD02577D09CB93C2008F320C /* AquaTabsDownNonKey.png in Resources */,
+				DD02577E09CB93C2008F320C /* AquaTabsSeparator.png in Resources */,
+				DD02577F09CB93C2008F320C /* AquaTabsSeparatorDown.png in Resources */,
+				DD02578209CB93C2008F320C /* overflowImage.tiff in Resources */,
+				DD02578309CB93C2008F320C /* overflowImagePressed.tif in Resources */,
+				DD02578409CB93C2008F320C /* pi.png in Resources */,
+				DD02578509CB93C2008F320C /* TabClose_Front.tif in Resources */,
+				DD02578609CB93C2008F320C /* TabClose_Front_Pressed.tif in Resources */,
+				DD02578709CB93C2008F320C /* TabClose_Front_Rollover.tif in Resources */,
+				DD02578A09CB93C2008F320C /* TabNewMetal.png in Resources */,
+				DD02578B09CB93C2008F320C /* TabNewMetalPressed.png in Resources */,
+				DD02578C09CB93C2008F320C /* TabNewMetalRollover.png in Resources */,
+				DD02578D09CB93C2008F320C /* Warning.png in Resources */,
+				F6B078900ADDF1BE00F4BB37 /* Bookmarks.nib in Resources */,
+				F6B07D990ADE1B9B00F4BB37 /* ProfilesWindow.nib in Resources */,
+				F6DA0AFD0AF066EE0098EFEB /* edit.png in Resources */,
+				208447E20BD45C49001446EA /* newwin.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8742064A0564169600CFC3F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8742064B0564169600CFC3F1 /* MainMenu.nib in Resources */,
+				8742064D0564169600CFC3F1 /* iTerm.icns in Resources */,
+				F6CDC4E70AE6D3E2005E7D4F /* folder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8742061F0564168A00CFC3F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874206200564168A00CFC3F1 /* ITTerminalView.m in Sources */,
+				874206210564168A00CFC3F1 /* PTYScrollView.m in Sources */,
+				874206220564168A00CFC3F1 /* PTYTextView.m in Sources */,
+				874206230564168A00CFC3F1 /* PTYTask.m in Sources */,
+				874206240564168A00CFC3F1 /* VT100Screen.m in Sources */,
+				874206250564168A00CFC3F1 /* VT100Terminal.m in Sources */,
+				874206260564168A00CFC3F1 /* iTermController.m in Sources */,
+				874206270564168A00CFC3F1 /* NSStringITerm.m in Sources */,
+				874206280564168A00CFC3F1 /* PreferencePanel.m in Sources */,
+				874206290564168A00CFC3F1 /* PTYSession.m in Sources */,
+				8742062A0564168A00CFC3F1 /* PTYTabView.m in Sources */,
+				8742062C0564168A00CFC3F1 /* PTYWindow.m in Sources */,
+				8742062E0564168A00CFC3F1 /* FindPanelWindowController.m in Sources */,
+				874206320564168A00CFC3F1 /* PTToolbarController.m in Sources */,
+				874206330564168A00CFC3F1 /* ITAddressBookMgr.m in Sources */,
+				874206340564168A00CFC3F1 /* ITViewLocalizer.m in Sources */,
+				874206350564168A00CFC3F1 /* ITConfigPanelController.m in Sources */,
+				DDDB7ABF05D7736600E197C2 /* iTermKeyBindingMgr.m in Sources */,
+				8787B0DA05FD160F00901149 /* iTermProfileWindowController.m in Sources */,
+				DD46BAC605FD689F00027283 /* iTermDisplayProfileMgr.m in Sources */,
+				F658C86E06054425000A13D5 /* iTermTerminalProfileMgr.m in Sources */,
+				DD8EC83106095CDA0085A27D /* Tree.m in Sources */,
+				DD02574009CB9399008F320C /* PSMAquaTabStyle.m in Sources */,
+				DD02574209CB9399008F320C /* PSMMetalTabStyle.m in Sources */,
+				DD02574509CB9399008F320C /* PSMOverflowPopUpButton.m in Sources */,
+				DD02574809CB9399008F320C /* PSMProgressIndicator.m in Sources */,
+				DD02574A09CB9399008F320C /* PSMRolloverButton.m in Sources */,
+				DD02574C09CB9399008F320C /* PSMTabBarCell.m in Sources */,
+				DD02574E09CB9399008F320C /* PSMTabBarControl.m in Sources */,
+				F6E708BC0A9D0EA400D0C4EF /* NSBezierPath_AMShading.m in Sources */,
+				F6E708BE0A9D0EA400D0C4EF /* PSMTabDragAssistant.m in Sources */,
+				F6E708C00A9D0EA400D0C4EF /* PSMUnifiedTabStyle.m in Sources */,
+				F62D15F30AA64B2F0075A287 /* PSMAdiumTabStyle.m in Sources */,
+				F62D15F50AA64B2F0075A287 /* PSMTabDragWindow.m in Sources */,
+				F6B077110ADDB7D400F4BB37 /* iTermBookmarkController.m in Sources */,
+				F67332420AED82E5003D786E /* iTermOutlineView.m in Sources */,
+				206C9ADA0B673A34002128A0 /* ITTerminalWindowController.m in Sources */,
+				206C9B460B673FB3002128A0 /* ITMiscNibController.m in Sources */,
+				2005EF4C0B73E42500CBF08D /* ITPopUpButton.m in Sources */,
+				2005EF570B73E5DB00CBF08D /* ITIconStore.m in Sources */,
+				205034480B76ED1400AFF542 /* ITSharedActionHandler.m in Sources */,
+				208448E00BD4B352001446EA /* ITProcess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8742064E0564169600CFC3F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8742064F0564169600CFC3F1 /* main.m in Sources */,
+				874206500564169600CFC3F1 /* iTermApplicationDelegate.m in Sources */,
+				DDF0FD66062916F70080EF74 /* iTermApplication.m in Sources */,
+				20616FD10B69D16300342BC2 /* MyTerminalView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20671A080BFE730F00757734 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaTechStrings;
+			targetProxy = 20671A070BFE730F00757734 /* PBXContainerItemProxy */;
+		};
+		2094D2C40CC6A4B900D5F32C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoatechCore;
+			targetProxy = 2094D2C30CC6A4B900D5F32C /* PBXContainerItemProxy */;
+		};
+		8742069B056416D000CFC3F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 874205EE0564168A00CFC3F1 /* iTerm Framework */;
+			targetProxy = 8742069A056416D000CFC3F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		870BCD83047070AC0073D10E /* FindPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				870BCD84047070AC0073D10E /* English */,
+			);
+			name = FindPanel.nib;
+			sourceTree = "<group>";
+		};
+		870EAAB504325A880073D10E /* PreferencePanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				870EAAB604325A880073D10E /* English */,
+			);
+			name = PreferencePanel.nib;
+			sourceTree = "<group>";
+		};
+		8723EDEC04EAADBB0073D10E /* ITConfigPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8723EDED04EAADBB0073D10E /* English */,
+			);
+			name = ITConfigPanel.nib;
+			sourceTree = "<group>";
+		};
+		E813FB7D0297522703A80106 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E813FB7E0297522703A80106 /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		E813FB86029754BB03A80106 /* Misc.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E813FB87029754BB03A80106 /* English */,
+			);
+			name = Misc.nib;
+			sourceTree = "<group>";
+		};
+		F6B0788E0ADDF1BE00F4BB37 /* Bookmarks.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6B0788F0ADDF1BE00F4BB37 /* English */,
+			);
+			name = Bookmarks.nib;
+			sourceTree = "<group>";
+		};
+		F6B07D970ADE1B9B00F4BB37 /* ProfilesWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6B07D980ADE1B9B00F4BB37 /* English */,
+			);
+			name = ProfilesWindow.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB024D32096EE4080021E793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iTerm_Prefix.pch;
+				INFOPLIST_FILE = iTerm_Framework.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-lncurses";
+				PRODUCT_NAME = iTerm;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		BB024D33096EE4080021E793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iTerm_Prefix.pch;
+				INFOPLIST_FILE = iTerm_Framework.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-lncurses";
+				PRODUCT_NAME = iTerm;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		BB024D36096EE4080021E793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G4;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iTerm_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = iTerm.plist;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = "-ltermcap";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = iTerm;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wmost",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB024D37096EE4080021E793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G4;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iTerm_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = iTerm.plist;
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = iTerm;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				UNSTRIPPED_PRODUCT = NO;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wmost",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BB024D3A096EE4080021E793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20881DB10EF8D917008D9CB9 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BB024D3B096EE4080021E793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20881DB20EF8D917008D9CB9 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB024D31096EE4080021E793 /* Build configuration list for PBXNativeTarget "iTerm Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB024D32096EE4080021E793 /* Debug */,
+				BB024D33096EE4080021E793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB024D35096EE4080021E793 /* Build configuration list for PBXNativeTarget "iTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB024D36096EE4080021E793 /* Debug */,
+				BB024D37096EE4080021E793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB024D39096EE4080021E793 /* Build configuration list for PBXProject "iTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB024D3A096EE4080021E793 /* Debug */,
+				BB024D3B096EE4080021E793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0464AB0C006CD2EC7F000001 /* Project object */;
+}

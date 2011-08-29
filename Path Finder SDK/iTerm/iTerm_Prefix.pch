@@ -1,0 +1,19 @@
+/*
+ *  iTerm_Prefix.pch
+ *  iTerm
+ *
+ *  Created by Steve Gehrman on 4/26/07.
+ *  Copyright 2007 __MyCompanyName__. All rights reserved.
+ *
+ */
+
+#import <Carbon/Carbon.h>
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#import <QuartzCore/QuartzCore.h>
+#import <CocoatechStrings/CocoatechStrings.h>
+#import <CocoatechCore/CocoatechCore.h>
+#endif
+
+#define NTLocalizedStringFromTableInBundle(w,x,y,z) (NSString*)[NTLocalizedString localize:(NSString*)w table:(NSString*)x]

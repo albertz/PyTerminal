@@ -1,0 +1,48 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                adEditBackground = id; 
+                adEditCancel = id; 
+                adEditFont = id; 
+                adEditForeground = id; 
+                adEditOK = id; 
+                adbAddEntry = id; 
+                adbCancel = id; 
+                adbEditEntry = id; 
+                adbGotoQuickOpen = id; 
+                adbOk = id; 
+                adbRemoveEntry = id; 
+            }; 
+            CLASS = AddressBook; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                adBackground = NSColorWell; 
+                adCommand = NSTextField; 
+                adEncoding = NSComboBox; 
+                adForegroud = NSColorWell; 
+                adName = NSTextField; 
+                adTable = NSTableView; 
+                adTextExample = NSTextView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {parameterPanelEnd = id; }; 
+            CLASS = ITMiscNibController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                commandField = id; 
+                commandView = id; 
+                parameterName = id; 
+                parameterPanel = id; 
+                parameterPrompt = id; 
+                parameterValue = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = PTYScrollView; LANGUAGE = ObjC; SUPERCLASS = NSScrollView; }, 
+        {CLASS = PTYTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }
+    ); 
+    IBVersion = 1; 
+}
