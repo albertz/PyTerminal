@@ -173,36 +173,24 @@ static int _check_and_flush (FILE *stream)
 {
 	Py_Initialize();
 
-/*	// make sure this is initialized (yes goofy, I know)
- 	[iTermController sharedInstance];
-	
-	NSDictionary* dict = [[ITAddressBookMgr sharedInstance] defaultBookmarkData];
-	ITTerminalView* term = [ITTerminalView view:dict];
-	
-	[term setFrame:[[window contentView] bounds]];
-	
-	[[window contentView] addSubview:term];
-	[term addNewSession:dict withCommand:nil withURL:nil];
-	
-	// goofy hack to show window, ignore
-	[self performSelector:@selector(showWindow) withObject:nil afterDelay:0];
-*/
-
+	// make sure this is initialized (yes goofy, I know)
 	[iTermController sharedInstance];
 
+	NSDictionary* dict = [[ITAddressBookMgr sharedInstance] defaultBookmarkData];
+	//ITTerminalView* v = [ITTerminalView view:dict];
+
 	ITTerminalView* v = [PyTerminalView alloc];
-	[v initWithFrame: NSMakeRect(0, 0, 100, 100)];
-	[v setupView:nil];
+	[v init];
+	[v setupView:dict];
 
     [v setAutoresizingMask: NSViewWidthSizable|NSViewHeightSizable];
 	[v setFrame:[[window contentView] bounds]];
-//	[v viewWillDraw];
 	[[window contentView] addSubview:v];
 
-//	[self performSelector:@selector(showWindow) withObject:nil afterDelay:0];
+	[v addNewSession:dict withCommand:nil withURL:nil];
 
-	[v addNewSession:nil withCommand:@"/bin/zsh" withURL:nil];
-	//[v runCommand:@"/bin/bash"];
+	// goofy hack to show window, ignore
+	[self performSelector:@selector(showWindow) withObject:nil afterDelay:0];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification
