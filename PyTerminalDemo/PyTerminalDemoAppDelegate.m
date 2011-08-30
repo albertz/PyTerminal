@@ -101,6 +101,9 @@ static int _check_and_flush (FILE *stream)
 	FILE* fp_in = fdopen(task->TTY_SLAVE, "r");
 	FILE* fp_out = fdopen(task->TTY_SLAVE, "w");
 	FILE* fp_err = fdopen(task->TTY_SLAVE, "w");
+	setbuf(fp_in,  (char *)NULL);
+	setbuf(fp_out, (char *)NULL);
+	setbuf(fp_err, (char *)NULL );
 
 	PyEval_AcquireLock();
 	PyThreadState* tstate = Py_NewInterpreter();
