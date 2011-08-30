@@ -25,14 +25,20 @@ static int _check_and_flush (FILE *stream)
 	return fflush (stream) || prev_fail ? EOF : 0;
 }
 
-@interface PyTerminalView : ITTerminalView
+@interface PyTerminalTask : NSObject
 {
-	int TTY_SLAVE;
+	@public int TTY_SLAVE;	
 }
+@end
+
+@implementation PyTerminalTask
+@end
+
+@interface PyTerminalView : ITTerminalView
 - (void)addNewSession:(NSDictionary *)addressbookEntry
 		  withCommand:(NSString *)command
 			  withURL:(NSString*)url;
-+ (void)_runPython:(PyTerminalView *)boss;
+- (void)_runPython:(PyTerminalTask *)task;
 @end
 
 @implementation PyTerminalView
@@ -41,10 +47,8 @@ static int _check_and_flush (FILE *stream)
 		  withCommand:(NSString *)command
 			  withURL:(NSString*)url
 {
-    PTYSession *aSession;
-	
     // Initialize a new session
-    aSession = [[PTYSession alloc] init];
+    PTYSession* aSession = [[PTYSession alloc] init];
 	[[aSession SCREEN] setScrollback:[[iTermTerminalProfileMgr singleInstance] scrollbackLinesForProfile: [addressbookEntry objectForKey: KEY_TERMINAL_PROFILE]]];
 	
 	// set our preferences
@@ -52,33 +56,21 @@ static int _check_and_flush (FILE *stream)
 	
     // Add this session to our term and make it current
     [self appendSession: aSession];
-	
-	NSString *pwd;
-	pwd = [addressbookEntry objectForKey: KEY_WORKING_DIRECTORY];
-	if ([pwd length] <= 0)
-		pwd = NSHomeDirectory();
-    NSDictionary *env=[NSDictionary dictionaryWithObject: pwd forKey:@"PWD"];
-    
+	    
     [self setCurrentSessionName:[addressbookEntry objectForKey: KEY_NAME]];	
     
-	PTYSession* curSession = [self currentSession];
-	PTYTask* shell = [curSession SHELL];
-	VT100Screen* screen = [curSession SCREEN];
+	PTYTask* shell = [aSession SHELL];
+	VT100Screen* screen = [aSession SCREEN];
 	
 	// see shell.launchWithPath for reference.
-	if(0)
-    [shell launchWithPath:nil
-				arguments:nil
-			  environment:env
-					width:[screen width]
-				   height:[screen height]];
 	
 	struct termios term;
     struct winsize win;
     char ttyname[PATH_MAX];
 	
+	PyTerminalTask* task = [[PyTerminalTask alloc] init];
     setup_tty_param(&term, &win, [screen width], [screen height]);
-    int ret = openpty(&shell->FILDES, &TTY_SLAVE, ttyname, &term, &win);
+    int ret = openpty(&shell->FILDES, &task->TTY_SLAVE, ttyname, &term, &win);
 	NSParameterAssert(ret == 0);
 
     int one = 1;
@@ -95,18 +87,25 @@ static int _check_and_flush (FILE *stream)
 
 	// spawn a thread for Python
     [NSThread detachNewThreadSelector:@selector(_runPython:)
-            	             toTarget:[PyTerminalView class]
-						   withObject:self];
+            	             toTarget:self
+						   withObject:task];
 	
     [aSession release];
 }
 
-+ (void)_runPython:(PyTerminalView *)boss
+- (void)_runPython:(PyTerminalTask *)task
 {
-	FILE* fp_in = fdopen(boss->TTY_SLAVE, "r");
-	FILE* fp_out = fdopen(boss->TTY_SLAVE, "w");
-	FILE* fp_err = fdopen(boss->TTY_SLAVE, "w");
+	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+	[[NSThread currentThread] setName:@"runPython"];
 
+	FILE* fp_in = fdopen(task->TTY_SLAVE, "r");
+	FILE* fp_out = fdopen(task->TTY_SLAVE, "w");
+	FILE* fp_err = fdopen(task->TTY_SLAVE, "w");
+
+	PyEval_AcquireLock();
+	PyThreadState* tstate = Py_NewInterpreter();
+	//PyThreadState* saved_tstate = PyThreadState_Swap(tstate);
+	
     PyObject *sysin, *sysout, *syserr;
 	sysin = PyFile_FromFile(fp_in, "<stdin>", "r", NULL);
     sysout = PyFile_FromFile(fp_out, "<stdout>", "w", _check_and_flush);
@@ -117,9 +116,6 @@ static int _check_and_flush (FILE *stream)
 	PySys_SetObject("stdout", sysout);
 	PySys_SetObject("stderr", syserr);
 	
-	PyRun_SimpleString("from time import time,ctime\n"
-					   "print 'Today is',ctime(time())\n");
-
 	{
 		PyObject *v;
 		v = PyImport_ImportModule("readline");
@@ -131,9 +127,6 @@ static int _check_and_flush (FILE *stream)
 			Py_DECREF(v);
 	}
 	
-	PyRun_SimpleString("s = raw_input('Input: ')\n"
-					   "print 'Out:', s\n");
-
 	PyRun_SimpleString(
 		"import sys\n"
 		"sys.argv = []\n"
@@ -141,25 +134,16 @@ static int _check_and_flush (FILE *stream)
 		"ipshell = IPShell(argv=[])\n"
 		"ipshell.mainloop()\n"
 	);
-
-    PyCompilerFlags cf;
+    
+	PyCompilerFlags cf;
 	cf.cf_flags = 0;
 
 	// We cannot use PyRun_InteractiveLoopFlags because in Python/Parser/tokenizer.c,
 	// there is `PyOS_Readline(stdin, stdout, tok->prompt)` hardcoded, so it ignores our fp_in.
 	//PyRun_InteractiveLoopFlags(fp_in, "<stdin>", &cf);
 	
-	
-	/*
-	NSAutoreleasePool *arPool = [[NSAutoreleasePool alloc] init];;
- 	
-	if (sts >= 0) 
-        [boss brokenPipe];
-	
-	[arPool release];
-	*/
- //   MPSignalSemaphore(boss->threadEndSemaphore);
-	
+	Py_EndInterpreter(tstate);
+	[pool release];
 	[NSThread exit];
 }
 
@@ -171,8 +155,10 @@ static int _check_and_flush (FILE *stream)
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	Py_Initialize();
-
+	Py_InitializeEx(0);
+	PyEval_InitThreads();
+	PyEval_ReleaseLock(); // the main thread doesn't use Python
+	
 	// make sure this is initialized (yes goofy, I know)
 	[iTermController sharedInstance];
 
@@ -195,6 +181,7 @@ static int _check_and_flush (FILE *stream)
 
 - (void)applicationWillTerminate:(NSNotification *)notification
 {
+	//PyEval_AcquireLock();
 	//Py_Finalize();
 }
 
