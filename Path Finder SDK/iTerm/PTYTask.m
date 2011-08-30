@@ -120,6 +120,7 @@ static int writep(int fds, char *buf, size_t len)
 
 + (void)_processReadThread:(PTYTask *)boss
 {
+	[[NSThread currentThread] setName:@"PTYTask processReadThread"];
 	NSAutoreleasePool *arPool = [[NSAutoreleasePool alloc] init];;
     BOOL exitf = NO;
     int sts;
