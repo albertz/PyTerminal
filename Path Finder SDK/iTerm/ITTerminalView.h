@@ -45,6 +45,7 @@
 }
 
 + (ITTerminalView*)view:(NSDictionary *)entry;
+- (void)setupView:(NSDictionary *)entry;
 
 - (void)setupSession: (PTYSession *) aSession title: (NSString *)title;
 - (void)insertSession: (PTYSession *) aSession atIndex: (int) index;

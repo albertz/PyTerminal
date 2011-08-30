@@ -55,8 +55,6 @@
 - (BOOL)askUserToCloseTab:(PTYSession*)session;
 - (NSArray*)runningProcesses:(PTYSession*)session;
 
-- (void)setupView:(NSDictionary *)entry;
-
 - (NSFont *) _getMaxFont:(NSFont* ) font 
 				  height:(float) height
 				   lines:(float) lines;
