@@ -15,7 +15,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	PyTerminalView* v = [PyTerminalView alloc];
+	NSView* v = allocPyTermialView();
 	[v init];
     [v setAutoresizingMask: NSViewWidthSizable|NSViewHeightSizable];
 	[v setFrame:[[window contentView] bounds]];

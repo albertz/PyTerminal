@@ -20,6 +20,19 @@
 #import <Python/Python.h>
 #include "py_raw_input.h"
 
+@interface PyTerminalTask : NSObject
+{
+	@public int TTY_SLAVE;	
+}
+@end
+
+@interface PyTerminalView : ITTerminalView
+- (void)addNewSession:(NSDictionary *)addressbookEntry
+		  withCommand:(NSString *)command
+			  withURL:(NSString*)url;
+- (void)_runPython:(PyTerminalTask *)task;
+@end
+
 // from Python/sysmodule.c
 static int _check_and_flush (FILE *stream)
 {
@@ -156,4 +169,8 @@ static int _check_and_flush (FILE *stream)
 }
 
 @end
+
+NSView* allocPyTermialView() {
+	return [PyTerminalView alloc];
+}
 
