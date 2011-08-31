@@ -48,6 +48,8 @@
 		20C6679F0B67027D00533B48 /* VT100Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6679E0B67027D00533B48 /* VT100Screen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20F0F2490BFE23D700689231 /* CocoaTechStrings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */; };
 		20F0F24A0BFE23E700689231 /* CocoaTechStrings.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 20F0F2480BFE23D700689231 /* CocoaTechStrings.framework */; };
+		2364B478140ED24C009AC854 /* CocoatechCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2094D2C00CC6A4B100D5F32C /* CocoatechCore.framework */; };
+		2364B479140ED24F009AC854 /* CocoaTechStrings.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 20671A040BFE72FF00757734 /* CocoaTechStrings.framework */; };
 		874206050564168A00CFC3F1 /* PTToolbarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2076B15704E8817300000106 /* PTToolbarController.h */; };
 		874206060564168A00CFC3F1 /* ITAddressBookMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E74F4804E9089700000106 /* ITAddressBookMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		874206070564168A00CFC3F1 /* ITViewLocalizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B8892A04E9342100000106 /* ITViewLocalizer.h */; };
@@ -194,6 +196,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2364B477140ED23A009AC854 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2364B478140ED24C009AC854 /* CocoatechCore.framework in CopyFiles */,
+				2364B479140ED24F009AC854 /* CocoaTechStrings.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		874206560564169600CFC3F1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -749,6 +762,7 @@
 				8742060B0564168A00CFC3F1 /* Resources */,
 				8742061F0564168A00CFC3F1 /* Sources */,
 				874206380564168A00CFC3F1 /* Frameworks */,
+				2364B477140ED23A009AC854 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1047,7 +1061,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iTerm_Prefix.pch;
 				INFOPLIST_FILE = iTerm_Framework.plist;
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@loader_path/Frameworks";
 				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = iTerm;
 				WRAPPER_EXTENSION = framework;
@@ -1063,7 +1077,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iTerm_Prefix.pch;
 				INFOPLIST_FILE = iTerm_Framework.plist;
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@loader_path/Frameworks";
 				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = iTerm;
 				WRAPPER_EXTENSION = framework;

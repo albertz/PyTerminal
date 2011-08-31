@@ -1250,7 +1250,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CocoatechStrings.pch;
 				INFOPLIST_FILE = "Info-CocoaTechStrings__Native_.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@loader_path/Frameworks";
 				PRODUCT_NAME = CocoaTechStrings;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1265,7 +1265,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CocoatechStrings.pch;
 				INFOPLIST_FILE = "Info-CocoaTechStrings__Native_.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@loader_path/Frameworks";
 				PRODUCT_NAME = CocoaTechStrings;
 				WRAPPER_EXTENSION = framework;
 			};

@@ -355,6 +355,7 @@
 		20F35BC21117D13000B556AC /* NSScrollView-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F35BC01117D13000B556AC /* NSScrollView-NTExtensions.m */; };
 		20F43BE6110824C800694504 /* NSSortDescriptor-NTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F43BE4110824C800694504 /* NSSortDescriptor-NTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20F43BE7110824C800694504 /* NSSortDescriptor-NTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F43BE5110824C800694504 /* NSSortDescriptor-NTExtensions.m */; };
+		2364B47C140ED3EB009AC854 /* CocoaTechStrings.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 20C10B0A0A3F6D9900291B79 /* CocoaTechStrings.framework */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -375,6 +376,19 @@
 			remoteInfo = CocoaTechStrings;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2364B47B140ED3DF009AC854 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2364B47C140ED3EB009AC854 /* CocoaTechStrings.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -1469,6 +1483,7 @@
 				8DC2EF520486A6940098B216 /* Resources */,
 				8DC2EF540486A6940098B216 /* Sources */,
 				8DC2EF560486A6940098B216 /* Frameworks */,
+				2364B47B140ED3DF009AC854 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1737,7 +1752,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CocoatechCore_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-headerpad_max_install_names",
@@ -1756,7 +1771,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CocoatechCore_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-headerpad_max_install_names",
