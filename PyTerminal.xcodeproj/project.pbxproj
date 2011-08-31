@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23F71C2A140D5C8000C92808 /* py_raw_input.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C29140D5C8000C92808 /* py_raw_input.c */; };
+		23F71C2B140D5C8000C92808 /* py_raw_input.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C29140D5C8000C92808 /* py_raw_input.c */; };
+		23F71C2E140D5DDB00C92808 /* py_raw_input.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C2D140D5DDB00C92808 /* py_raw_input.h */; };
+		23F71C30140D604D00C92808 /* libreadline.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F71C2F140D604D00C92808 /* libreadline.dylib */; };
 		23FB664A140BA41A003DA117 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6649140BA41A003DA117 /* Cocoa.framework */; };
 		23FB6654140BA41A003DA117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6652140BA41A003DA117 /* InfoPlist.strings */; };
 		23FB6658140BA41A003DA117 /* PyTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB6657140BA41A003DA117 /* PyTerminal.m */; };
@@ -45,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23F71C29140D5C8000C92808 /* py_raw_input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = py_raw_input.c; sourceTree = "<group>"; };
+		23F71C2D140D5DDB00C92808 /* py_raw_input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = py_raw_input.h; sourceTree = "<group>"; };
+		23F71C2F140D604D00C92808 /* libreadline.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libreadline.dylib; path = usr/lib/libreadline.dylib; sourceTree = SDKROOT; };
 		23FB6646140BA41A003DA117 /* PyTerminal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PyTerminal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FB6649140BA41A003DA117 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		23FB664C140BA41A003DA117 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -81,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F71C30140D604D00C92808 /* libreadline.dylib in Frameworks */,
 				23FB669C140BADCF003DA117 /* Python.framework in Frameworks */,
 				23FB6667140BA4A5003DA117 /* Cocoa.framework in Frameworks */,
 				23FB6695140BA4DB003DA117 /* iTerm.framework in Frameworks */,
@@ -90,12 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23F71C2C140D5C9400C92808 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				23F71C29140D5C8000C92808 /* py_raw_input.c */,
+				23F71C2D140D5DDB00C92808 /* py_raw_input.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		23FB663A140BA41A003DA117 = {
 			isa = PBXGroup;
 			children = (
+				23F71C2F140D604D00C92808 /* libreadline.dylib */,
 				23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */,
 				23FB664F140BA41A003DA117 /* PyTerminal */,
 				23FB6668140BA4A5003DA117 /* PyTerminalDemo */,
+				23F71C2C140D5C9400C92808 /* Source */,
 				23FB6648140BA41A003DA117 /* Frameworks */,
 				23FB6647140BA41A003DA117 /* Products */,
 			);
@@ -189,6 +208,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F71C2E140D5DDB00C92808 /* py_raw_input.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23FB6658140BA41A003DA117 /* PyTerminal.m in Sources */,
+				23F71C2A140D5C8000C92808 /* py_raw_input.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +337,7 @@
 			files = (
 				23FB666F140BA4A5003DA117 /* main.m in Sources */,
 				23FB6676140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m in Sources */,
+				23F71C2B140D5C8000C92808 /* py_raw_input.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

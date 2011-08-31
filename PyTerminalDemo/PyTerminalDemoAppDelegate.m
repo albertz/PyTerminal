@@ -17,105 +17,7 @@
 #include <sys/ioctl.h>
 
 #import <Python/Python.h>
-
-// based on Python/Parser/myreadline.c:PyOS_Readline
-static char *
-my_PyOS_Readline(FILE *sys_stdin, FILE *sys_stdout, char *prompt)
-{
-    char *rv;
-	
-    if (_PyOS_ReadlineTState == PyThreadState_GET()) {
-        PyErr_SetString(PyExc_RuntimeError,
-                        "can't re-enter readline");
-        return NULL;
-    }
-	
-	// PyOS_StdioReadline not available here, so no fallback!
-    assert (PyOS_ReadlineFunctionPointer != NULL);
-	
-    _PyOS_ReadlineTState = PyThreadState_GET();
-    Py_BEGIN_ALLOW_THREADS	
-    rv = (*PyOS_ReadlineFunctionPointer)(sys_stdin, sys_stdout, prompt);
-    Py_END_ALLOW_THREADS
-    _PyOS_ReadlineTState = NULL;
-	
-    return rv;
-}
-
-// from Python/bltinmodule.c
-static PyObject *
-my_raw_input(PyObject *self, PyObject *args)
-{
-    PyObject *v = NULL;
-    PyObject *fin = PySys_GetObject("stdin");
-    PyObject *fout = PySys_GetObject("stdout");
-	
-    if (!PyArg_UnpackTuple(args, "[raw_]input", 0, 1, &v))
-        return NULL;
-	
-    if (fin == NULL) {
-        PyErr_SetString(PyExc_RuntimeError, "[raw_]input: lost sys.stdin");
-        return NULL;
-    }
-    if (fout == NULL) {
-        PyErr_SetString(PyExc_RuntimeError, "[raw_]input: lost sys.stdout");
-        return NULL;
-    }
-    if (PyFile_SoftSpace(fout, 0)) {
-        if (PyFile_WriteString(" ", fout) != 0)
-            return NULL;
-    }
-    if (PyFile_AsFile(fin) && PyFile_AsFile(fout)
-        && isatty(fileno(PyFile_AsFile(fin)))
-        && isatty(fileno(PyFile_AsFile(fout)))) {
-        PyObject *po;
-        char *prompt;
-        char *s;
-        PyObject *result;
-        if (v != NULL) {
-            po = PyObject_Str(v);
-            if (po == NULL)
-                return NULL;
-            prompt = PyString_AsString(po);
-            if (prompt == NULL)
-                return NULL;
-        }
-        else {
-            po = NULL;
-            prompt = "";
-        }
-        s = my_PyOS_Readline(PyFile_AsFile(fin), PyFile_AsFile(fout),
-                          prompt);
-        Py_XDECREF(po);
-        if (s == NULL) {
-            if (!PyErr_Occurred())
-                PyErr_SetNone(PyExc_KeyboardInterrupt);
-            return NULL;
-        }
-        if (*s == '\0') {
-            PyErr_SetNone(PyExc_EOFError);
-            result = NULL;
-        }
-        else { /* strip trailing '\n' */
-            size_t len = strlen(s);
-            if (len > PY_SSIZE_T_MAX) {
-                PyErr_SetString(PyExc_OverflowError,
-                                "[raw_]input: input too long");
-                result = NULL;
-            }
-            else {
-                result = PyString_FromStringAndSize(s, len-1);
-            }
-        }
-        PyMem_FREE(s);
-        return result;
-    }
-    if (v != NULL) {
-        if (PyFile_WriteObject(v, fout, Py_PRINT_RAW) != 0)
-            return NULL;
-    }
-    return PyFile_GetLine(fin, -1);
-}
+#include "py_raw_input.h"
 
 // from Python/sysmodule.c
 static int _check_and_flush (FILE *stream)
@@ -202,7 +104,7 @@ static int _check_and_flush (FILE *stream)
 	FILE* fp_err = fdopen(task->TTY_SLAVE, "w");
 	setbuf(fp_in,  (char *)NULL);
 	setbuf(fp_out, (char *)NULL);
-	setbuf(fp_err, (char *)NULL );
+	setbuf(fp_err, (char *)NULL);
 
 	PyEval_AcquireLock();
 	PyThreadState* tstate = Py_NewInterpreter();
@@ -218,29 +120,7 @@ static int _check_and_flush (FILE *stream)
 	PySys_SetObject("stdout", sysout);
 	PySys_SetObject("stderr", syserr);
 	
-	{
-		PyObject *v;
-		v = PyImport_ImportModule("readline");
-		if (v == NULL) {
-			fprintf(fp_out, "Error importing 'readline' module.\n");
-			PyErr_Print();
-			PyErr_Clear();
-		} else
-			Py_DECREF(v);
-	}
-	
-	{
-		// overwrite raw_input builtin
-		PyObject* dict = tstate->interp->builtins;
-		struct PyMethodDef md = {"raw_input", my_raw_input, METH_VARARGS, NULL};
-		PyObject* n = PyString_FromString("__builtin__");
-		NSParameterAssert(n != NULL);
-		PyObject* v = PyCFunction_NewEx(&md, NULL, n);
-		NSParameterAssert(v != NULL);
-		NSParameterAssert(PyDict_SetItemString(dict, md.ml_name, v) == 0);
-		Py_DECREF(v);
-		Py_DECREF(n);
-	}
+	overwritePyRawInput(tstate->interp->builtins);
 	
 	PyRun_SimpleString(
 		"import sys\n"
