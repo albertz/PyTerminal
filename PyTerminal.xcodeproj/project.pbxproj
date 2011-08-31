@@ -299,7 +299,6 @@
 		23FB663A140BA41A003DA117 = {
 			isa = PBXGroup;
 			children = (
-				2358792D140E74F20057D08E /* libtermcap.dylib */,
 				23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */,
 				23FB664F140BA41A003DA117 /* PyTerminal */,
 				23FB6668140BA4A5003DA117 /* PyTerminalDemo */,
@@ -323,6 +322,7 @@
 		23FB6648140BA41A003DA117 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2358792D140E74F20057D08E /* libtermcap.dylib */,
 				23FB669B140BADCF003DA117 /* Python.framework */,
 				23FB6649140BA41A003DA117 /* Cocoa.framework */,
 				23FB664B140BA41A003DA117 /* Other Frameworks */,
