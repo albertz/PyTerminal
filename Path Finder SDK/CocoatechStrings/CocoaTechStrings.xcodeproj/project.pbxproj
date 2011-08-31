@@ -35,11 +35,11 @@
 		20CD1C2F0546675B00A37B05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9613FF903A6BF4D014F6B84 /* Foundation.framework */; };
 		20D8947706157798002EBFE9 /* NTMacErrorString.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D8947506157798002EBFE9 /* NTMacErrorString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20D8947806157798002EBFE9 /* NTMacErrorString.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8947606157798002EBFE9 /* NTMacErrorString.m */; };
-		20DAAA6008FB10AD008777D7 /* CocoatechStrings.pch in Headers */ = {isa = PBXBuildFile; fileRef = 20DAAA5F08FB10AD008777D7 /* CocoatechStrings.pch */; };
+		20DAAA6008FB10AD008777D7 /* CocoatechStrings.pch in Headers */ = {isa = PBXBuildFile; fileRef = 20DAAA5F08FB10AD008777D7 /* CocoatechStrings.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		20DBFFBD0C2F198E001180F0 /* modulePlugins.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20DBFFAA0C2F198E001180F0 /* modulePlugins.strings */; };
 		20E976E205F1C665002909FE /* NTViewLocalizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E976E005F1C665002909FE /* NTViewLocalizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E976E305F1C665002909FE /* NTViewLocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E976E105F1C665002909FE /* NTViewLocalizer.m */; };
-		20E976E805F1C6CC002909FE /* NSButton-Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E976E605F1C6CC002909FE /* NSButton-Extensions.h */; };
+		20E976E805F1C6CC002909FE /* NSButton-Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E976E605F1C6CC002909FE /* NSButton-Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E976E905F1C6CC002909FE /* NSButton-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E976E705F1C6CC002909FE /* NSButton-Extensions.m */; };
 /* End PBXBuildFile section */
 
@@ -568,13 +568,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20DAAA6008FB10AD008777D7 /* CocoatechStrings.pch in Headers */,
 				20CD1C2A0546675B00A37B05 /* NTLocalizedString.h in Headers */,
 				202253D00565C8F900066B11 /* CocoaTechStrings.h in Headers */,
 				200AB2B805BE24D300CA5EEC /* NTMenuBarLocalizer.h in Headers */,
 				20E976E205F1C665002909FE /* NTViewLocalizer.h in Headers */,
 				20E976E805F1C6CC002909FE /* NSButton-Extensions.h in Headers */,
 				20D8947706157798002EBFE9 /* NTMacErrorString.h in Headers */,
-				20DAAA6008FB10AD008777D7 /* CocoatechStrings.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
