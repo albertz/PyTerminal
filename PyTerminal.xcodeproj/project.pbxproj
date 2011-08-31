@@ -139,6 +139,7 @@
 		23587930140E81500057D08E /* PyTerminalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyTerminalView.m; sourceTree = "<group>"; };
 		23587937140E83000057D08E /* libtermcap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtermcap.dylib; path = usr/lib/libtermcap.dylib; sourceTree = SDKROOT; };
 		23587939140E83050057D08E /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		2364B473140ECAB5009AC854 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		23F71C29140D5C8000C92808 /* py_raw_input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = py_raw_input.c; sourceTree = "<group>"; };
 		23F71C2D140D5DDB00C92808 /* py_raw_input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = py_raw_input.h; sourceTree = "<group>"; };
 		23F71C35140E6ECB00C92808 /* libreadline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libreadline.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -325,6 +326,7 @@
 		23FB663A140BA41A003DA117 = {
 			isa = PBXGroup;
 			children = (
+				2364B473140ECAB5009AC854 /* install.sh */,
 				23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */,
 				23FB664F140BA41A003DA117 /* PyTerminal */,
 				23FB6668140BA4A5003DA117 /* PyTerminalDemo */,
