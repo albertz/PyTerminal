@@ -204,14 +204,12 @@
 		23FB664E140BA41A003DA117 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23FB6651140BA41A003DA117 /* PyTerminal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyTerminal-Info.plist"; sourceTree = "<group>"; };
 		23FB6653140BA41A003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		23FB6655140BA41A003DA117 /* PyTerminal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PyTerminal-Prefix.pch"; sourceTree = "<group>"; };
 		23FB6656140BA41A003DA117 /* PyTerminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PyTerminal.h; sourceTree = "<group>"; };
 		23FB6657140BA41A003DA117 /* PyTerminal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyTerminal.m; sourceTree = "<group>"; };
 		23FB6665140BA4A5003DA117 /* PyTerminalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyTerminalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FB666A140BA4A5003DA117 /* PyTerminalDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyTerminalDemo-Info.plist"; sourceTree = "<group>"; };
 		23FB666C140BA4A5003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		23FB666E140BA4A5003DA117 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		23FB6670140BA4A5003DA117 /* PyTerminalDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PyTerminalDemo-Prefix.pch"; sourceTree = "<group>"; };
 		23FB6672140BA4A5003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		23FB6674140BA4A5003DA117 /* PyTerminalDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PyTerminalDemoAppDelegate.h; sourceTree = "<group>"; };
 		23FB6675140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyTerminalDemoAppDelegate.m; sourceTree = "<group>"; };
@@ -383,7 +381,6 @@
 			children = (
 				23FB6651140BA41A003DA117 /* PyTerminal-Info.plist */,
 				23FB6652140BA41A003DA117 /* InfoPlist.strings */,
-				23FB6655140BA41A003DA117 /* PyTerminal-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -405,7 +402,6 @@
 				23FB666A140BA4A5003DA117 /* PyTerminalDemo-Info.plist */,
 				23FB666B140BA4A5003DA117 /* InfoPlist.strings */,
 				23FB666E140BA4A5003DA117 /* main.m */,
-				23FB6670140BA4A5003DA117 /* PyTerminalDemo-Prefix.pch */,
 				23FB6671140BA4A5003DA117 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -779,8 +775,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PyTerminal/PyTerminal-Prefix.pch";
 				INFOPLIST_FILE = "PyTerminal/PyTerminal-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -793,8 +787,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PyTerminal/PyTerminal-Prefix.pch";
 				INFOPLIST_FILE = "PyTerminal/PyTerminal-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -804,8 +796,6 @@
 		23FB667A140BA4A5003DA117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PyTerminalDemo/PyTerminalDemo-Prefix.pch";
 				INFOPLIST_FILE = "PyTerminalDemo/PyTerminalDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -815,8 +805,6 @@
 		23FB667B140BA4A5003DA117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PyTerminalDemo/PyTerminalDemo-Prefix.pch";
 				INFOPLIST_FILE = "PyTerminalDemo/PyTerminalDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
