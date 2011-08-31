@@ -1041,11 +1041,119 @@ initreadline(void)
 
 #include <Python/pythread.h>
 
-static PyThread_type_lock* readline_lock = NULL;
 
-// in Python-2.7.1/Parser/myreadline.c
-extern char *
-PyOS_StdioReadline(FILE *sys_stdin, FILE *sys_stdout, char *prompt);
+// from Python-2.7.1/Parser/myreadline.c:my_fgets
+
+/* This function restarts a fgets() after an EINTR error occurred
+ except if PyOS_InterruptOccurred() returns true. */
+
+static int
+my_fgets(char *buf, int len, FILE *fp)
+{
+    char *p;
+    if (PyOS_InputHook != NULL)
+        (void)(PyOS_InputHook)();
+    errno = 0;
+    p = fgets(buf, len, fp);
+    if (p != NULL)
+        return 0; /* No error */
+#ifdef MS_WINDOWS
+    /* In the case of a Ctrl+C or some other external event
+	 interrupting the operation:
+	 Win2k/NT: ERROR_OPERATION_ABORTED is the most recent Win32
+	 error code (and feof() returns TRUE).
+	 Win9x: Ctrl+C seems to have no effect on fgets() returning
+	 early - the signal handler is called, but the fgets()
+	 only returns "normally" (ie, when Enter hit or feof())
+	 */
+    if (GetLastError()==ERROR_OPERATION_ABORTED) {
+        /* Signals come asynchronously, so we sleep a brief
+		 moment before checking if the handler has been
+		 triggered (we cant just return 1 before the
+		 signal handler has been called, as the later
+		 signal may be treated as a separate interrupt).
+		 */
+        Sleep(1);
+        if (PyOS_InterruptOccurred()) {
+            return 1; /* Interrupt */
+        }
+        /* Either the sleep wasn't long enough (need a
+		 short loop retrying?) or not interrupted at all
+		 (in which case we should revisit the whole thing!)
+		 Logging some warning would be nice.  assert is not
+		 viable as under the debugger, the various dialogs
+		 mean the condition is not true.
+		 */
+    }
+#endif /* MS_WINDOWS */
+    if (feof(fp)) {
+        return -1; /* EOF */
+    }
+#ifdef EINTR
+    if (errno == EINTR) {
+        int s;
+#ifdef WITH_THREAD
+        PyEval_RestoreThread(_PyOS_ReadlineTState);
+#endif
+        s = PyErr_CheckSignals();
+#ifdef WITH_THREAD
+        PyEval_SaveThread();
+#endif
+        if (s < 0) {
+            return 1;
+        }
+    }
+#endif
+    if (PyOS_InterruptOccurred()) {
+        return 1; /* Interrupt */
+    }
+    return -2; /* Error */
+}
+
+// based on Python-2.7.1/Parser/myreadline.c:PyOS_StdioReadline
+/* Readline implementation using fgets() */
+
+static char *
+PyOS_StdioReadline(FILE *sys_stdin, FILE *sys_stdout, char *prompt)
+{
+    size_t n;
+    char *p;
+    n = 100;
+    if ((p = (char *)PyMem_MALLOC(n)) == NULL)
+        return NULL;
+    if (prompt)
+        fprintf(sys_stdout, "%s", prompt);
+    fflush(sys_stdout);
+    switch (my_fgets(p, (int)n, sys_stdin)) {
+		case 0: /* Normal case */
+			break;
+		case 1: /* Interrupt */
+			PyMem_FREE(p);
+			return NULL;
+		case -1: /* EOF */
+		case -2: /* Error */
+		default: /* Shouldn't happen */
+			*p = '\0';
+			break;
+    }
+    n = strlen(p);
+    while (n > 0 && p[n-1] != '\n') {
+        size_t incr = n+2;
+        p = (char *)PyMem_REALLOC(p, n + incr);
+        if (p == NULL)
+            return NULL;
+        if (incr > INT_MAX) {
+            PyErr_SetString(PyExc_OverflowError, "input line too long");
+        }
+        if (my_fgets(p+n, (int)incr, sys_stdin) != 0)
+            break;
+        n += strlen(p+n);
+    }
+    return (char *)PyMem_REALLOC(p, n+1);
+}
+
+
+static PyThread_type_lock* readline_lock = NULL;
 
 // based on Python-2.7.1/Parser/myreadline.c:PyOS_Readline
 static char *
