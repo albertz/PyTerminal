@@ -1039,8 +1039,15 @@ initreadline(void)
 
 // ----------------------
 
+#include <Python/pythread.h>
 
-// based on Python/Parser/myreadline.c:PyOS_Readline
+static PyThread_type_lock* readline_lock = NULL;
+
+// in Python-2.7.1/Parser/myreadline.c
+extern char *
+PyOS_StdioReadline(FILE *sys_stdin, FILE *sys_stdout, char *prompt);
+
+// based on Python-2.7.1/Parser/myreadline.c:PyOS_Readline
 static char *
 my_PyOS_Readline(FILE *sys_stdin, FILE *sys_stdout, char *prompt)
 {
@@ -1054,7 +1061,18 @@ my_PyOS_Readline(FILE *sys_stdin, FILE *sys_stdout, char *prompt)
 		
     _PyOS_ReadlineTState = PyThreadState_GET();
     Py_BEGIN_ALLOW_THREADS	
-    rv = call_readline(sys_stdin, sys_stdout, prompt);
+	if(readline_lock == NULL)
+		readline_lock = PyThread_allocate_lock();
+	if(PyThread_acquire_lock(readline_lock, NOWAIT_LOCK)) {
+		rv = call_readline(sys_stdin, sys_stdout, prompt);
+		PyThread_release_lock(readline_lock);
+	}
+	else {
+		// someone else is using readline right now.
+		// readline is totally not multithreading safe.
+		// this sucks.
+		rv = PyOS_StdioReadline(sys_stdin, sys_stdout, prompt);
+	}
     Py_END_ALLOW_THREADS
     _PyOS_ReadlineTState = NULL;
 	
