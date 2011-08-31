@@ -74,7 +74,6 @@
 		23F71CAD140E6F4500C92808 /* xmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C74140E6F4500C92808 /* xmalloc.h */; };
 		23FB664A140BA41A003DA117 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6649140BA41A003DA117 /* Cocoa.framework */; };
 		23FB6654140BA41A003DA117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6652140BA41A003DA117 /* InfoPlist.strings */; };
-		23FB6658140BA41A003DA117 /* PyTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB6657140BA41A003DA117 /* PyTerminal.m */; };
 		23FB6667140BA4A5003DA117 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6649140BA41A003DA117 /* Cocoa.framework */; };
 		23FB666D140BA4A5003DA117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23FB666B140BA4A5003DA117 /* InfoPlist.strings */; };
 		23FB666F140BA4A5003DA117 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB666E140BA4A5003DA117 /* main.m */; };
@@ -205,8 +204,6 @@
 		23FB664E140BA41A003DA117 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23FB6651140BA41A003DA117 /* PyTerminal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyTerminal-Info.plist"; sourceTree = "<group>"; };
 		23FB6653140BA41A003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		23FB6656140BA41A003DA117 /* PyTerminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PyTerminal.h; sourceTree = "<group>"; };
-		23FB6657140BA41A003DA117 /* PyTerminal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyTerminal.m; sourceTree = "<group>"; };
 		23FB6665140BA4A5003DA117 /* PyTerminalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyTerminalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FB666A140BA4A5003DA117 /* PyTerminalDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyTerminalDemo-Info.plist"; sourceTree = "<group>"; };
 		23FB666C140BA4A5003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -371,8 +368,6 @@
 		23FB664F140BA41A003DA117 /* PyTerminal */ = {
 			isa = PBXGroup;
 			children = (
-				23FB6656140BA41A003DA117 /* PyTerminal.h */,
-				23FB6657140BA41A003DA117 /* PyTerminal.m */,
 				23FB6650140BA41A003DA117 /* Supporting Files */,
 			);
 			path = PyTerminal;
@@ -634,7 +629,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23FB6658140BA41A003DA117 /* PyTerminal.m in Sources */,
 				23F71C2A140D5C8000C92808 /* py_raw_input.c in Sources */,
 				23587932140E81500057D08E /* PyTerminalView.m in Sources */,
 			);
