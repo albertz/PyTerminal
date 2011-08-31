@@ -1111,6 +1111,7 @@ my_fgets(char *buf, int len, FILE *fp)
 }
 
 // based on Python-2.7.1/Parser/myreadline.c:PyOS_StdioReadline
+// This fixes http://bugs.python.org/issue12869 , i.e. it prints on sys_stdout.
 /* Readline implementation using fgets() */
 
 static char *
