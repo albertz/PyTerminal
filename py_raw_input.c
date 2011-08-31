@@ -6,15 +6,17 @@
 //  Copyright 2011 Albert Zeyer. All rights reserved.
 //
 
+#include "py_raw_input.h"
+
+//-------------------------
 // This is based on Python-2.7.1/Modules/readline.c.
+// Or: https://github.com/ludwigschwardt/python-readline/blob/master/Modules/2.x/readline.c
 
 /* This module makes GNU readline available to Python.  It has ideas
  * contributed by Lee Busby, LLNL, and William Magro, Cornell Theory
  * Center.  The completer interface was inspired by Lele Gaifax.  More
  * recently, it was largely rewritten by Guido van Rossum.
  */
-
-#include "py_raw_input.h"
 
 /* Standard definitions */
 #include <Python/Python.h>
@@ -915,6 +917,7 @@ setup_readline(void)
 
 /* Wrapper around GNU readline that handles signals differently. */
 
+
 static  char *completed_input_string;
 static void
 rlhandler(char *text)
@@ -945,8 +948,7 @@ readline_until_enter_or_signal(char *prompt, int *signal)
         int has_input = 0;
 		
         while (!has_input)
-        {
-			struct timeval timeout = {0, 100000}; /* 0.1 seconds */
+        {               struct timeval timeout = {0, 100000}; /* 0.1 seconds */
 			
             /* [Bug #1552726] Only limit the pause if an input hook has been
 			 defined.  */
@@ -961,7 +963,6 @@ readline_until_enter_or_signal(char *prompt, int *signal)
         }
 		
         if(has_input > 0) {
-			printf("readline %i\n", fileno(rl_instream));
             rl_callback_read_char();
         }
         else if (errno == EINTR) {
@@ -985,6 +986,7 @@ readline_until_enter_or_signal(char *prompt, int *signal)
 	
     return completed_input_string;
 }
+
 
 
 static char *
@@ -1072,6 +1074,7 @@ PyDoc_STRVAR(doc_module_le,
 			 "Importing this module enables command line editing using libedit readline.");
 #endif /* __APPLE__ */
 
+
 static void
 initreadline(void)
 {
@@ -1091,13 +1094,14 @@ initreadline(void)
 		
 		m = Py_InitModule4("readline", readline_methods, doc_module,
 						   (PyObject *)NULL, PYTHON_API_VERSION);
-		
+
 	PyObject* moddict = PyModule_GetDict(m);
 	PyDict_SetItemString(moddict, "__file__", PyString_FromString("")); // hack for IPython rlineimpl.py
-
-	setup_readline();
+	
+    setup_readline();
 }
 
+// ----------------------
 
 
 // based on Python/Parser/myreadline.c:PyOS_Readline
