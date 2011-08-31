@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2358792E140E74F30057D08E /* libtermcap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2358792D140E74F20057D08E /* libtermcap.dylib */; };
+		23587931140E81500057D08E /* PyTerminalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2358792F140E81500057D08E /* PyTerminalView.h */; };
+		23587932140E81500057D08E /* PyTerminalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23587930140E81500057D08E /* PyTerminalView.m */; };
+		23587933140E82C50057D08E /* PyTerminal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6646140BA41A003DA117 /* PyTerminal.framework */; };
+		23587936140E82F80057D08E /* libreadline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F71C35140E6ECB00C92808 /* libreadline.a */; };
+		23587938140E83000057D08E /* libtermcap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23587937140E83000057D08E /* libtermcap.dylib */; };
+		2358793A140E83050057D08E /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23587939140E83050057D08E /* Python.framework */; };
+		2358793B140E83170057D08E /* iTerm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6693140BA4CB003DA117 /* iTerm.framework */; };
 		23F71C2A140D5C8000C92808 /* py_raw_input.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C29140D5C8000C92808 /* py_raw_input.c */; };
-		23F71C2B140D5C8000C92808 /* py_raw_input.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C29140D5C8000C92808 /* py_raw_input.c */; };
 		23F71C2E140D5DDB00C92808 /* py_raw_input.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C2D140D5DDB00C92808 /* py_raw_input.h */; };
-		23F71C39140E6ED800C92808 /* libreadline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F71C35140E6ECB00C92808 /* libreadline.a */; };
 		23F71C75140E6F4500C92808 /* ansi_stdlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C3B140E6F4500C92808 /* ansi_stdlib.h */; };
 		23F71C76140E6F4500C92808 /* bind.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C3C140E6F4500C92808 /* bind.c */; };
 		23F71C77140E6F4500C92808 /* callback.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C3D140E6F4500C92808 /* callback.c */; };
@@ -76,12 +80,24 @@
 		23FB6673140BA4A5003DA117 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6671140BA4A5003DA117 /* Credits.rtf */; };
 		23FB6676140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB6675140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m */; };
 		23FB6679140BA4A5003DA117 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6677140BA4A5003DA117 /* MainMenu.xib */; };
-		23FB6695140BA4DB003DA117 /* iTerm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6693140BA4CB003DA117 /* iTerm.framework */; };
-		23FB669C140BADCF003DA117 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB669B140BADCF003DA117 /* Python.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		23F71CAE140E6F5800C92808 /* PBXContainerItemProxy */ = {
+		23587934140E82CF0057D08E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23FB663C140BA41A003DA117 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23FB6645140BA41A003DA117;
+			remoteInfo = PyTerminal;
+		};
+		2358793C140E83200057D08E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 874205EE0564168A00CFC3F1;
+			remoteInfo = "iTerm Framework";
+		};
+		2358793E140E83250057D08E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 23FB663C140BA41A003DA117 /* Project object */;
 			proxyType = 1;
@@ -102,17 +118,13 @@
 			remoteGlobalIDString = 874206430564168A00CFC3F1;
 			remoteInfo = "iTerm Framework";
 		};
-		23FB6696140BA5A7003DA117 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 874205EE0564168A00CFC3F1;
-			remoteInfo = "iTerm Framework";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2358792D140E74F20057D08E /* libtermcap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtermcap.dylib; path = usr/lib/libtermcap.dylib; sourceTree = SDKROOT; };
+		2358792F140E81500057D08E /* PyTerminalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyTerminalView.h; sourceTree = "<group>"; };
+		23587930140E81500057D08E /* PyTerminalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyTerminalView.m; sourceTree = "<group>"; };
+		23587937140E83000057D08E /* libtermcap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtermcap.dylib; path = usr/lib/libtermcap.dylib; sourceTree = SDKROOT; };
+		23587939140E83050057D08E /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 		23F71C29140D5C8000C92808 /* py_raw_input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = py_raw_input.c; sourceTree = "<group>"; };
 		23F71C2D140D5DDB00C92808 /* py_raw_input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = py_raw_input.h; sourceTree = "<group>"; };
 		23F71C35140E6ECB00C92808 /* libreadline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libreadline.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,7 +203,6 @@
 		23FB6675140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyTerminalDemoAppDelegate.m; sourceTree = "<group>"; };
 		23FB6678140BA4A5003DA117 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iTerm.xcodeproj; path = "Path Finder SDK/iTerm/iTerm.xcodeproj"; sourceTree = "<group>"; };
-		23FB669B140BADCF003DA117 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +217,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2358793B140E83170057D08E /* iTerm.framework in Frameworks */,
+				2358793A140E83050057D08E /* Python.framework in Frameworks */,
+				23587938140E83000057D08E /* libtermcap.dylib in Frameworks */,
+				23587936140E82F80057D08E /* libreadline.a in Frameworks */,
 				23FB664A140BA41A003DA117 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,11 +229,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2358792E140E74F30057D08E /* libtermcap.dylib in Frameworks */,
-				23FB669C140BADCF003DA117 /* Python.framework in Frameworks */,
+				23587933140E82C50057D08E /* PyTerminal.framework in Frameworks */,
 				23FB6667140BA4A5003DA117 /* Cocoa.framework in Frameworks */,
-				23FB6695140BA4DB003DA117 /* iTerm.framework in Frameworks */,
-				23F71C39140E6ED800C92808 /* libreadline.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +242,8 @@
 			children = (
 				23F71C29140D5C8000C92808 /* py_raw_input.c */,
 				23F71C2D140D5DDB00C92808 /* py_raw_input.h */,
+				2358792F140E81500057D08E /* PyTerminalView.h */,
+				23587930140E81500057D08E /* PyTerminalView.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -322,8 +336,8 @@
 		23FB6648140BA41A003DA117 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2358792D140E74F20057D08E /* libtermcap.dylib */,
-				23FB669B140BADCF003DA117 /* Python.framework */,
+				23587939140E83050057D08E /* Python.framework */,
+				23587937140E83000057D08E /* libtermcap.dylib */,
 				23FB6649140BA41A003DA117 /* Cocoa.framework */,
 				23FB664B140BA41A003DA117 /* Other Frameworks */,
 			);
@@ -429,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23F71C2E140D5DDB00C92808 /* py_raw_input.h in Headers */,
+				23587931140E81500057D08E /* PyTerminalView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +479,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				2358793F140E83250057D08E /* PBXTargetDependency */,
+				2358793D140E83200057D08E /* PBXTargetDependency */,
 			);
 			name = PyTerminal;
 			productName = PyTerminal;
@@ -481,8 +498,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				23FB6697140BA5A7003DA117 /* PBXTargetDependency */,
-				23F71CAF140E6F5800C92808 /* PBXTargetDependency */,
+				23587935140E82CF0057D08E /* PBXTargetDependency */,
 			);
 			name = PyTerminalDemo;
 			productName = PyTerminalDemo;
@@ -607,6 +623,7 @@
 			files = (
 				23FB6658140BA41A003DA117 /* PyTerminal.m in Sources */,
 				23F71C2A140D5C8000C92808 /* py_raw_input.c in Sources */,
+				23587932140E81500057D08E /* PyTerminalView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,22 +633,26 @@
 			files = (
 				23FB666F140BA4A5003DA117 /* main.m in Sources */,
 				23FB6676140BA4A5003DA117 /* PyTerminalDemoAppDelegate.m in Sources */,
-				23F71C2B140D5C8000C92808 /* py_raw_input.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		23F71CAF140E6F5800C92808 /* PBXTargetDependency */ = {
+		23587935140E82CF0057D08E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 23F71C34140E6ECB00C92808 /* readline */;
-			targetProxy = 23F71CAE140E6F5800C92808 /* PBXContainerItemProxy */;
+			target = 23FB6645140BA41A003DA117 /* PyTerminal */;
+			targetProxy = 23587934140E82CF0057D08E /* PBXContainerItemProxy */;
 		};
-		23FB6697140BA5A7003DA117 /* PBXTargetDependency */ = {
+		2358793D140E83200057D08E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "iTerm Framework";
-			targetProxy = 23FB6696140BA5A7003DA117 /* PBXContainerItemProxy */;
+			targetProxy = 2358793C140E83200057D08E /* PBXContainerItemProxy */;
+		};
+		2358793F140E83250057D08E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F71C34140E6ECB00C92808 /* readline */;
+			targetProxy = 2358793E140E83250057D08E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
