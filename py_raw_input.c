@@ -915,9 +915,6 @@ setup_readline(void)
 
 /* Wrapper around GNU readline that handles signals differently. */
 
-
-#if defined(HAVE_RL_CALLBACK) && defined(HAVE_SELECT)
-
 static  char *completed_input_string;
 static void
 rlhandler(char *text)
@@ -948,7 +945,8 @@ readline_until_enter_or_signal(char *prompt, int *signal)
         int has_input = 0;
 		
         while (!has_input)
-        {               struct timeval timeout = {0, 100000}; /* 0.1 seconds */
+        {
+			struct timeval timeout = {0, 100000}; /* 0.1 seconds */
 			
             /* [Bug #1552726] Only limit the pause if an input hook has been
 			 defined.  */
@@ -963,6 +961,7 @@ readline_until_enter_or_signal(char *prompt, int *signal)
         }
 		
         if(has_input > 0) {
+			printf("readline %i\n", fileno(rl_instream));
             rl_callback_read_char();
         }
         else if (errno == EINTR) {
@@ -986,47 +985,6 @@ readline_until_enter_or_signal(char *prompt, int *signal)
 	
     return completed_input_string;
 }
-
-
-#else
-
-/* Interrupt handler */
-
-static jmp_buf jbuf;
-
-/* ARGSUSED */
-static void
-onintr(int sig)
-{
-    longjmp(jbuf, 1);
-}
-
-
-static char *
-readline_until_enter_or_signal(char *prompt, int *signal)
-{
-    PyOS_sighandler_t old_inthandler;
-    char *p;
-	
-    *signal = 0;
-	
-    old_inthandler = PyOS_setsig(SIGINT, onintr);
-    if (setjmp(jbuf)) {
-#ifdef HAVE_SIGRELSE
-        /* This seems necessary on SunOS 4.1 (Rasmus Hahn) */
-        sigrelse(SIGINT);
-#endif
-        PyOS_setsig(SIGINT, old_inthandler);
-        *signal = 1;
-        return NULL;
-    }
-    rl_event_hook = PyOS_InputHook;
-    p = readline(prompt);
-    PyOS_setsig(SIGINT, old_inthandler);
-	
-    return p;
-}
-#endif /*defined(HAVE_RL_CALLBACK) && defined(HAVE_SELECT) */
 
 
 static char *
