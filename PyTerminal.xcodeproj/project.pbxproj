@@ -7,10 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2358792E140E74F30057D08E /* libtermcap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2358792D140E74F20057D08E /* libtermcap.dylib */; };
 		23F71C2A140D5C8000C92808 /* py_raw_input.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C29140D5C8000C92808 /* py_raw_input.c */; };
 		23F71C2B140D5C8000C92808 /* py_raw_input.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C29140D5C8000C92808 /* py_raw_input.c */; };
 		23F71C2E140D5DDB00C92808 /* py_raw_input.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C2D140D5DDB00C92808 /* py_raw_input.h */; };
-		23F71C30140D604D00C92808 /* libreadline.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F71C2F140D604D00C92808 /* libreadline.dylib */; };
+		23F71C39140E6ED800C92808 /* libreadline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F71C35140E6ECB00C92808 /* libreadline.a */; };
+		23F71C75140E6F4500C92808 /* ansi_stdlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C3B140E6F4500C92808 /* ansi_stdlib.h */; };
+		23F71C76140E6F4500C92808 /* bind.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C3C140E6F4500C92808 /* bind.c */; };
+		23F71C77140E6F4500C92808 /* callback.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C3D140E6F4500C92808 /* callback.c */; };
+		23F71C78140E6F4500C92808 /* chardefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C3E140E6F4500C92808 /* chardefs.h */; };
+		23F71C79140E6F4500C92808 /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C3F140E6F4500C92808 /* compat.c */; };
+		23F71C7A140E6F4500C92808 /* complete.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C40140E6F4500C92808 /* complete.c */; };
+		23F71C7B140E6F4500C92808 /* display.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C41140E6F4500C92808 /* display.c */; };
+		23F71C7D140E6F4500C92808 /* funmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C43140E6F4500C92808 /* funmap.c */; };
+		23F71C7E140E6F4500C92808 /* histexpand.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C44140E6F4500C92808 /* histexpand.c */; };
+		23F71C7F140E6F4500C92808 /* histfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C45140E6F4500C92808 /* histfile.c */; };
+		23F71C80140E6F4500C92808 /* histlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C46140E6F4500C92808 /* histlib.h */; };
+		23F71C81140E6F4500C92808 /* history.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C47140E6F4500C92808 /* history.c */; };
+		23F71C82140E6F4500C92808 /* history.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C48140E6F4500C92808 /* history.h */; };
+		23F71C83140E6F4500C92808 /* histsearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C49140E6F4500C92808 /* histsearch.c */; };
+		23F71C84140E6F4500C92808 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C4A140E6F4500C92808 /* input.c */; };
+		23F71C85140E6F4500C92808 /* isearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C4C140E6F4500C92808 /* isearch.c */; };
+		23F71C86140E6F4500C92808 /* keymaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C4D140E6F4500C92808 /* keymaps.c */; };
+		23F71C87140E6F4500C92808 /* keymaps.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C4E140E6F4500C92808 /* keymaps.h */; };
+		23F71C88140E6F4500C92808 /* kill.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C4F140E6F4500C92808 /* kill.c */; };
+		23F71C89140E6F4500C92808 /* macro.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C50140E6F4500C92808 /* macro.c */; };
+		23F71C8A140E6F4500C92808 /* mbutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C51140E6F4500C92808 /* mbutil.c */; };
+		23F71C8B140E6F4500C92808 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C52140E6F4500C92808 /* misc.c */; };
+		23F71C8C140E6F4500C92808 /* nls.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C53140E6F4500C92808 /* nls.c */; };
+		23F71C8D140E6F4500C92808 /* parens.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C54140E6F4500C92808 /* parens.c */; };
+		23F71C8E140E6F4500C92808 /* posixdir.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C55140E6F4500C92808 /* posixdir.h */; };
+		23F71C8F140E6F4500C92808 /* posixjmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C56140E6F4500C92808 /* posixjmp.h */; };
+		23F71C90140E6F4500C92808 /* posixselect.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C57140E6F4500C92808 /* posixselect.h */; };
+		23F71C91140E6F4500C92808 /* posixstat.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C58140E6F4500C92808 /* posixstat.h */; };
+		23F71C92140E6F4500C92808 /* readline.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C59140E6F4500C92808 /* readline.c */; };
+		23F71C93140E6F4500C92808 /* readline.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C5A140E6F4500C92808 /* readline.h */; };
+		23F71C94140E6F4500C92808 /* rlconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C5B140E6F4500C92808 /* rlconf.h */; };
+		23F71C95140E6F4500C92808 /* rldefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C5C140E6F4500C92808 /* rldefs.h */; };
+		23F71C96140E6F4500C92808 /* rlmbutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C5D140E6F4500C92808 /* rlmbutil.h */; };
+		23F71C97140E6F4500C92808 /* rlprivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C5E140E6F4500C92808 /* rlprivate.h */; };
+		23F71C98140E6F4500C92808 /* rlshell.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C5F140E6F4500C92808 /* rlshell.h */; };
+		23F71C99140E6F4500C92808 /* rlstdc.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C60140E6F4500C92808 /* rlstdc.h */; };
+		23F71C9A140E6F4500C92808 /* rltty.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C61140E6F4500C92808 /* rltty.c */; };
+		23F71C9B140E6F4500C92808 /* rltty.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C62140E6F4500C92808 /* rltty.h */; };
+		23F71C9C140E6F4500C92808 /* rltypedefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C63140E6F4500C92808 /* rltypedefs.h */; };
+		23F71C9D140E6F4500C92808 /* rlwinsize.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C64140E6F4500C92808 /* rlwinsize.h */; };
+		23F71C9E140E6F4500C92808 /* savestring.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C65140E6F4500C92808 /* savestring.c */; };
+		23F71C9F140E6F4500C92808 /* search.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C66140E6F4500C92808 /* search.c */; };
+		23F71CA0140E6F4500C92808 /* shell.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C67140E6F4500C92808 /* shell.c */; };
+		23F71CA1140E6F4500C92808 /* signals.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C68140E6F4500C92808 /* signals.c */; };
+		23F71CA2140E6F4500C92808 /* tcap.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C69140E6F4500C92808 /* tcap.h */; };
+		23F71CA3140E6F4500C92808 /* terminal.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C6A140E6F4500C92808 /* terminal.c */; };
+		23F71CA4140E6F4500C92808 /* text.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C6B140E6F4500C92808 /* text.c */; };
+		23F71CA5140E6F4500C92808 /* tilde.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C6C140E6F4500C92808 /* tilde.c */; };
+		23F71CA6140E6F4500C92808 /* tilde.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C6D140E6F4500C92808 /* tilde.h */; };
+		23F71CA7140E6F4500C92808 /* undo.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C6E140E6F4500C92808 /* undo.c */; };
+		23F71CA8140E6F4500C92808 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C6F140E6F4500C92808 /* util.c */; };
+		23F71CAA140E6F4500C92808 /* vi_mode.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C71140E6F4500C92808 /* vi_mode.c */; };
+		23F71CAB140E6F4500C92808 /* xfree.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C72140E6F4500C92808 /* xfree.c */; };
+		23F71CAC140E6F4500C92808 /* xmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F71C73140E6F4500C92808 /* xmalloc.c */; };
+		23F71CAD140E6F4500C92808 /* xmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F71C74140E6F4500C92808 /* xmalloc.h */; };
 		23FB664A140BA41A003DA117 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB6649140BA41A003DA117 /* Cocoa.framework */; };
 		23FB6654140BA41A003DA117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23FB6652140BA41A003DA117 /* InfoPlist.strings */; };
 		23FB6658140BA41A003DA117 /* PyTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FB6657140BA41A003DA117 /* PyTerminal.m */; };
@@ -25,6 +81,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		23F71CAE140E6F5800C92808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23FB663C140BA41A003DA117 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F71C34140E6ECB00C92808;
+			remoteInfo = readline;
+		};
 		23FB6690140BA4CB003DA117 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */;
@@ -49,9 +112,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2358792D140E74F20057D08E /* libtermcap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtermcap.dylib; path = usr/lib/libtermcap.dylib; sourceTree = SDKROOT; };
 		23F71C29140D5C8000C92808 /* py_raw_input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = py_raw_input.c; sourceTree = "<group>"; };
 		23F71C2D140D5DDB00C92808 /* py_raw_input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = py_raw_input.h; sourceTree = "<group>"; };
-		23F71C2F140D604D00C92808 /* libreadline.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libreadline.dylib; path = usr/lib/libreadline.dylib; sourceTree = SDKROOT; };
+		23F71C35140E6ECB00C92808 /* libreadline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libreadline.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F71C3B140E6F4500C92808 /* ansi_stdlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ansi_stdlib.h; path = readline/ansi_stdlib.h; sourceTree = "<group>"; };
+		23F71C3C140E6F4500C92808 /* bind.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bind.c; path = readline/bind.c; sourceTree = "<group>"; };
+		23F71C3D140E6F4500C92808 /* callback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = callback.c; path = readline/callback.c; sourceTree = "<group>"; };
+		23F71C3E140E6F4500C92808 /* chardefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chardefs.h; path = readline/chardefs.h; sourceTree = "<group>"; };
+		23F71C3F140E6F4500C92808 /* compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = compat.c; path = readline/compat.c; sourceTree = "<group>"; };
+		23F71C40140E6F4500C92808 /* complete.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = complete.c; path = readline/complete.c; sourceTree = "<group>"; };
+		23F71C41140E6F4500C92808 /* display.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = display.c; path = readline/display.c; sourceTree = "<group>"; };
+		23F71C43140E6F4500C92808 /* funmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = funmap.c; path = readline/funmap.c; sourceTree = "<group>"; };
+		23F71C44140E6F4500C92808 /* histexpand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = histexpand.c; path = readline/histexpand.c; sourceTree = "<group>"; };
+		23F71C45140E6F4500C92808 /* histfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = histfile.c; path = readline/histfile.c; sourceTree = "<group>"; };
+		23F71C46140E6F4500C92808 /* histlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = histlib.h; path = readline/histlib.h; sourceTree = "<group>"; };
+		23F71C47140E6F4500C92808 /* history.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = history.c; path = readline/history.c; sourceTree = "<group>"; };
+		23F71C48140E6F4500C92808 /* history.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = history.h; path = readline/history.h; sourceTree = "<group>"; };
+		23F71C49140E6F4500C92808 /* histsearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = histsearch.c; path = readline/histsearch.c; sourceTree = "<group>"; };
+		23F71C4A140E6F4500C92808 /* input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = input.c; path = readline/input.c; sourceTree = "<group>"; };
+		23F71C4C140E6F4500C92808 /* isearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = isearch.c; path = readline/isearch.c; sourceTree = "<group>"; };
+		23F71C4D140E6F4500C92808 /* keymaps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = keymaps.c; path = readline/keymaps.c; sourceTree = "<group>"; };
+		23F71C4E140E6F4500C92808 /* keymaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = keymaps.h; path = readline/keymaps.h; sourceTree = "<group>"; };
+		23F71C4F140E6F4500C92808 /* kill.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kill.c; path = readline/kill.c; sourceTree = "<group>"; };
+		23F71C50140E6F4500C92808 /* macro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = macro.c; path = readline/macro.c; sourceTree = "<group>"; };
+		23F71C51140E6F4500C92808 /* mbutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mbutil.c; path = readline/mbutil.c; sourceTree = "<group>"; };
+		23F71C52140E6F4500C92808 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = misc.c; path = readline/misc.c; sourceTree = "<group>"; };
+		23F71C53140E6F4500C92808 /* nls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nls.c; path = readline/nls.c; sourceTree = "<group>"; };
+		23F71C54140E6F4500C92808 /* parens.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parens.c; path = readline/parens.c; sourceTree = "<group>"; };
+		23F71C55140E6F4500C92808 /* posixdir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = posixdir.h; path = readline/posixdir.h; sourceTree = "<group>"; };
+		23F71C56140E6F4500C92808 /* posixjmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = posixjmp.h; path = readline/posixjmp.h; sourceTree = "<group>"; };
+		23F71C57140E6F4500C92808 /* posixselect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = posixselect.h; path = readline/posixselect.h; sourceTree = "<group>"; };
+		23F71C58140E6F4500C92808 /* posixstat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = posixstat.h; path = readline/posixstat.h; sourceTree = "<group>"; };
+		23F71C59140E6F4500C92808 /* readline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = readline.c; path = readline/readline.c; sourceTree = "<group>"; };
+		23F71C5A140E6F4500C92808 /* readline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = readline.h; path = readline/readline.h; sourceTree = "<group>"; };
+		23F71C5B140E6F4500C92808 /* rlconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rlconf.h; path = readline/rlconf.h; sourceTree = "<group>"; };
+		23F71C5C140E6F4500C92808 /* rldefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rldefs.h; path = readline/rldefs.h; sourceTree = "<group>"; };
+		23F71C5D140E6F4500C92808 /* rlmbutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rlmbutil.h; path = readline/rlmbutil.h; sourceTree = "<group>"; };
+		23F71C5E140E6F4500C92808 /* rlprivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rlprivate.h; path = readline/rlprivate.h; sourceTree = "<group>"; };
+		23F71C5F140E6F4500C92808 /* rlshell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rlshell.h; path = readline/rlshell.h; sourceTree = "<group>"; };
+		23F71C60140E6F4500C92808 /* rlstdc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rlstdc.h; path = readline/rlstdc.h; sourceTree = "<group>"; };
+		23F71C61140E6F4500C92808 /* rltty.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rltty.c; path = readline/rltty.c; sourceTree = "<group>"; };
+		23F71C62140E6F4500C92808 /* rltty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rltty.h; path = readline/rltty.h; sourceTree = "<group>"; };
+		23F71C63140E6F4500C92808 /* rltypedefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rltypedefs.h; path = readline/rltypedefs.h; sourceTree = "<group>"; };
+		23F71C64140E6F4500C92808 /* rlwinsize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rlwinsize.h; path = readline/rlwinsize.h; sourceTree = "<group>"; };
+		23F71C65140E6F4500C92808 /* savestring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = savestring.c; path = readline/savestring.c; sourceTree = "<group>"; };
+		23F71C66140E6F4500C92808 /* search.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = search.c; path = readline/search.c; sourceTree = "<group>"; };
+		23F71C67140E6F4500C92808 /* shell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = shell.c; path = readline/shell.c; sourceTree = "<group>"; };
+		23F71C68140E6F4500C92808 /* signals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = signals.c; path = readline/signals.c; sourceTree = "<group>"; };
+		23F71C69140E6F4500C92808 /* tcap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tcap.h; path = readline/tcap.h; sourceTree = "<group>"; };
+		23F71C6A140E6F4500C92808 /* terminal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = terminal.c; path = readline/terminal.c; sourceTree = "<group>"; };
+		23F71C6B140E6F4500C92808 /* text.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = text.c; path = readline/text.c; sourceTree = "<group>"; };
+		23F71C6C140E6F4500C92808 /* tilde.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tilde.c; path = readline/tilde.c; sourceTree = "<group>"; };
+		23F71C6D140E6F4500C92808 /* tilde.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tilde.h; path = readline/tilde.h; sourceTree = "<group>"; };
+		23F71C6E140E6F4500C92808 /* undo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = undo.c; path = readline/undo.c; sourceTree = "<group>"; };
+		23F71C6F140E6F4500C92808 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = readline/util.c; sourceTree = "<group>"; };
+		23F71C71140E6F4500C92808 /* vi_mode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vi_mode.c; path = readline/vi_mode.c; sourceTree = "<group>"; };
+		23F71C72140E6F4500C92808 /* xfree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xfree.c; path = readline/xfree.c; sourceTree = "<group>"; };
+		23F71C73140E6F4500C92808 /* xmalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xmalloc.c; path = readline/xmalloc.c; sourceTree = "<group>"; };
+		23F71C74140E6F4500C92808 /* xmalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmalloc.h; path = readline/xmalloc.h; sourceTree = "<group>"; };
 		23FB6646140BA41A003DA117 /* PyTerminal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PyTerminal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FB6649140BA41A003DA117 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		23FB664C140BA41A003DA117 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -76,6 +195,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23F71C32140E6ECB00C92808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23FB6642140BA41A003DA117 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,10 +214,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F71C30140D604D00C92808 /* libreadline.dylib in Frameworks */,
+				2358792E140E74F30057D08E /* libtermcap.dylib in Frameworks */,
 				23FB669C140BADCF003DA117 /* Python.framework in Frameworks */,
 				23FB6667140BA4A5003DA117 /* Cocoa.framework in Frameworks */,
 				23FB6695140BA4DB003DA117 /* iTerm.framework in Frameworks */,
+				23F71C39140E6ED800C92808 /* libreadline.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,14 +234,77 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
+		23F71C3A140E6EE000C92808 /* readline source */ = {
+			isa = PBXGroup;
+			children = (
+				23F71C3B140E6F4500C92808 /* ansi_stdlib.h */,
+				23F71C3C140E6F4500C92808 /* bind.c */,
+				23F71C3D140E6F4500C92808 /* callback.c */,
+				23F71C3E140E6F4500C92808 /* chardefs.h */,
+				23F71C3F140E6F4500C92808 /* compat.c */,
+				23F71C40140E6F4500C92808 /* complete.c */,
+				23F71C41140E6F4500C92808 /* display.c */,
+				23F71C4E140E6F4500C92808 /* keymaps.h */,
+				23F71C4D140E6F4500C92808 /* keymaps.c */,
+				23F71C43140E6F4500C92808 /* funmap.c */,
+				23F71C44140E6F4500C92808 /* histexpand.c */,
+				23F71C45140E6F4500C92808 /* histfile.c */,
+				23F71C46140E6F4500C92808 /* histlib.h */,
+				23F71C47140E6F4500C92808 /* history.c */,
+				23F71C48140E6F4500C92808 /* history.h */,
+				23F71C49140E6F4500C92808 /* histsearch.c */,
+				23F71C4A140E6F4500C92808 /* input.c */,
+				23F71C4C140E6F4500C92808 /* isearch.c */,
+				23F71C4F140E6F4500C92808 /* kill.c */,
+				23F71C50140E6F4500C92808 /* macro.c */,
+				23F71C51140E6F4500C92808 /* mbutil.c */,
+				23F71C52140E6F4500C92808 /* misc.c */,
+				23F71C53140E6F4500C92808 /* nls.c */,
+				23F71C54140E6F4500C92808 /* parens.c */,
+				23F71C55140E6F4500C92808 /* posixdir.h */,
+				23F71C56140E6F4500C92808 /* posixjmp.h */,
+				23F71C57140E6F4500C92808 /* posixselect.h */,
+				23F71C58140E6F4500C92808 /* posixstat.h */,
+				23F71C59140E6F4500C92808 /* readline.c */,
+				23F71C5A140E6F4500C92808 /* readline.h */,
+				23F71C5B140E6F4500C92808 /* rlconf.h */,
+				23F71C5C140E6F4500C92808 /* rldefs.h */,
+				23F71C5D140E6F4500C92808 /* rlmbutil.h */,
+				23F71C5E140E6F4500C92808 /* rlprivate.h */,
+				23F71C5F140E6F4500C92808 /* rlshell.h */,
+				23F71C60140E6F4500C92808 /* rlstdc.h */,
+				23F71C61140E6F4500C92808 /* rltty.c */,
+				23F71C62140E6F4500C92808 /* rltty.h */,
+				23F71C63140E6F4500C92808 /* rltypedefs.h */,
+				23F71C64140E6F4500C92808 /* rlwinsize.h */,
+				23F71C65140E6F4500C92808 /* savestring.c */,
+				23F71C66140E6F4500C92808 /* search.c */,
+				23F71C67140E6F4500C92808 /* shell.c */,
+				23F71C68140E6F4500C92808 /* signals.c */,
+				23F71C69140E6F4500C92808 /* tcap.h */,
+				23F71C6A140E6F4500C92808 /* terminal.c */,
+				23F71C6B140E6F4500C92808 /* text.c */,
+				23F71C6C140E6F4500C92808 /* tilde.c */,
+				23F71C6D140E6F4500C92808 /* tilde.h */,
+				23F71C6E140E6F4500C92808 /* undo.c */,
+				23F71C6F140E6F4500C92808 /* util.c */,
+				23F71C71140E6F4500C92808 /* vi_mode.c */,
+				23F71C72140E6F4500C92808 /* xfree.c */,
+				23F71C73140E6F4500C92808 /* xmalloc.c */,
+				23F71C74140E6F4500C92808 /* xmalloc.h */,
+			);
+			name = "readline source";
+			sourceTree = "<group>";
+		};
 		23FB663A140BA41A003DA117 = {
 			isa = PBXGroup;
 			children = (
-				23F71C2F140D604D00C92808 /* libreadline.dylib */,
+				2358792D140E74F20057D08E /* libtermcap.dylib */,
 				23FB667E140BA4CB003DA117 /* iTerm.xcodeproj */,
 				23FB664F140BA41A003DA117 /* PyTerminal */,
 				23FB6668140BA4A5003DA117 /* PyTerminalDemo */,
 				23F71C2C140D5C9400C92808 /* Source */,
+				23F71C3A140E6EE000C92808 /* readline source */,
 				23FB6648140BA41A003DA117 /* Frameworks */,
 				23FB6647140BA41A003DA117 /* Products */,
 			);
@@ -125,6 +315,7 @@
 			children = (
 				23FB6646140BA41A003DA117 /* PyTerminal.framework */,
 				23FB6665140BA4A5003DA117 /* PyTerminalDemo.app */,
+				23F71C35140E6ECB00C92808 /* libreadline.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +395,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		23F71C33140E6ECB00C92808 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F71C75140E6F4500C92808 /* ansi_stdlib.h in Headers */,
+				23F71C78140E6F4500C92808 /* chardefs.h in Headers */,
+				23F71C80140E6F4500C92808 /* histlib.h in Headers */,
+				23F71C82140E6F4500C92808 /* history.h in Headers */,
+				23F71C87140E6F4500C92808 /* keymaps.h in Headers */,
+				23F71C8E140E6F4500C92808 /* posixdir.h in Headers */,
+				23F71C8F140E6F4500C92808 /* posixjmp.h in Headers */,
+				23F71C90140E6F4500C92808 /* posixselect.h in Headers */,
+				23F71C91140E6F4500C92808 /* posixstat.h in Headers */,
+				23F71C93140E6F4500C92808 /* readline.h in Headers */,
+				23F71C94140E6F4500C92808 /* rlconf.h in Headers */,
+				23F71C95140E6F4500C92808 /* rldefs.h in Headers */,
+				23F71C96140E6F4500C92808 /* rlmbutil.h in Headers */,
+				23F71C97140E6F4500C92808 /* rlprivate.h in Headers */,
+				23F71C98140E6F4500C92808 /* rlshell.h in Headers */,
+				23F71C99140E6F4500C92808 /* rlstdc.h in Headers */,
+				23F71C9B140E6F4500C92808 /* rltty.h in Headers */,
+				23F71C9C140E6F4500C92808 /* rltypedefs.h in Headers */,
+				23F71C9D140E6F4500C92808 /* rlwinsize.h in Headers */,
+				23F71CA2140E6F4500C92808 /* tcap.h in Headers */,
+				23F71CA6140E6F4500C92808 /* tilde.h in Headers */,
+				23F71CAD140E6F4500C92808 /* xmalloc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23FB6643140BA41A003DA117 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +435,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		23F71C34140E6ECB00C92808 /* readline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F71C36140E6ECB00C92808 /* Build configuration list for PBXNativeTarget "readline" */;
+			buildPhases = (
+				23F71C31140E6ECB00C92808 /* Sources */,
+				23F71C32140E6ECB00C92808 /* Frameworks */,
+				23F71C33140E6ECB00C92808 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = readline;
+			productName = readline;
+			productReference = 23F71C35140E6ECB00C92808 /* libreadline.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		23FB6645140BA41A003DA117 /* PyTerminal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23FB665B140BA41A003DA117 /* Build configuration list for PBXNativeTarget "PyTerminal" */;
@@ -245,6 +482,7 @@
 			);
 			dependencies = (
 				23FB6697140BA5A7003DA117 /* PBXTargetDependency */,
+				23F71CAF140E6F5800C92808 /* PBXTargetDependency */,
 			);
 			name = PyTerminalDemo;
 			productName = PyTerminalDemo;
@@ -279,6 +517,7 @@
 			targets = (
 				23FB6645140BA41A003DA117 /* PyTerminal */,
 				23FB6664140BA4A5003DA117 /* PyTerminalDemo */,
+				23F71C34140E6ECB00C92808 /* readline */,
 			);
 		};
 /* End PBXProject section */
@@ -322,6 +561,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		23F71C31140E6ECB00C92808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F71C76140E6F4500C92808 /* bind.c in Sources */,
+				23F71C77140E6F4500C92808 /* callback.c in Sources */,
+				23F71C79140E6F4500C92808 /* compat.c in Sources */,
+				23F71C7A140E6F4500C92808 /* complete.c in Sources */,
+				23F71C7B140E6F4500C92808 /* display.c in Sources */,
+				23F71C7D140E6F4500C92808 /* funmap.c in Sources */,
+				23F71C7E140E6F4500C92808 /* histexpand.c in Sources */,
+				23F71C7F140E6F4500C92808 /* histfile.c in Sources */,
+				23F71C81140E6F4500C92808 /* history.c in Sources */,
+				23F71C83140E6F4500C92808 /* histsearch.c in Sources */,
+				23F71C84140E6F4500C92808 /* input.c in Sources */,
+				23F71C85140E6F4500C92808 /* isearch.c in Sources */,
+				23F71C86140E6F4500C92808 /* keymaps.c in Sources */,
+				23F71C88140E6F4500C92808 /* kill.c in Sources */,
+				23F71C89140E6F4500C92808 /* macro.c in Sources */,
+				23F71C8A140E6F4500C92808 /* mbutil.c in Sources */,
+				23F71C8B140E6F4500C92808 /* misc.c in Sources */,
+				23F71C8C140E6F4500C92808 /* nls.c in Sources */,
+				23F71C8D140E6F4500C92808 /* parens.c in Sources */,
+				23F71C92140E6F4500C92808 /* readline.c in Sources */,
+				23F71C9A140E6F4500C92808 /* rltty.c in Sources */,
+				23F71C9E140E6F4500C92808 /* savestring.c in Sources */,
+				23F71C9F140E6F4500C92808 /* search.c in Sources */,
+				23F71CA0140E6F4500C92808 /* shell.c in Sources */,
+				23F71CA1140E6F4500C92808 /* signals.c in Sources */,
+				23F71CA3140E6F4500C92808 /* terminal.c in Sources */,
+				23F71CA4140E6F4500C92808 /* text.c in Sources */,
+				23F71CA5140E6F4500C92808 /* tilde.c in Sources */,
+				23F71CA7140E6F4500C92808 /* undo.c in Sources */,
+				23F71CA8140E6F4500C92808 /* util.c in Sources */,
+				23F71CAA140E6F4500C92808 /* vi_mode.c in Sources */,
+				23F71CAB140E6F4500C92808 /* xfree.c in Sources */,
+				23F71CAC140E6F4500C92808 /* xmalloc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23FB6641140BA41A003DA117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +623,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		23F71CAF140E6F5800C92808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F71C34140E6ECB00C92808 /* readline */;
+			targetProxy = 23F71CAE140E6F5800C92808 /* PBXContainerItemProxy */;
+		};
 		23FB6697140BA5A7003DA117 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "iTerm Framework";
@@ -387,13 +671,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		23F71C37140E6ECB00C92808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_CONFIG_H,
+					"RL_LIBRARY_VERSION='\"6.2\"'",
+				);
+				HEADER_SEARCH_PATHS = readline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		23F71C38140E6ECB00C92808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_CONFIG_H,
+					"RL_LIBRARY_VERSION='\"6.2\"'",
+				);
+				HEADER_SEARCH_PATHS = readline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		23FB6659140BA41A003DA117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -416,11 +724,8 @@
 		23FB665A140BA41A003DA117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -485,6 +790,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23F71C36140E6ECB00C92808 /* Build configuration list for PBXNativeTarget "readline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F71C37140E6ECB00C92808 /* Debug */,
+				23F71C38140E6ECB00C92808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		23FB663F140BA41A003DA117 /* Build configuration list for PBXProject "PyTerminal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
