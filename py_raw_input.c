@@ -842,7 +842,18 @@ setup_readline(void)
     if (!saved_locale)
         Py_FatalError("not enough memory to save locale");
 #endif
-	
+
+	// set rl_instream/rl_outstream in advance.
+	// this helps the readline internal state.
+	// it seems its internal _rl_in_stream/_rl_out_stream
+	// are not updated correctly otherwise.
+	PyObject *fin = PySys_GetObject("stdin");
+    PyObject *fout = PySys_GetObject("stdout");
+	assert(fin != NULL);
+	assert(fout != NULL);
+	rl_instream = PyFile_AsFile(fin);
+	rl_outstream = PyFile_AsFile(fout);
+
     using_history();
 	
     rl_readline_name = "python";
@@ -869,7 +880,7 @@ setup_readline(void)
 	
     begidx = PyInt_FromLong(0L);
     endidx = PyInt_FromLong(0L);
-    /* Initialize (allows .inputrc to override)
+	/* Initialize (allows .inputrc to override)
      *
      * XXX: A bug in the readline-2.2 library causes a memory leak
      * inside this function.  Nothing we can do about it.
