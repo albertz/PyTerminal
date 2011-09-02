@@ -668,8 +668,8 @@ rl_ding ()
 	    }
 	  /* FALLTHROUGH */
 	case AUDIBLE_BELL:
-	  fprintf (stderr, "\007");
-	  fflush (stderr);
+	  fprintf (_rl_out_stream, "\007");
+	  fflush (_rl_out_stream);
 	  break;
         }
       return (0);
