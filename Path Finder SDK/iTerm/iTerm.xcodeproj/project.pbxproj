@@ -1165,6 +1165,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20881DB10EF8D917008D9CB9 /* Debug.xcconfig */;
 			buildSettings = {
+				GCC_ENABLE_OBJC_GC = supported;
 			};
 			name = Debug;
 		};
@@ -1172,6 +1173,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20881DB20EF8D917008D9CB9 /* Release.xcconfig */;
 			buildSettings = {
+				GCC_ENABLE_OBJC_GC = supported;
 			};
 			name = Release;
 		};
