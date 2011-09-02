@@ -162,7 +162,7 @@ static int _check_and_flush (FILE *stream)
 		[self addNewSession:dict withCommand:nil withURL:nil];
 		
 		// goofy hack to show window, ignore
-		[self performSelector:@selector(showWindow) withObject:nil afterDelay:0];
+		[[self window] performSelector:@selector(showWindow) withObject:nil afterDelay:0];
 	}
     
     return self;
