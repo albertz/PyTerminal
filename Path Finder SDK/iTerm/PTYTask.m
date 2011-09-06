@@ -80,6 +80,7 @@ static int writep(int fds, char *buf, size_t len)
     int chunk;
     struct timeval tv;
     fd_set wfds,efds;
+	int istty = isatty(fds);
 	
     while (wrtlen > 0) {
 		
@@ -102,7 +103,10 @@ static int writep(int fds, char *buf, size_t len)
 			chunk = 1024;
 		else
 			chunk = wrtlen;
-		sts = write(fds, tmpPtr, chunk);
+		if(!istty && *tmpPtr == '\x0d') // small hack for non-pty
+			sts = write(fds, "\x0a", 1);
+		else
+			sts = write(fds, tmpPtr, chunk);
 		if (sts <= 0)
 			break;
 		
@@ -378,11 +382,21 @@ static int writep(int fds, char *buf, size_t len)
     const void *datap = [data bytes];
     size_t len = [data length];
     int sts;
-    	
+	
     sts = writep(FILDES, (char *)datap, len);
     if (sts < 0 ) {
 		NSLog(@"%s(%d): writep() %s", __FILE__, __LINE__, strerror(errno));
     }
+	else if (sts > 0 && !isatty(FILDES)) { // for non-pty: also print the data
+		for(size_t i = 0; i < len; ++i) {
+			[self setHasOutput: YES];
+			[self readTask:(char *)&datap[i] length:len];
+			if(*(char*)&datap[i] == '\x0d') {
+				[self setHasOutput: YES];
+				[self readTask:(char *)"\x0a" length:1];
+			}
+		}
+	}
 }
 
 - (void)brokenPipe
