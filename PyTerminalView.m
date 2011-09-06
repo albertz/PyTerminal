@@ -16,6 +16,7 @@
 
 #include <util.h> // openpty
 #include <sys/ioctl.h>
+#include <sys/socket.h> // socketpair
 
 #import <Python/Python.h>
 #include "py_raw_input.h"
@@ -73,11 +74,22 @@ static int _check_and_flush (FILE *stream)
 	PyTerminalTask* task = [[PyTerminalTask alloc] init];
     setup_tty_param(&term, &win, [screen width], [screen height]);
     int ret = openpty(&shell->FILDES, &task->TTY_SLAVE, ttyname, &term, &win);
-	NSParameterAssert(ret == 0);
+	if(ret != 0) {
+		fprintf(stderr, "PyTerminal: openpty failed: %s\n", strerror(errno));
+		int fildes[2] = {-1,-1};
+		ret = socketpair(AF_UNIX, SOCK_STREAM, 0, fildes);
+		if(ret != 0) {
+			fprintf(stderr, "PyTerminal: socketpair failed: %s\n", strerror(errno));
+			return;
+		}
+		shell->FILDES = fildes[0];
+		task->TTY_SLAVE = fildes[1];
+	}
 	
     int one = 1;
 	int sts = ioctl(shell->FILDES, TIOCPKT, &one);
-    NSParameterAssert(sts >= 0);
+    if(sts < 0)
+		fprintf(stderr, "PyTerminal: ioctl TIOCPKT failed: %s\n", strerror(errno));
 	
     shell->TTY = [[NSString stringWithUTF8String:ttyname] retain];
     NSParameterAssert(shell->TTY != nil);
