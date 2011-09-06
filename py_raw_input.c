@@ -1183,7 +1183,8 @@ my_PyOS_Readline(FILE *sys_stdin, FILE *sys_stdout, char *prompt)
     Py_BEGIN_ALLOW_THREADS	
 	if(readline_lock == NULL)
 		readline_lock = PyThread_allocate_lock();
-	if(PyThread_acquire_lock(readline_lock, NOWAIT_LOCK)) {
+	if(isatty(fileno(sys_stdin)) && isatty(fileno(sys_stdout)) &&
+	   PyThread_acquire_lock(readline_lock, NOWAIT_LOCK)) {
 		rv = call_readline(sys_stdin, sys_stdout, prompt);
 		PyThread_release_lock(readline_lock);
 	}
