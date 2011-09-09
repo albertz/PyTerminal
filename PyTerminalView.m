@@ -111,7 +111,7 @@ static int _check_and_flush (FILE *stream)
 {
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	[[NSThread currentThread] setName:@"runPython"];
-	
+
 	FILE* fp_in = fdopen(task->TTY_SLAVE, "r");
 	FILE* fp_out = fdopen(task->TTY_SLAVE, "w");
 	FILE* fp_err = fdopen(task->TTY_SLAVE, "w");
@@ -119,9 +119,22 @@ static int _check_and_flush (FILE *stream)
 	setbuf(fp_out, (char *)NULL);
 	setbuf(fp_err, (char *)NULL);
 	
-	PyEval_AcquireLock();
-	PyThreadState* tstate = Py_NewInterpreter();
-	//PyThreadState* saved_tstate = PyThreadState_Swap(tstate);
+	PyThreadState* tstate = NULL;
+	PyInterpreterState* interp = NULL;
+	BOOL _pyInited = NO;
+	if(!Py_IsInitialized()) {
+		fprintf(stderr, "Python not initialized, initializing...\n");
+		Py_InitializeEx(0);
+		PyEval_InitThreads();
+		PyEval_ReleaseLock(); // the main thread doesn't use Python
+		_pyInited = YES;
+		interp = PyInterpreterState_Head();
+	}
+	else {
+		PyEval_AcquireLock();
+		tstate = Py_NewInterpreter();
+		interp = tstate->interp;
+	}
 	
     PyObject *sysin, *sysout, *syserr;
 	sysin = PyFile_FromFile(fp_in, "<stdin>", "r", NULL);
@@ -133,7 +146,7 @@ static int _check_and_flush (FILE *stream)
 	PySys_SetObject("stdout", sysout);
 	PySys_SetObject("stderr", syserr);
 	
-	overwritePyRawInput(tstate->interp->builtins);
+	overwritePyRawInput(interp->builtins);
 	
 	PyRun_SimpleString(
 					   "import sys\n"
@@ -150,7 +163,9 @@ static int _check_and_flush (FILE *stream)
 	// there is `PyOS_Readline(stdin, stdout, tok->prompt)` hardcoded, so it ignores our fp_in.
 	//PyRun_InteractiveLoopFlags(fp_in, "<stdin>", &cf);
 	
-	Py_EndInterpreter(tstate);
+	if(tstate)
+		Py_EndInterpreter(tstate);
+		
 	[pool release];
 	[NSThread exit];
 }
@@ -160,10 +175,6 @@ static int _check_and_flush (FILE *stream)
     self = [super init];
     if (self) {
         // Initialization code here.
-
-		Py_InitializeEx(0);
-		PyEval_InitThreads();
-		PyEval_ReleaseLock(); // the main thread doesn't use Python
 		
 		// make sure this is initialized (yes goofy, I know)
 		[iTermController sharedInstance];
