@@ -107,6 +107,8 @@ static int _check_and_flush (FILE *stream)
     [aSession release];
 }
 
+static int32_t usedPythonInterpreterNum = 0;
+
 - (void)_runPython:(PyTerminalTask *)task
 {
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
@@ -121,13 +123,7 @@ static int _check_and_flush (FILE *stream)
 	
 	PyThreadState* tstate = NULL;
 	PyInterpreterState* interp = NULL;
-	BOOL _pyInited = NO;
-	if(!Py_IsInitialized()) {
-		fprintf(stderr, "Python not initialized, initializing...\n");
-		Py_InitializeEx(0);
-		PyEval_InitThreads();
-		PyEval_ReleaseLock(); // the main thread doesn't use Python
-		_pyInited = YES;
+	if(OSAtomicIncrement32(&usedPythonInterpreterNum) == 1) {
 		interp = PyInterpreterState_Head();
 	}
 	else {
@@ -164,8 +160,9 @@ static int _check_and_flush (FILE *stream)
 	//PyRun_InteractiveLoopFlags(fp_in, "<stdin>", &cf);
 	
 	if(tstate)
-		Py_EndInterpreter(tstate);
-		
+		Py_EndInterpreter(tstate);	
+	OSAtomicDecrement32(&usedPythonInterpreterNum);
+	
 	[pool release];
 	[NSThread exit];
 }
@@ -175,6 +172,15 @@ static int _check_and_flush (FILE *stream)
     self = [super init];
     if (self) {
         // Initialization code here.
+		
+		if(!Py_IsInitialized()) {
+			fprintf(stderr, "Python not initialized, initializing...\n");
+			Py_InitializeEx(0);
+			PyEval_InitThreads();
+			PyEval_ReleaseLock(); // the main thread doesn't use Python
+		}
+		else
+			OSAtomicIncrement32(&usedPythonInterpreterNum); // it might be more but that doesn't matter
 		
 		// make sure this is initialized (yes goofy, I know)
 		[iTermController sharedInstance];
