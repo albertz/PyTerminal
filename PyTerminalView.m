@@ -203,6 +203,7 @@ void initPython() {
 	}
 	else
 		OSAtomicIncrement32(&usedPythonInterpreterNum); // it might be more but that doesn't matter
+	_initedPython = YES;
 }
 
 NSView* allocPyTermialView() {
