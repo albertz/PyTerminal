@@ -124,6 +124,7 @@ static int32_t usedPythonInterpreterNum = 0;
 	PyThreadState* tstate = NULL;
 	PyInterpreterState* interp = NULL;
 	if(OSAtomicIncrement32(&usedPythonInterpreterNum) == 1) {
+		PyEval_AcquireLock();
 		interp = PyInterpreterState_Head();
 	}
 	else {
@@ -172,15 +173,7 @@ static int32_t usedPythonInterpreterNum = 0;
     self = [super init];
     if (self) {
         // Initialization code here.
-		
-		if(!Py_IsInitialized()) {
-			fprintf(stderr, "Python not initialized, initializing...\n");
-			Py_InitializeEx(0);
-			PyEval_InitThreads();
-			PyEval_ReleaseLock(); // the main thread doesn't use Python
-		}
-		else
-			OSAtomicIncrement32(&usedPythonInterpreterNum); // it might be more but that doesn't matter
+		initPython();
 		
 		// make sure this is initialized (yes goofy, I know)
 		[iTermController sharedInstance];
@@ -198,6 +191,19 @@ static int32_t usedPythonInterpreterNum = 0;
 }
 
 @end
+
+static BOOL _initedPython = NO;
+void initPython() {
+	if(_initedPython) return;
+	if(!Py_IsInitialized()) {
+		fprintf(stderr, "Python not initialized, initializing...\n");
+		Py_InitializeEx(0);
+		PyEval_InitThreads();
+		PyEval_ReleaseLock(); // the main thread doesn't use Python
+	}
+	else
+		OSAtomicIncrement32(&usedPythonInterpreterNum); // it might be more but that doesn't matter
+}
 
 NSView* allocPyTermialView() {
 	return [PyTerminalView alloc];
