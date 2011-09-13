@@ -121,14 +121,17 @@ static int32_t usedPythonInterpreterNum = 0;
 	setbuf(fp_out, (char *)NULL);
 	setbuf(fp_err, (char *)NULL);
 	
+	BOOL createdNewInterp = NO;
 	PyThreadState* tstate = NULL;
 	PyInterpreterState* interp = NULL;
 	if(OSAtomicIncrement32(&usedPythonInterpreterNum) == 1) {
-		PyEval_AcquireLock();
 		interp = PyInterpreterState_Head();
+		tstate = PyThreadState_New(interp);
+		PyEval_AcquireThread(tstate);
 	}
 	else {
 		PyEval_AcquireLock();
+		createdNewInterp = YES;
 		tstate = Py_NewInterpreter();
 		interp = tstate->interp;
 	}
@@ -160,8 +163,13 @@ static int32_t usedPythonInterpreterNum = 0;
 	// there is `PyOS_Readline(stdin, stdout, tok->prompt)` hardcoded, so it ignores our fp_in.
 	//PyRun_InteractiveLoopFlags(fp_in, "<stdin>", &cf);
 	
-	if(tstate)
-		Py_EndInterpreter(tstate);	
+	if(createdNewInterp) {
+		Py_EndInterpreter(tstate);
+		PyEval_ReleaseLock();
+	}
+	else
+		PyEval_ReleaseThread(tstate);
+	
 	OSAtomicDecrement32(&usedPythonInterpreterNum);
 	
 	[pool release];
@@ -199,7 +207,7 @@ void initPython() {
 		fprintf(stderr, "Python not initialized, initializing...\n");
 		Py_InitializeEx(0);
 		PyEval_InitThreads();
-		PyEval_ReleaseLock(); // the main thread doesn't use Python
+		PyEval_ReleaseThread(PyThreadState_Get()); // the main thread doesn't use Python; we would recreate it
 	}
 	else
 		OSAtomicIncrement32(&usedPythonInterpreterNum); // it might be more but that doesn't matter
