@@ -21,6 +21,11 @@
 #import <Python/Python.h>
 #include "py_raw_input.h"
 
+#undef HAVE_CONFIG_H /* Else readline/chardefs.h includes strings.h */
+#define READLINE_LIBRARY /* Hack: we are linking statically */
+#include <readline.h>
+#include <rlprivate.h>
+
 @interface PyTerminalTask : NSObject
 {
 	@public int TTY_SLAVE;	
@@ -73,6 +78,7 @@ static int _check_and_flush (FILE *stream)
 	
 	PyTerminalTask* task = [[PyTerminalTask alloc] init];
     setup_tty_param(&term, &win, [screen width], [screen height]);
+	_rl_set_screen_size(25, 80);
     int ret = openpty(&shell->FILDES, &task->TTY_SLAVE, ttyname, &term, &win);
 	if(ret != 0) {
 		fprintf(stderr, "PyTerminal: openpty failed: %s\n", strerror(errno));

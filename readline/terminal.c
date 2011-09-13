@@ -322,6 +322,8 @@ _rl_set_screen_size (rows, cols)
 
   if (rows > 0 || cols > 0)
     _rl_screenchars = _rl_screenwidth * _rl_screenheight;
+	
+	fprintf(stderr, "set rows:%i, cols:%i\n", rows, cols);
 }
 
 void
